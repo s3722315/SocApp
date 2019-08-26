@@ -1,0 +1,896 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8200ed62-0c0b-4b11-b650-e00a4c6e9759" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../.project" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/00ff3e0d558a74f4d7a5c80a64f44a45.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/012ae7839638abb273f9758dc8e839cf.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/0156c3947c0cfaffa84b9952935d2a80.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/017b68e9f088095a7e69cc294eccf3f8.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/02e4ebdada153f4cbdcc2314913611e5.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/035fb5eebbc13430413a0205be3dc4fa.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/048e9177d2df5f96010b71a15ff95f7d.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/0586bdf1172f118535d3d9e1deeeb234.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/063d411422e3df373235599c6d76f5f4.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/065139df8ff6579dccb121c175feb65a.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/0787f7f47588d2b91f549a0b4cf68077.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/07cfa56ddb25aca1a300f31a514e5764.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/0894636d5785d1433106960fe28b499b.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/09466022ee798718ead5f364422163fe.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/09830e55432ae0903d9e77455bb1995a.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/0c0d7a1e51018f259dc96c19de05c5b6.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/0c44e3ea6e8a990dc7c5a0c6f558b191.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/0c5cf03de4426ef3efc8cc721e932c2f.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/0cd10ad180cae42d3f7122fa0c6e5d30.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/0cde223541dd0cce4069343056dc82d4.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/0d41b87a6cd8d12710853f9e4c94f0ec.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/0d60553c48126bdae2560f261c54e72f.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/0e5bbc1b553af6e96c27d5335efd1414.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/0e76a57b0776a591e1b8f09763c22e1a.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/12df0d0e70dda7c87b5f282648682ea6.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/137263dfa5be3aff0fa2948a8709ec3d.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/14707e4e02bb65470ec85f95c82d3059.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/14a64a31e22c1adfe2e330fa97949d3e.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/14afd26ada7464e86340093460684d14.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/14ce307b56e9bb107e7d922f9169733b.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/14fafe8422442c5fc496d71fff606d6c.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/16eca7ae84ba085a5404a9b091157336.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/1721341ad8273a45574bc0e2a70089bf.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/17250df7bbceacde40bf8f7e7d430af3.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/1750364f7f7e5487ee5833a2299070da.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/17802f3c631573ec2892a1a19a90cd3f.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/18a542d761db984a8411b6302bccc707.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/192b8de2e9f2f361f2024cee0eb6d7eb.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/1a89a7eaed6eba9aefdab5c29e4afc4c.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/1ac87a4ea252ef25032f5b380995d170.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/1b1f4e57930b9e02a59facbb1f9cc851.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/1b2e683e5e2e2379375ac1576ddf1559.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/1b7abe2265859a47f3a66f660782015a.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/1bbc1ecada0839d167e4aa8546c3e91f.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/1cca6bb525e111cd49cc0c9ffd55e8dd.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/1d49aca868044208630a1e29722e5cc6.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/1dd68aead6dec108413e38c3157fccac.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/1e173b409788ceb61be76cfc0bf89e84.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/1ecd62f0010eb63a01cec1680526df76.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/1ed5c9047d7908cd0dc0106ab44f6235.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/1f546db777e6d5f41d5ace1f52352165.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/1fbeeddecd72e575a3296bd5c5f45bb3.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/20f17d0ac072be2f87bed0ac7fee5155.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/2220c6d855a7a045f76e0b9fd149bc0e.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/24e2c64607b660ade16e8041b96aac35.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/24e89399e0c12d9ab58641e744338c18.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/264e529ec1647805a38e51cf39f0764c.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/265c61467bef3f7758352e9b6cbcc6d7.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/26733b4da41ef2f5a1062b5a213e3a14.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/274c36ccb94293f6471150a25afc3b59.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/27e46f0a2f3c5a7766c32ca9f8536468.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/2bb6877824c6478c2a1d961325b1b233.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/2cadf4d2bcaf6804ea46fd194596b0f4.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/2d4c1d724a9e3887922b668c48af290a.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/2e3caebcd1c352f879f15a8b6c518645.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/2e67439d0156fff674fadf22ea538333.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/2fd9cba0475df8cee73a2cf79ef34106.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/30ca26b4aaec0b25ae37122d2035a377.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/31acc8ef78baeaf6d5dddaa3d0e4e4a3.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/333741268cda9c070212cb12328b09ba.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/33741d455de6f365d8a8bff17eb94be0.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/34567d728c9e625d7ac1ef9a345e8ba3.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/35a4f13e14728c9f65ae3e8e3d9f6d92.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/35d258195e4d38ca831b3823565997fc.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/368db62bc702e443cf4ffdb0651383e8.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/36aa67f3ef9959aca5490cd6c8c23b37.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/372f1ff748c1035f841f86e3de765787.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/38176e1cf9fff963d7a6ef4dca7d0b36.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/3ab11755971927cde2fabf962f73b82d.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/3b39ddf009ce1cfa01c3355ede36fbc6.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/3b65b0ab7dcab3f06f917b48408f3b06.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/3b75286e9863886c095006b13900e514.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/3ba2b041139310e485a180282d0700fe.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/3bb68c7162a249d13730b7c48a60148d.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/3c038675c355404214c0dd3c053a0448.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/3cd01e97fd98eeea22c1a6efde4802eb.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/3e18276561101705a3571d2c556510cf.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/3e4294f172a0e1ec4a943232d01c5807.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/3f27ed5e929ff67945f66577b2f000d4.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/3f72324782da945cbed9b1c04ad86139.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/3fa9557a4b6e9e04dbd6ee4fa286e023.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/4099104eb52404f4c41cf8c0c60ef98a.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/409ee43dc840175bb2a52e0fb808b60c.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/41e55c211f7290627a772a79f8439f65.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/43f2d27262f5ca645cc8be1f3a376826.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/43fe7746f91135702c74b55b4c4f6313.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/440b6c55d7e0205bd0716f3ed6b6708a.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/4451fa7f6e531431017e84c44f8fd7b9.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/44a2f8aebaf8edb33a0900e63a126e42.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/4503d39f556b5cdefde0e4d3d59dd3ce.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/450d904bd17bc05a5428ca58f0115e85.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/45c7de2f7341a18dde69802f3586f3f7.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/46da1730fd1927bfbc9c1e32d7841f37.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/4735353dff1047172fd5b962eaff7011.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/47373fcab7fc5a9c6f438882ea51ac20.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/47c12159dd2913ca98b2e0a47488ca9d.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/48236ceebac9867649f357637035a986.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/484ab5a037a8edae2cb55dd1d7dfa017.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/488dd0f995ef540781f2e78fe37e0026.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/49985ba87d2e4e8c3120e773418c2f5d.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/4a72ef345543c62669af615c0484e42d.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/4aef78dfbb877ad82dd06b9770c597ab.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/4c7f36521ce8b82f69c2243ccf180fdd.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/4c903b4c47d081be234ff5ac4f8914b6.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/4d6adc91d539ebaece61e4d5686520ae.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/4e1ffccb9f47d94baa8bcb4a17996e5c.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/4e7e8673d8e7e1f6826324c2c58aa6d3.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/4e8fa838466b5ebc5e7a1a661c42a7d6.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/4eb79d886877fd67d8998d8fee319fbc.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/4f1dfbc16862a3c1ffc829e0333b3b74.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/500e6f0fa26114323b2a147d563e8e75.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/5109a4ef0874634c67f0d812b7a1ad35.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/5178a397b23c66c4ce6a063f7499ab97.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/51a72aa0e12e7317da3052767458a3fb.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/51c9664c32dc1d52643eeb62aa4a29fd.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/5382deee1a085224d9c0a7d19ce0da67.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/539409baa3f9ade4961af31daf4744b8.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/53b65bc3be45f8cdbabdaf4d862c5e99.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/53d3903ac4cb5e3a3289c29a1438ccb8.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/5538184ee665f4f403489b66e73460a8.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/55e5e8e85a0a6e729d403cc7dbb34b9c.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/56067b0475b9722f19136014c42a7540.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/57113e88e5d25b9034d3a803f9fd60c4.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/57d3afd403806946e937d116a6c158c4.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/587c74b1c8f5dab6575397cbbbd02029.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/59528fb885bc45cad19cb48b6f204445.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/59c0834f0ca26790c78a56a0d24bf109.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/5a161f1091e97cdcd649223372f03d84.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/5b0cd04239ab426b9e00697463d6e40f.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/5b237c5df7be00f865b3934a63aa8316.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/5cee532b3ad8ba67bbbb3650089d1200.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/5db6ed8f899e19f06d1025a365df0723.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/5df58c14e6ae1fbabc66b48a915841e0.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/5ef9a25afe2d5f302bbe0ff5977318f5.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/5fc04538a955c2deb4d700e257307774.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/5fc2477522cd2a0b734e35d4ae1eb2fc.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/6077a6ba54c0cff7c9133fc0a5780d64.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/609406fe07ea1c3a63a3a74cce657c74.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/61f66c04e914032dc06f3b11184e9fc4.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/62bf7c14c0085652e6e0f9497fe3c35a.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/62e050f6373eefe4f3cd6a8e4d318069.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/639e7b0c1b21068dc48a93e34fbf3a3c.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/63c948c76214d999fd9417e4c1750822.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/63e90c18def0db3ffcad9558f1278235.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/63eab9efbf22445e90706cc9d9b5a473.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/64a1c3ff158d8f3ca227ab1fbae010ba.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/64b65215fc0839278280b9c7b8e2a776.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/6551cf10af49a4f748c08f34d59d9779.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/658ff929cbee9c734f140de054db998e.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/65953e4948f8f70d6115bcf3eef4888b.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/6595b608fb99fc4161d0b09b8bd37427.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/67349c5e458afd4e512e570c5e010938.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/690dfc7aa2a374992bba075a846d6576.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/69327632185a318b85b0e04d68fb16f2.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/6a4943637783147df8406669b3f2ab79.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/6a846248297ca6dcfc61119c6ffbad25.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/6b2609860618668fff826f90044fab82.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/6b7214312cf135de9021df90925e8bfd.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/6b760c1f1efabd0da92c65204a24713c.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/6b7941add6d1eeb6861a97396a8e1a87.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/6b845e78cb32a70cd931fda7449ec7c9.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/6b8c9a9ebb266d4413fe82fee5d0b3da.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/6e0a306bd30d4bb2b6c2006d7d37da9b.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/6e14e8333688796def3a91eca519462e.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/6e57a295cb6b0810f6eff4df59c66061.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/6f5afabaa7a9ee2f7fc12173b9a57584.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/6fbbdd5438aa92e5d7e1e30f3b633534.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/7001b5bf7b82722bb14f9f13a9cf51e1.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/7008dbfafe0fc0281ec4282330fd7069.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/712f84edd37057f5fb0b827ab662b45d.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/71e1e904f7d427e8bb4cc48d36785161.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/727b1b64cecf29a2b910c3b284e601e0.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/72f700ab76fef1ad55bc988c5f03ad09.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/744fa246a473a7dffa8a227039660111.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/74c1c9a93d3d4c5c6826183fbf71c5c3.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/7545925f3e5d13e4f0152b546920078a.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/773e77255833a54b685a5cd24212d8a9.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/77e4090b156e80dde45ccabab93a69bd.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/7952f65c01aab4dd74d853b39c18d356.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/7ac1957c4fe3d5c3659fb3df6660851e.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/7c59131220be3f924a4380e746208efe.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/7c96d46c5e2051742a4bb86c31dd7b96.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/7d93dc7fcb50b1d24f8b6fada330be12.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/7da759510a6665841c1e67f696b595d7.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/7ee83f266a38df8d326df7508d0d4c59.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/805946e360633fc693cb8d4c931fb68a.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/8102e5dd6aa4fcfa739412f6f65fce2c.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/811642693665b466ac47f19558d6efa4.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/81acf4b445a91af4501d295884796a9b.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/81ad4cd2fabc7e03a0896dfa4c3cb9c1.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/81e097674c94c2795532931e4e85b327.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/81f6979ab0f27ecf1d2eeb450ec47ba0.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/81ff261db270d12295be486ac3462c7a.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/82516a9895230850f06ad2b7dd1065ba.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/82da2da304a8d3ad8c506492c3afc387.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/82ded67d2b43cc94085c143794ac028a.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/83923b849d9a5d2f58f803e4f6aa5147.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/8427421ca851e3b97bd332f924e596bc.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/84902bb95fae7d0e6f1789bcb789435f.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/85296d9a827250213bb196d41e9b6b78.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/85a9af3e60921a954fc0cc143e4bc791.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/85db4848855870294fe8900d044f32d6.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/878bb4f66da2417e23c0806f8d2394fa.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/87b1437d6a6c585453937d378cb21b14.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/87c24404c1e63a5e182bf7f4f003a5fc.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/88b402045976315c58a96ea25d8770a7.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/8995e11083e80d624cf3606a00ddd66d.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/89b75077b4fad2c65631bd838839090c.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/8a54bcd7af558c2575ee4293f6cf16fa.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/8aa86c52fc6bd5f8c6d4845626836abf.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/8acb78ee44ffdda6b62ca4aa731e9568.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/8e7b932d99d75820bcb14b4d90b64fed.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/8f6e4335bd71c9dd4f0bb88dc8307f90.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/8fa9a20187af0a15193d83223e03a1b8.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/90f577d405e454ba61af2ec539eab435.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/91224e760bec1c1b5aa0c90936cc9a53.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/9203b7ed6d4693e2fbaf0ccf4592572b.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/924204e75d0a6f213130010102677c79.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/929f79ab3a0ecdf61de69839e93babd2.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/92b6f26c3b2a95fd958af65683e6d5e0.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/937c823f8d82081ddba30fb4fa06fce6.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/93bc63d81ad73bf066f99a45b60395e4.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/9428c2e1cb5e523d69498c4ba0e0f84e.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/9430ed641584ee3316c55a786228bb13.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/9474556036277bee1776582ec2148415.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/94f538d8106d309bee0da57a98224eff.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/95000a6c2be297df22b4fdffd1f441c4.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/95b6a71a56a1cd79b0383a778ae80aa2.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/95e2ece6c4ef9026c41e6fe9df7378cc.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/965bc05c5edd4da53701c19f5297fb9e.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/96af99ebc0d40cad4108953070006043.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/972a90a0be285f96d4b80fa6f468cb79.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/97a03af8c99580aafd55d9baaef86e3f.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/98eb364db801fab5a02f2ce9994caf34.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/994fd99a660bdd00ac4fb661f77160be.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/9a7915700cf978e57b42f60b8ea3593c.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/9ac0e139fc58467002a476edbc5d7875.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/9ad2cfbba3195b75465df73df79fd38a.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/9c00bb89ab0d92512f2736edfc53109c.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/9c50dba7c9cea60129808026b7f8d40f.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/9f4fc21aee5e34002a0873919bce48eb.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/9f97049454417732bdc315ea9a8a30c9.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/a099431689fa6ab28866074792c7dc78.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/a20cb557cf4af2c13f07b528d022be93.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/a222a0742188a8bd8f2b273b6e41ef24.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/a29b9f1dd9fefbfc9ccfea56293ff321.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/a2b0c39b9f77d93d03c9aed5f5bd681c.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/a2ccb6a77428ff276a90282640e9396d.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/a3489a855d9b8f915a16b701c7d86c8f.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/a3fa4f8196f99fa5b0d540d81900d42f.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/a411bcf615606fdd4c697e837309ee02.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/a4326c192925df6f511e3cb646775fcc.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/a47ca3e58d0e20802ca7ef72de8975f7.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/a6a536cdec73cdfafda2972c2f6ddd09.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/a928491913f2835617810d6f3041059f.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/a98ce6b557b4ec6a5cc198a85a56de43.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/aa4983a30db7107defa6f62edd55b8cb.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/ab8f685963d3bc51ff2abf8620575ba6.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/abcaae6a60d39fdd32d647e295320ec1.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/abd14b9055b0f3ec2d6f4b718221eb95.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/ac69794068bb74324e3c315554c055fe.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/acb513748479b88b70307844047d88af.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/acbea80fa9ac3a5ca9107b2f1f58afe2.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/adcba6080b026c1f53bbccf7b4d903bb.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/aea4fd33ea41ee8d79b1cdf296b1a744.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/aed58d988ca12538e9d6bd525407ee55.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/afa64d20a2a97adc0d341a3e7426155b.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/b09047d49f2b58e5818da0119761d852.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/b1911b8539838784eb35b7e61937b536.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/b20087059c5279e9d533673450a5897c.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/b26180b2c588e024a31f64f7ed4a012f.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/b49a25bf0ad0bb5379771d3be3fddc16.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/b4c0a2ed2ab9c807786803ee35240630.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/b523692892c59b337ff5c42eee3dd800.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/b552962c49afd98ff5547c3c36972bad.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/b60d077d99ad3473b1545a17ab5193c1.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/b618815c4b23f8a59c339c49ae8c3bcc.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/b83fbdbf11e7402f9751ba8e381aff3d.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/b8bc44d3482950411b1c1e1760d398d5.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/b8f9866fdcfae5239305fb5bdecba7a5.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/b9348dd4a9220b277c4c2f21ba35f454.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/b939c62f94783001167344baebe16455.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/b996be36be32409054b75496eb54732c.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/bb80b988b4173354d994d9c5cdb3ad8a.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/bc143b2f53ae7e4decca757861133fa3.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/bd024acc85cae39f8aae98446ac22bfc.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/bd3708b0a02a888f26f8728148b95c5d.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/bd4b3b398a94a0508835b6c80f1a8076.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/bd93c2b77ce895fb3bb2abb0bce78c31.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/bf6b53a3fab4630eb442a9cfd62d929d.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/c02dc442e2c48e38e42008e60d0daed3.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/c081492b985b0892b6c9e097dfd74301.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/c0cebc15a8c238395f36dba25d13dcc8.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/c1ac3118a2bf8611acd21f3b7d04a7b9.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/c2303db7fa1f3fb66a2967f39d546aa9.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/c2680d3321e1d8b19b2641b74a01a5e9.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/c2c49e919dfb4518af8dc37eb80f3964.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/c3af0382f63605af43235c55d8249244.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/c49945be1f7717d523b9245eeea560df.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/c4bfe7871475fce7985727e0e0671b7f.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/c59a64555ea0e60dd5dbe61f63219a2b.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/c62cf09acbacc5c0e01cfd20c3067cfc.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/c66a117f5e91653d347ef9242e109993.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/c6ae4d1f3e792fadd47c34abc543f680.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/c755b6a556b46a32d4baeaf9a7e28069.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/c88efe72119a922151b77048aec912fd.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/c8bf43d5aafc5b89bcb7ab31bca0adf7.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/c8c58122422a06d9834b04c7981df311.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/c9c7bfea110c4b30b27bd472af9c706a.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/ca223b1a207ea954e2260d0027288eb6.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/cabaecf0c0a378cff73ee57acd55ee47.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/cb777d989513cd945ae3fbad87a21d1f.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/cba5819a995df86a5dac0cbf7641c001.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/cbed2b63f187db80ebf51379234e5c98.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/cbf316cddb83caadd39f808b7092ad5e.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/cd31c35d3074218c5e9fe6000dd56cc8.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/ce5e62491676b18b698517b4602fe50b.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/ced7084cba09b9241f8e7685004f2689.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/cf276b25c281baad081a23fa5ce6d5d2.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/cf3c2b97afb8c2a50597eec51787b8e0.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/cf857409461727e54f347ebaa7f6eee0.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/d0b127bbc0dd61a7bdf3ddae2f4c29bd.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/d138b3da0e1d94135f0225f37c874672.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/d18b292952fabc533fa03ae603936eeb.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/d1917bfc14303d1e7eb105a0fdb75016.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/d1b8b1a4543a3d60b2118703b894bd13.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/d33f2252af791f0c6c8ce196ef0d208d.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/d386589a1f13df83a42ff3e65f52088a.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/d3fd6a121899b9a8c949935aa37982cc.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/d403ce5a2f3387a452a62f7753defa3b.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/d47280bb4987912c3d964b810a9dae79.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/d4b027c81d7a80c523287befef5d3e52.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/d59d8721a732e2828803df20e2351175.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/d624a7ef9068a112cec2a2902544ec6b.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/d69174820b5d7545b876ae605be77c4f.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/d6c58a79fff0f66fb3c7996f7ad358fb.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/d79e1896a98d4cfbb8a91533bfce4a46.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/d80a062bbb1b5ffb1d090bbd995e81e3.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/d9b094d248eaa5c391695b868c275de2.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/d9bd7c8c4fac8f858476a691b4e1edac.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/d9e3fef835ef2682596705fb4813df90.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/dc812aeb10f1ddb3a78ba1cdb434e641.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/dd02d512f6030eaec1593848bfe3042d.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/de084d9b527c5270f84c0000ed1db521.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/de0af8a6deaa127f201c25749b9b031b.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/de82cca2273a929cdb435a55fc50131e.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/de9cb3b52f6263847034a0e9222736bf.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/dea882dbcdb8ac2c93d33884d11fbec6.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/df6cc348e7522823c926aaabb9ba120a.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/dfabf9d6590ea996d52f9dea9d2a9191.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/e04feb9a628dcda2dd1036134e2b7236.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/e2c894a98ea4fa3b84132e707956a527.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/e34ccc38116647836ef8f38f4c1855af.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/e4c03c0651e7cda14931a6866fae76ed.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/e4de0bd81cf6d0d07a48a65f9088a208.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/e53d4f72910212be4d3f43e986623b27.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/e61a5a9b03ea6f03facd75f1e6ae3982.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/e6437550e177eb8678bdc1df80ed7c88.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/e6ac8f5286c3e74db7f0cd27deee192b.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/e6d9128d9a3febd9e1dec9b62562a78f.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/e6e944be64e24a177acbf93d3b71b372.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/e7c8fc0bdc0efd857854e0a9756c1c29.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/e8558ade44480a413954050fe3bccf37.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/e88ecd4bbd5d046a4dda34b94ed5c48e.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/e8a63c087456258171523ea92be9fc5c.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/ea19204dfc8ad8d45cdc9e28d3a18675.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/eaa330a7f4bc6a4d3928bb09626165b8.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/eab97c784a1c7755e2ce53007ec439fe.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/eb62691c190589e8ef8c5f6131b57919.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/ec377e7ba7f1e96c15f695e63d2c12d7.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/ec4054aeb4d60c786c1556f4f8de6cec.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/ec4a0d84205686b2be2e83f1a1de64ed.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/ecb350de0db40a9faafdc5bde367f02f.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/ed0850eecc6a01bd0eb2531a550b13a0.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/eee8816c5f7a507973ea13a4127b6090.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/ef4ae0e224a487c3a39856b06c2a6faa.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/ef992424db6bb2e2e5311ed954240f86.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/f1893c960fea8d45683b1043b8fe04e2.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/f1e920fd766ea4c0fe4c42f534a56bfb.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/f21d0e4961a0b85e613a86277e7eeb97.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/f25bf09f4a4325761dd979c010967d17.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/f30ee39a275bc48d882a89e461a02b68.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/f3dab29c2c23cade9a912a45ae56a8d5.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/f41617d87f6661610124de21ab02d233.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/f420bdcde76a82d1c97bfeff1c7759e1.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/f4b27fbe9f71392a1cc54afac847a861.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/f588e5a6534640982ec708e4663c1757.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/f69647df7ec7f298c8dd1bcb021a64f2.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/f8121b39d5b726b1d34a150d5b9784e6.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/f84e5f9ca2045049f653bef73af686bb.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/f904316e482dfd18957026311d55c4b5.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/f968332ec4ec66c73c52935a6e626f74.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/f97ef9ee1906db31ec86f2e2578e1250.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/fa8b92eb28f6cc7288abfde569f9e03d.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/fae8e999b1de80dfea9b44faeb6f41c0.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/fb033f8db4c84a29e754580475270eaa.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/fbafc5eefdd52bef88b28980bb431159.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/fc269e23f0073fa61699da406fc35a30.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/fc754317d95bafa2aefc00a30deb18df.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/fd32101f4a4730773ef17c4b1bae2ebb.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/fe671f34afa8e1b0b220b51de32a303e.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/node_modules/.cache/babel-loader/fe80141924d147bbbd239ddb296881a9.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/src/api/course-list/CourseDataService.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/src/components/course-list/AllCoursesComponent.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/todo-app/src/components/course-list/CourseComponent.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.settings/org.springframework.ide.eclipse.prefs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/todo-app/src/components/todo/HeaderComponent.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/todo-app/src/components/todo/HeaderComponent.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/todo-app/src/components/todo/TodoApp.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/todo-app/src/components/todo/TodoApp.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.classpath" beforeDir="false" afterPath="$PROJECT_DIR$/.classpath" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.project" beforeDir="false" afterPath="$PROJECT_DIR$/.project" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/.settings/org.eclipse.jdt.core.prefs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/data.sql" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="testRunner" value="GRADLE" />
+    <option name="delegatedBuild" value="true" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/sept/rest/webservices/restfulwebservices/todo/TodoHardcodedService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="748">
+              <caret line="50" column="36" lean-forward="true" selection-start-line="50" selection-start-column="36" selection-end-line="50" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/sept/rest/webservices/restfulwebservices/course/CourseHardcodedService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="26" column="39" lean-forward="true" selection-start-line="26" selection-start-column="39" selection-end-line="26" selection-end-column="39" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#766#767#0" expanded="true" />
+                <element signature="e#799#800#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.classpath">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="29" column="21" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/sept/rest/webservices/restfulwebservices/course/CourseResource.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="299">
+              <caret line="28" column="5" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1081#1082#0" expanded="true" />
+                <element signature="e#1116#1117#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/sept/rest/webservices/restfulwebservices/todo/TodoResource.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="19" column="15" lean-forward="true" selection-start-line="19" selection-start-column="15" selection-end-line="19" selection-end-column="15" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/java/com/sept/rest/webservices/restfulwebservices/course/Course.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sept/rest/webservices/restfulwebservices/course/CourseJpaRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sept/rest/webservices/restfulwebservices/course/CourseResource.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sept/rest/webservices/restfulwebservices/course/CourseHardcodedService.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/data.sql" />
+        <option value="$PROJECT_DIR$/.settings/org.eclipse.jdt.core.prefs" />
+        <option value="$PROJECT_DIR$/.project" />
+        <option value="$PROJECT_DIR$/.classpath" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="990" />
+    <option name="width" value="940" />
+    <option name="height" value="1090" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="restful-web-services" type="b2602c69:ProjectViewProjectNode" />
+              <item name="restful-web-services" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="RestfulWebServicesApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="restful-web-services" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.sept.rest.webservices.restfulwebservices.RestfulWebServicesApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8200ed62-0c0b-4b11-b650-e00a4c6e9759" name="Default Changelist" comment="" />
+      <created>1566756580315</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1566756580315</updated>
+      <workItem from="1566756583912" duration="10547000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="10547000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="55" y="-7" width="1488" height="878" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Image Layers" order="0" />
+      <window_info id="Capture Tool" order="1" />
+      <window_info id="UI Designer" order="2" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info id="Web" order="4" side_tool="true" />
+      <window_info id="Designer" order="5" />
+      <window_info active="true" content_ui="combo" id="Project" order="6" visible="true" weight="0.25" />
+      <window_info id="Structure" order="7" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Terminal" order="0" visible="true" weight="0.3297587" />
+      <window_info anchor="bottom" id="Docker" order="1" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="3" />
+      <window_info anchor="bottom" id="Java Enterprise" order="4" weight="0.3297587" />
+      <window_info anchor="bottom" id="Database Changes" order="5" />
+      <window_info anchor="bottom" id="Version Control" order="6" weight="0.3297587" />
+      <window_info anchor="bottom" id="Spring" order="7" weight="0.3297587" />
+      <window_info anchor="bottom" id="Message" order="8" />
+      <window_info anchor="bottom" id="Find" order="9" />
+      <window_info anchor="bottom" id="Run" order="10" weight="0.3297587" />
+      <window_info anchor="bottom" id="Debug" order="11" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="12" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="13" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="14" />
+      <window_info anchor="right" id="Palette" order="0" />
+      <window_info anchor="right" id="Capture Analysis" order="1" />
+      <window_info anchor="right" id="Database" order="2" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info anchor="right" id="Theme Preview" order="4" />
+      <window_info anchor="right" id="Bean Validation" order="5" />
+      <window_info anchor="right" id="Maven" order="6" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="7" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="8" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="9" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sept/rest/webservices/restfulwebservices/course/CourseRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="29" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sept/rest/webservices/restfulwebservices/course/CourseJpaRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sept/rest/basic/auth/AuthenticationBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sept/rest/basic/auth/BasicAuthenticationController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sept/rest/basic/auth/SpringSecurityConfigurationBasicAuth.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sept/rest/webservices/restfulwebservices/RestfulWebServicesApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sept/rest/webservices/restfulwebservices/jwt/resource/JwtAuthenticationRestController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-687">
+          <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sept/rest/webservices/restfulwebservices/jwt/resource/AuthenticationException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sept/rest/webservices/restfulwebservices/jwt/resource/JwtTokenRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-41">
+          <caret line="4" column="14" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sept/rest/webservices/restfulwebservices/jwt/resource/JwtTokenResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sept/rest/webservices/restfulwebservices/jwt/JwtInMemoryUserDetailsService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-58">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sept/rest/webservices/restfulwebservices/jwt/JwtTokenAuthorizationOncePerRequestFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-531">
+          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sept/rest/webservices/restfulwebservices/jwt/JwtTokenUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-891">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sept/rest/webservices/restfulwebservices/jwt/JwtUnAuthorizedResponseAuthenticationEntryPoint.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sept/rest/webservices/restfulwebservices/jwt/JwtUserDetails.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-517">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sept/rest/webservices/restfulwebservices/jwt/JWTWebSecurityConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-823">
+          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="35" selection-start-line="3" selection-start-column="35" selection-end-line="3" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sept/rest/webservices/restfulwebservices/course/Course.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="20" column="25" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sept/rest/webservices/restfulwebservices/todo/Todo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-153">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sept/rest/webservices/restfulwebservices/todo/TodoHardcodedService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="748">
+          <caret line="50" column="36" lean-forward="true" selection-start-line="50" selection-start-column="36" selection-end-line="50" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/sept/rest/webservices/restfulwebservices/RestfulWebServicesApplicationTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sept/rest/webservices/restfulwebservices/todo/TodoJpaRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sept/rest/webservices/restfulwebservices/todo/TodoResource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="19" column="15" lean-forward="true" selection-start-line="19" selection-start-column="15" selection-end-line="19" selection-end-column="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/data.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sept/rest/webservices/restfulwebservices/todo/TodoJpaResource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="22" column="30" lean-forward="true" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sept/rest/webservices/restfulwebservices/course/CourseResource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="28" column="5" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1081#1082#0" expanded="true" />
+            <element signature="e#1116#1117#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sept/rest/webservices/restfulwebservices/course/CourseHardcodedService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="26" column="39" lean-forward="true" selection-start-line="26" selection-start-column="39" selection-end-line="26" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#766#767#0" expanded="true" />
+            <element signature="e#799#800#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.settings/org.eclipse.jdt.core.prefs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="64" selection-start-line="4" selection-start-column="64" selection-end-line="4" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.project">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="21" column="23" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.classpath">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="29" column="21" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
