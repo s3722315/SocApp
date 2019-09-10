@@ -15,6 +15,7 @@ public class CourseHardcodedService {
         courses.add(new Course(++idCounter, "Programming 1", "EEET0001", Course.Status.available));
         courses.add(new Course(++idCounter, "Web Programming", "EEET0002", Course.Status.available));
         courses.add(new Course(++idCounter, "Software Fundamentals", "COSC0034", Course.Status.full));
+        courses.add(new Course(++idCounter, "Software Testing", "COSC0045", Course.Status.unavailable));
     }
 
     public List<Course> findAll() { return courses; }
@@ -31,5 +32,7 @@ public class CourseHardcodedService {
         }
         return null;
     }
+
+
 
 }
