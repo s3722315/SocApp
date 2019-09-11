@@ -35,11 +35,13 @@ class ListTodosComponent extends Component {
     }
 
     refreshTodos() {
+        console.log('refresh')
         let username = AuthenticationService.getLoggedInUserName()
         TodoDataService.retrieveAllTodos(username)
             .then(
                 response => {
                     //console.log(response);
+                    // this.setState({ message: `Tried to read data`})
                     this.setState({ todos: response.data })
                 }
             )

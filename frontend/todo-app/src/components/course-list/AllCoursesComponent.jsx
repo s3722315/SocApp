@@ -1,13 +1,35 @@
 import React, { Component } from 'react'
 import CourseDataService from '../../api/course-list/CourseDataService.js'
+import AuthenticationService from '../todo/AuthenticationService.js'
 
 class AllCoursesComponent extends Component {
 
     constructor(props) {
+        console.log('constructor')
         super(props)
+        this.state = {
+            courseList: [],
+            message: null
+        }
+        this.gotoCourse = this.gotoCourse.bind(this)
+        this.refreshCourses = this.refreshCourses.bind(this)
+    }
 
-        this.courseList = []
+    componentWillUnmount() {
+        console.log('componentWillUnmount')
+    }
 
+    shouldComponentUpdate(nextProps, nextState) {
+        console.log('shouldComponentUpdate')
+        console.log(nextProps)
+        console.log(nextState)
+        return true
+    }
+
+    componentDidMount() {
+        console.log('componentDidMount')
+        this.refreshCourses();
+        console.log(this.state)
     }
 
     gotoCourse(id) {
@@ -16,16 +38,30 @@ class AllCoursesComponent extends Component {
 
     }
 
-    render() {
-        CourseDataService.retrieveAllCourses()
+    refreshCourses() {
+        console.log('refresh')
+        let username = AuthenticationService.getLoggedInUserName()
+        CourseDataService.retrieveAllCourses(username)
         .then(
             response => {
                 //console.log(response);
-                this.setCourseList({ courseList: response.data })
+                this.setState({ message: `Tried to read data`})
+                this.setState({ courseList: response.data })
+                
             }
         )
+    }
 
+    render() {
+        // CourseDataService.retrieveAllCourses()
+        // .then(
+        //     response => {
+        //         //console.log(response);
+        //         this.setState({ courseList: response.data })
+        //     }
+        // )
 
+        console.log('render')
         return(
             <div>
             
@@ -52,10 +88,10 @@ class AllCoursesComponent extends Component {
 
                             {
 
-                                this.courseList.map(
+                                this.state.courseList.map(
                                     course =>
-                                        <tr key={course.id} onClick={this.props.history.push(`/courses/${course.id}`)}>
-                                            <td>{course.id}</td>
+                                        <tr key={course.id}>
+                                            <td>{course.code}</td>
                                             <td>{course.name}</td>
                                             <td>{course.status}</td>
                                             <td><button className="btn btn-success" onClick={() => this.gotoCourse(course.id)}>Go To</button></td>

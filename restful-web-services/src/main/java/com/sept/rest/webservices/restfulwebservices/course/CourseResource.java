@@ -23,8 +23,8 @@ public class CourseResource {
     @Autowired
     private CourseHardcodedService courseService;
 
-    @GetMapping("/courses")
-    public List<Course> getAllCourses(@PathVariable String name) {
+    @GetMapping("/users/{username}/courses")
+    public List<Course> getAllCourses(@PathVariable String username) {
         return courseService.findAll();
     }
 
