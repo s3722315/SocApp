@@ -9,6 +9,7 @@ class AllCoursesComponent extends Component {
         super(props)
         this.state = {
             courseList: [],
+            myCourseList: [],
             message: null
         }
         this.gotoCourse = this.gotoCourse.bind(this)
@@ -39,13 +40,11 @@ class AllCoursesComponent extends Component {
     }
 
     refreshCourses() {
-        console.log('refresh')
-        let username = AuthenticationService.getLoggedInUserName()
-        CourseDataService.retrieveAllCourses(username)
+        console.log('refresh    ')
+        CourseDataService.retrieveAllCourses()
         .then(
             response => {
                 //console.log(response);
-                this.setState({ message: `Tried to read data`})
                 this.setState({ courseList: response.data })
                 
             }

@@ -3,9 +3,9 @@ import { API_URL, JPA_API_URL } from '../../Constants'
 
 class CourseDataService {
 
-    retrieveAllCourses(name) {
+    retrieveAllCourses() {
         //console.log('executed service')
-        return axios.get(`${API_URL}/users/${name}/courses`);
+        return axios.get(`${JPA_API_URL}/courses`);
     }
 
     retrieveMyCourses(name) {
@@ -13,9 +13,9 @@ class CourseDataService {
         return axios.get(`${JPA_API_URL}/users/${name}/mycourses`);
     }
 
-    retrieveACourse(id) {
+    retrieveACourse(name, id) {
         //console.log('executed service')
-        return axios.get(`${JPA_API_URL}/courses/${id}`);
+        return axios.get(`${JPA_API_URL}/users/${name}courses/${id}`);
     }
 
 }
