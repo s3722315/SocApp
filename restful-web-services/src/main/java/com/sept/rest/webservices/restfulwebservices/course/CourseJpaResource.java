@@ -41,9 +41,9 @@ public class CourseJpaResource {
         return courseJpaRepository.findById(id).get().getStatus();
     }
 
-    @GetMapping("/jpa/users/{username}/courses/{id}")       //user database not implemented yet
-    public Course getCoursebyUser(@PathVariable String username, @PathVariable long id){
-        return courseJpaRepository.findById(id).get();
+    @GetMapping("/jpa/users/{username}/courses")       //user database not implemented yet
+    public List<Course> getMyCourses(@PathVariable String username, @PathVariable long id){
+        return courseService.findByEnrolled();
     }
 
     @PutMapping("/jpa/courses/{id}/enroll")

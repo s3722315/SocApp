@@ -15,7 +15,8 @@ public class CourseHardcodedService {
         courses.add(new Course(++idCounter, "Programming 1", "EEET0001", Course.Status.available));
         courses.add(new Course(++idCounter, "Web Programming", "EEET0002", Course.Status.available));
         courses.add(new Course(++idCounter, "Software Fundamentals", "COSC0034", Course.Status.full));
-        courses.add(new Course(++idCounter, "Software Testing", "COSC0045", Course.Status.unavailable));
+        courses.add(new Course(++idCounter, "Software Testing", "COSC0035", Course.Status.unavailable));
+        courses.add(new Course(++idCounter, "Capstone Project", "EEET0003", Course.Status.enrolled));
     }
 
     public List<Course> findAll() { return courses; }
@@ -31,6 +32,16 @@ public class CourseHardcodedService {
             }
         }
         return null;
+    }
+
+    public List<Course> findByEnrolled() {
+        List<Course> enrolledCourses = new ArrayList<>();
+        for (Course course : courses) {
+            if (course.getStatus() == Course.Status.enrolled) {
+                enrolledCourses.add(course);
+            }
+        }
+        return enrolledCourses;
     }
 
 
