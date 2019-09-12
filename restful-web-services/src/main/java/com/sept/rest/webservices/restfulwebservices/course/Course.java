@@ -10,9 +10,10 @@ public class Course {
     @Id
     @GeneratedValue
     private long id;
-    private String name;
+    private String username;
+    private String coursename;
     private String code;
-    private Status status;
+    private String status;
 
     public enum Status {
         available, enrolled, full, unavailable
@@ -22,9 +23,10 @@ public class Course {
     protected Course(){
     }
 
-    public Course(long id, String name, String code, Status status){
+    public Course(long id, String username, String coursename, String code, String status){
         this.id = id;
-        this.name = name;
+        this.username = username;
+        this.coursename = coursename;
         this.code = code;
         this.status = status;
     }
@@ -34,15 +36,19 @@ public class Course {
 
     public void setId(long id) { this.id = id; }
 
-    public String getName() { return name; }
+    public String getUsername() { return username; }
 
-    public void setName(String name) { this.name = name; }
+    public void setUsername(String username) { this.username = username; }
+
+    public String getCoursename() { return coursename; }
+
+    public void setCoursename(String coursename) { this.coursename = coursename; }
 
     public String getCode() { return code; }
 
     public void setCode(String code) { this.code = code; }
 
-    public Status getStatus() { return status; }
+    public String getStatus() { return status; }
 
-    public void setStatus(Status status) { this.status = status; }
+    public void setStatus(String status) { this.status = status; }
 }

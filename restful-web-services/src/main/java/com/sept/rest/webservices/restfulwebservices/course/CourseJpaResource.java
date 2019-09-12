@@ -28,7 +28,7 @@ public class CourseJpaResource {
 
     @GetMapping("/jpa/courses")
     public List<Course> getAllCourses() {
-        return courseService.findAll();
+        return courseJpaRepository.findAll();
     }
 
     @GetMapping("/jpa/courses/{id}")
@@ -37,18 +37,18 @@ public class CourseJpaResource {
     }
 
     @GetMapping("/jpa/courses/{id}/status")
-    public Course.Status getCourseStatus(@PathVariable long id){
+    public String getCourseStatus(@PathVariable long id){
         return courseJpaRepository.findById(id).get().getStatus();
     }
 
-    @GetMapping("/jpa/users/{username}/courses/{id}")       //user database not implemented yet
-    public Course getCoursebyUser(@PathVariable String username, @PathVariable long id){
-        return courseJpaRepository.findById(id).get();
+    @GetMapping("/jpa/users/{username}/courses")       //user database not implemented yet
+    public List<Course> getMyCourses(@PathVariable String username){
+        return courseJpaRepository.findByUsername(username);
     }
 
     @PutMapping("/jpa/courses/{id}/enroll")
     public ResponseEntity<Course> enrollCourse(@PathVariable long id, @RequestBody Course course){
-        course.setStatus(Course.Status.enrolled);
+        course.setStatus("enrolled");
         Course courseUpdated = courseJpaRepository.save(course);
 
         return new ResponseEntity<Course>(course, HttpStatus.OK);
@@ -56,7 +56,7 @@ public class CourseJpaResource {
 
     @PutMapping("/jpa/courses/{id}/drop")
     public ResponseEntity<Course> dropCourse(@PathVariable long id, @RequestBody Course course){
-        course.setStatus(Course.Status.available);
+        course.setStatus("available");
         Course courseUpdated = courseJpaRepository.save(course);
 
         return new ResponseEntity<Course>(course, HttpStatus.OK);

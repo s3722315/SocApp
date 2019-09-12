@@ -12,15 +12,16 @@ public class CourseHardcodedService {
     private static long idCounter = 0;
 
     static {
-        courses.add(new Course(++idCounter, "Programming 1", "EEET0001", Course.Status.available));
-        courses.add(new Course(++idCounter, "Web Programming", "EEET0002", Course.Status.available));
-        courses.add(new Course(++idCounter, "Software Fundamentals", "COSC0034", Course.Status.full));
-        courses.add(new Course(++idCounter, "Software Testing", "COSC0045", Course.Status.unavailable));
+        courses.add(new Course(++idCounter, "sept", "Programming 1", "EEET0001", "available"));
+        courses.add(new Course(++idCounter, "sept", "Web Programming", "EEET0002", "available"));
+        courses.add(new Course(++idCounter, "sept", "Software Fundamentals", "COSC0034", "full"));
+        courses.add(new Course(++idCounter, "sept", "Software Testing", "COSC0035", "unavailable"));
+        courses.add(new Course(++idCounter, "sept", "Capstone Project", "EEET0003", "enrolled"));
     }
 
     public List<Course> findAll() { return courses; }
 
-    public Course.Status checkStatus(Course course){
+    public String checkStatus(Course course){
         return course.getStatus();
     }
 
@@ -31,6 +32,16 @@ public class CourseHardcodedService {
             }
         }
         return null;
+    }
+
+    public List<Course> findByEnrolled() {
+        List<Course> enrolledCourses = new ArrayList<>();
+        for (Course course : courses) {
+            if (course.getStatus().equals("enrolled")) {
+                enrolledCourses.add(course);
+            }
+        }
+        return enrolledCourses;
     }
 
 
