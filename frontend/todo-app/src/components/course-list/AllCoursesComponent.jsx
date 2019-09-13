@@ -13,7 +13,9 @@ class AllCoursesComponent extends Component {
             message: null
         }
         this.gotoCourse = this.gotoCourse.bind(this)
+        this.enrollInCourse = this.enrollInCourse.bind(this)
         this.refreshCourses = this.refreshCourses.bind(this)
+        this.refreshMyCourses = this.refreshMyCourses.bind(this)
     }
 
     componentWillUnmount() {
@@ -29,7 +31,8 @@ class AllCoursesComponent extends Component {
 
     componentDidMount() {
         console.log('componentDidMount')
-        this.refreshCourses();
+        this.refreshCourses()
+        this.refreshMyCourses()
         console.log(this.state)
     }
 
@@ -39,8 +42,31 @@ class AllCoursesComponent extends Component {
 
     }
 
+    enrollInCourse(id, course) {
+        console.log('enrolled in ' + id)
+        CourseDataService.enrolACourse(id, course)
+        .then(
+            response => {
+                this.refreshMyCourses()
+                this.refreshCourses()
+            }
+        )
+    }
+
+    unenrollCourse(id, course)
+    {
+        console.log('enrolled in ' + id)
+        CourseDataService.unenrolACourse(id, course)
+        .then(
+            response => {
+                this.refreshMyCourses()
+                this.refreshCourses()
+            }
+        )
+    }
+
     refreshCourses() {
-        console.log('refresh    ')
+        console.log('refresh Courses')
         CourseDataService.retrieveAllCourses()
         .then(
             response => {
@@ -49,23 +75,76 @@ class AllCoursesComponent extends Component {
                 
             }
         )
+        
+    }
+    
+    refreshMyCourses() {
+        console.log('refresh My Courses')
+        let username = AuthenticationService.getLoggedInUserName()
+        CourseDataService.retrieveMyCourses(username)
+        .then(
+            response => {
+                this.setState({myCourseList: response.data})
+            }
+        )
+    }
+
+    actionButton(course) {
+        if (course.status == "available") {
+            return <td><button className="btn btn-success" onClick={() => this.enrollInCourse(course.id, course)}>Enroll</button></td>;
+        }
+
+        if (course.status == "enrolled") {
+            return <td><button className="btn btn-warning" onClick={() => this.unenrollCourse(course.id, course)}>Unenroll</button></td>;
+        }
+
+        return <td>None</td>;
     }
 
     render() {
-        // CourseDataService.retrieveAllCourses()
-        // .then(
-        //     response => {
-        //         //console.log(response);
-        //         this.setState({ courseList: response.data })
-        //     }
-        // )
 
         console.log('render')
         return(
             <div>
-            
-                <h1>All Courses</h1>
                 <div className="container">
+                <h1>My Courses</h1>
+                <table className="table">
+                    <thead>
+                        <tr>
+                            <th>Code</th>
+                            <th>Name</th>
+                            <th>Status</th>
+                            <th>Link</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        {
+
+                            this.state.myCourseList.map(
+                                course =>
+                                    <tr key={course.id}>
+                                        <td>{course.code}</td>
+                                        <td>{course.coursename}</td>
+                                        <td>{course.status}</td>
+                                        <td><button className="btn btn-success" onClick={() => this.gotoCourse(course.id)}>Go To</button></td>
+                                        {this.actionButton(course)}
+                                    </tr>
+                            )
+                        }
+                    </tbody>
+                </table>
+
+                    <hr
+                        style={{
+                            color: "grey",
+                            backgroundColor: "grey",
+                            height: 3
+                        }}
+                    />
+
+                    <h1>All Courses</h1>
                     <table className="table">
                         <thead>
                             <tr>
@@ -73,27 +152,21 @@ class AllCoursesComponent extends Component {
                                 <th>Name</th>
                                 <th>Status</th>
                                 <th>Link</th>
+                                <th>Action</th>
                             </tr>
                         </thead>
 
                         <tbody>
-                                <tr>
-                                        <td>Bruh1231</td>
-                                        <td>This is my fav course</td>
-                                        <td>Available</td>
-                                        <td><button className="btn btn-success" onClick={() => this.gotoCourse('Bruh1231')}>Go To</button></td>
-
-                                </tr>
-
                             {
 
                                 this.state.courseList.map(
                                     course =>
                                         <tr key={course.id}>
                                             <td>{course.code}</td>
-                                            <td>{course.name}</td>
+                                            <td>{course.coursename}</td>
                                             <td>{course.status}</td>
-                                            <td><button className="btn btn-success" onClick={() => this.gotoCourse(course.id)}>Go To</button></td>
+                                            <td><button className="btn btn-success" onClick={() => this.gotoCourse(course.id)}>Go To</button></td> 
+                                            {this.actionButton(course)}
                                         </tr>
                                 )
                             }
