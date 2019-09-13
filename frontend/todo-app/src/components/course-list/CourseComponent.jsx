@@ -11,19 +11,63 @@ class CourseComponent extends Component {
             course: null
         }
         
+        this.refreshCourse = this.refreshCourse.bind(this)
     }
 
-    render() {
-        CourseDataService.retrieveACourse(this.id)
+    componentWillUnmount() {
+        console.log('componentWillUnmount')
+    }
+
+    shouldComponentUpdate(nextProps, nextState) {
+        console.log('shouldComponentUpdate')
+        console.log(nextProps)
+        console.log(nextState)
+        return true
+    }
+
+    componentDidMount() {
+        console.log('componentDidMount')
+        this.refreshCourse()
+        console.log(this.state)
+    }
+
+    refreshCourse()
+    {
+        console.log('getting course')
+        CourseDataService.retrieveACourse(this.state.id)
         .then( 
             response => {
                 this.setState({ course: response.data })
             }
         )
+    }
 
+    enrollInCourse() {
+        console.log('enrolled in ' + this.state.id)
+        CourseDataService.enrolACourse(this.state.id, this.state.course)
+        .then(
+            response => {
+                this.refreshCourses()
+            }
+        )
+    }
+
+    unenrollCourse()
+    {
+        console.log('enrolled in ' + this.state.id)
+        CourseDataService.unenrolACourse(this.state.id, this.state.course)
+        .then(
+            response => {
+                this.refreshCourse()
+            }
+        )
+    }
+
+    render() {
+        
         return(
             <div>
-                <h1>{this.state.id} This is my fav course</h1>
+                {/* <h1>{this.state.course.code}:{this.state.course.coursename}</h1> */}
                 <div>
                     This is where the course information goes
                 </div>

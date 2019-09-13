@@ -13,9 +13,9 @@ class CourseDataService {
         return axios.get(`${JPA_API_URL}/users/${name}/courses`);
     }
 
-    retrieveACourse(name, id) {
+    retrieveACourse(id) {
         //console.log('executed service')
-        return axios.get(`${JPA_API_URL}/users/${name}courses/${id}`);
+        return axios.get(`${JPA_API_URL}/courses/${id}`);
     }
 
     enrolACourse(id, course) {
