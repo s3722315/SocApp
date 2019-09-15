@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 import CourseDataService from '../../api/course-list/CourseDataService.js'
 
 class CourseComponent extends Component {
@@ -8,7 +9,7 @@ class CourseComponent extends Component {
 
         this.state={
             id: this.props.match.params.id,
-            course: null
+            course: []
         }
         
         this.refreshCourse = this.refreshCourse.bind(this)
@@ -67,30 +68,19 @@ class CourseComponent extends Component {
         
         return(
             <div>
-                {/* <h1>{this.state.course.code}:{this.state.course.coursename}</h1> */}
-                <div>
-                    This is where the course information goes
-                </div>
-
+                <h1>{this.state.course.code}:  {this.state.course.coursename}</h1>
                 <div className="container">
-                    <h2>Study Groups</h2>
-                    <table className="table">
-                        <thead>
-                            <tr>
-                                <th>Id</th>
-                                <th>Name</th>
-                                <th>Link</th>
-                            </tr>
-                        </thead>
+                    <nav className="navbar navbar-expand-md navbar-dark bg-dark">
+                        <ul className="navbar-nav">
+                            <li><Link className="nav-link" to={() => this.props.history.push(`/courses/${this.id}`)}>Details</Link></li>
+                            <li><Link className="nav-link" to={() => this.props.history.push(`/courses/${this.id}`)}>Study Groups</Link></li>
+                        </ul>
+                    </nav>
 
-                        <tbody>
-                            <tr>
-                                <td>1</td>
-                                <td>Study Group 1</td>
-                                <td><button className="btn btn-success" >Go To</button></td>
-                            </tr>
-                        </tbody>
-                    </table>
+                    <div style={{textAlign: 'left', margin: '10px 15px'}}>
+                        <h2>Details:</h2>
+                        {this.state.course.details}
+                    </div>
                 </div>
             </div>
         )
