@@ -49,6 +49,7 @@ class AllCoursesComponent extends Component {
             response => {
                 this.refreshMyCourses()
                 this.refreshCourses()
+                this.state.message = "The course " + course.code + ": " + course.coursename + " has been enrolled" 
             }
         )
     }
@@ -61,6 +62,7 @@ class AllCoursesComponent extends Component {
             response => {
                 this.refreshMyCourses()
                 this.refreshCourses()
+                this.state.message = "The course " + course.code + ": " + course.coursename + " has been unenrolled" 
             }
         )
     }
@@ -108,6 +110,7 @@ class AllCoursesComponent extends Component {
             <div>
                 <div className="container">
                 <h1>My Courses</h1>
+                {this.state.message && <div class="alert alert-success">{this.state.message}</div>}
                 <table className="table">
                     <thead>
                         <tr>
