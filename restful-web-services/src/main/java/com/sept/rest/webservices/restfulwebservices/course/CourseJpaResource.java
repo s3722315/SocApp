@@ -43,7 +43,7 @@ public class CourseJpaResource {
 
     @GetMapping("/jpa/users/{username}/courses")       //user database not implemented yet
     public List<Course> getMyCourses(@PathVariable String username){
-        return courseJpaRepository.findByUsername(username);
+        return courseJpaRepository.findByStatus("enrolled");
     }
 
     @PutMapping("/jpa/courses/{id}/enroll")
