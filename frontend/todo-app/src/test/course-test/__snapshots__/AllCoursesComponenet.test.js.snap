@@ -1,0 +1,149 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AllCourseComponent should enroll 1`] = `
+<AllCoursesComponent
+  debug={true}
+>
+  <div>
+    <div
+      className="container"
+    >
+      <h1>
+        My Courses
+      </h1>
+      <table
+        className="table"
+      >
+        <thead>
+          <tr>
+            <th>
+              Code
+            </th>
+            <th>
+              Name
+            </th>
+            <th>
+              Status
+            </th>
+            <th>
+              Link
+            </th>
+            <th>
+              Action
+            </th>
+          </tr>
+        </thead>
+        <tbody />
+      </table>
+      <hr
+        style={
+          Object {
+            "backgroundColor": "grey",
+            "color": "grey",
+            "height": 3,
+          }
+        }
+      />
+      <h1>
+        All Courses
+      </h1>
+      <table
+        className="table"
+      >
+        <thead>
+          <tr>
+            <th>
+              Code
+            </th>
+            <th>
+              Name
+            </th>
+            <th>
+              Status
+            </th>
+            <th>
+              Link
+            </th>
+            <th>
+              Action
+            </th>
+          </tr>
+        </thead>
+        <tbody />
+      </table>
+    </div>
+  </div>
+</AllCoursesComponent>
+`;
+
+exports[`AllCourseComponent should render correctly in "debug" mode 1`] = `
+<div>
+  <div
+    className="container"
+  >
+    <h1>
+      My Courses
+    </h1>
+    <table
+      className="table"
+    >
+      <thead>
+        <tr>
+          <th>
+            Code
+          </th>
+          <th>
+            Name
+          </th>
+          <th>
+            Status
+          </th>
+          <th>
+            Link
+          </th>
+          <th>
+            Action
+          </th>
+        </tr>
+      </thead>
+      <tbody />
+    </table>
+    <hr
+      style={
+        Object {
+          "backgroundColor": "grey",
+          "color": "grey",
+          "height": 3,
+        }
+      }
+    />
+    <h1>
+      All Courses
+    </h1>
+    <table
+      className="table"
+    >
+      <thead>
+        <tr>
+          <th>
+            Code
+          </th>
+          <th>
+            Name
+          </th>
+          <th>
+            Status
+          </th>
+          <th>
+            Link
+          </th>
+          <th>
+            Action
+          </th>
+        </tr>
+      </thead>
+      <tbody />
+    </table>
+  </div>
+</div>
+`;

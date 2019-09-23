@@ -93,11 +93,11 @@ class AllCoursesComponent extends Component {
 
     actionButton(course) {
         if (course.status == "available") {
-            return <td><button className="btn btn-success" onClick={() => this.enrollInCourse(course.id, course)}>Enroll</button></td>;
+            return <td><button className="btn btn-success" id={course.id} onClick={() => this.enrollInCourse(course.id, course)}>Enroll</button></td>;
         }
 
         if (course.status == "enrolled") {
-            return <td><button className="btn btn-warning" onClick={() => this.unenrollCourse(course.id, course)}>Unenroll</button></td>;
+            return <td><button className="btn btn-warning" id={course.id} onClick={() => this.unenrollCourse(course.id, course)}>Unenroll</button></td>;
         }
 
         return <td>None</td>;
