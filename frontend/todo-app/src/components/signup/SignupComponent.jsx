@@ -26,7 +26,12 @@ class SignupComponent extends Component {
     }
 
     signupClicked() {
-        
+        SignupDataService.createNewAccount(this.state.username, this.state.password)
+        .then((response) => {
+            this.props.history.push(`/login`)
+        }).catch(() => {
+            this.setState({failSignup: true })
+        })
     }
 
     render() {

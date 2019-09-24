@@ -2,8 +2,8 @@ import axios from 'axios'
 import { API_URL, JPA_API_URL } from '../../Constants'
 
 class SignupDataService {
-    createNewAccount(account) {
-        return axios.put(`${JPA_API_URL}/blah`, account)
+    createNewAccount(username, password) {
+        return axios.put(`${JPA_API_URL}/newAccount`, username, password)
     }
 }
 
