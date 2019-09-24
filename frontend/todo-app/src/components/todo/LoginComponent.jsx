@@ -77,10 +77,6 @@ class LoginComponent extends Component {
 
     }
 
-    signupClicked() {
-        this.props.history.push(`/signup`)
-    }
-
     render() {
         return (
             <div>
@@ -93,7 +89,7 @@ class LoginComponent extends Component {
                     User Name: <input type="text" name="username" value={this.state.username} onChange={this.handleChange} />
                     Password: <input type="password" name="password" value={this.state.password} onChange={this.handleChange} />
                     <button className="btn btn-success" onClick={this.loginClicked}>Login</button>
-                    <button className="btn btn-warning" onClick={() =>this.signupClicked()}>Signup</button>
+                    <button className="btn btn-warning" onClick={() => this.props.history.push(`/signup`)}>Sign Up</button>
                 </div>
             </div>
         )
