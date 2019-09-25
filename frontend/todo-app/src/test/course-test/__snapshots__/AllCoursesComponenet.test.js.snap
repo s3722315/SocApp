@@ -147,3 +147,1269 @@ exports[`AllCourseComponent should render correctly in "debug" mode 1`] = `
   </div>
 </div>
 `;
+
+exports[`AllCourseComponentMock enrolling 1`] = `
+<AllCoursesComponentMock
+  debug={true}
+>
+  <div>
+    <div
+      className="container"
+    >
+      <h1>
+        My Courses
+      </h1>
+      <table
+        className="table"
+      >
+        <thead>
+          <tr>
+            <th>
+              Code
+            </th>
+            <th>
+              Name
+            </th>
+            <th>
+              Status
+            </th>
+            <th>
+              Link
+            </th>
+            <th>
+              Action
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr
+            key="4"
+          >
+            <td>
+              bruh4
+            </td>
+            <td>
+              bruh chad
+            </td>
+            <td>
+              enrolled
+            </td>
+            <td>
+              <button
+                className="btn btn-success"
+              >
+                Go To
+              </button>
+            </td>
+            <td>
+              <button
+                className="btn btn-warning"
+                id="my-unenroll-4"
+                onClick={[Function]}
+              >
+                Unenroll
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <hr
+        style={
+          Object {
+            "backgroundColor": "grey",
+            "color": "grey",
+            "height": 3,
+          }
+        }
+      />
+      <h1>
+        All Courses
+      </h1>
+      <table
+        className="table"
+      >
+        <thead>
+          <tr>
+            <th>
+              Code
+            </th>
+            <th>
+              Name
+            </th>
+            <th>
+              Status
+            </th>
+            <th>
+              Link
+            </th>
+            <th>
+              Action
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr
+            key="1"
+          >
+            <td>
+              bruh1
+            </td>
+            <td>
+              bruh science
+            </td>
+            <td>
+              available
+            </td>
+            <td>
+              <button
+                className="btn btn-success"
+              >
+                Go To
+              </button>
+            </td>
+            <td>
+              <button
+                className="btn btn-success"
+                id="all-enroll-1"
+                onClick={[Function]}
+              >
+                Enroll
+              </button>
+            </td>
+          </tr>
+          <tr
+            key="2"
+          >
+            <td>
+              bruh2
+            </td>
+            <td>
+              bruh physics
+            </td>
+            <td>
+              unavailable
+            </td>
+            <td>
+              <button
+                className="btn btn-success"
+              >
+                Go To
+              </button>
+            </td>
+            <td>
+              None
+            </td>
+          </tr>
+          <tr
+            key="3"
+          >
+            <td>
+              bruh3
+            </td>
+            <td>
+              bruh bro
+            </td>
+            <td>
+              full
+            </td>
+            <td>
+              <button
+                className="btn btn-success"
+              >
+                Go To
+              </button>
+            </td>
+            <td>
+              None
+            </td>
+          </tr>
+          <tr
+            key="4"
+          >
+            <td>
+              bruh4
+            </td>
+            <td>
+              bruh chad
+            </td>
+            <td>
+              enrolled
+            </td>
+            <td>
+              <button
+                className="btn btn-success"
+              >
+                Go To
+              </button>
+            </td>
+            <td>
+              <button
+                className="btn btn-warning"
+                id="all-unenroll-4"
+                onClick={[Function]}
+              >
+                Unenroll
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</AllCoursesComponentMock>
+`;
+
+exports[`AllCourseComponentMock enrolling from all courses list 1`] = `
+<AllCoursesComponentMock
+  debug={true}
+>
+  <div>
+    <div
+      className="container"
+    >
+      <h1>
+        My Courses
+      </h1>
+      <table
+        className="table"
+      >
+        <thead>
+          <tr>
+            <th>
+              Code
+            </th>
+            <th>
+              Name
+            </th>
+            <th>
+              Status
+            </th>
+            <th>
+              Link
+            </th>
+            <th>
+              Action
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr
+            key="4"
+          >
+            <td>
+              bruh4
+            </td>
+            <td>
+              bruh chad
+            </td>
+            <td>
+              enrolled
+            </td>
+            <td>
+              <button
+                className="btn btn-success"
+              >
+                Go To
+              </button>
+            </td>
+            <td>
+              <button
+                className="btn btn-warning"
+                id="my-unenroll-4"
+                onClick={[Function]}
+              >
+                Unenroll
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <hr
+        style={
+          Object {
+            "backgroundColor": "grey",
+            "color": "grey",
+            "height": 3,
+          }
+        }
+      />
+      <h1>
+        All Courses
+      </h1>
+      <table
+        className="table"
+      >
+        <thead>
+          <tr>
+            <th>
+              Code
+            </th>
+            <th>
+              Name
+            </th>
+            <th>
+              Status
+            </th>
+            <th>
+              Link
+            </th>
+            <th>
+              Action
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr
+            key="1"
+          >
+            <td>
+              bruh1
+            </td>
+            <td>
+              bruh science
+            </td>
+            <td>
+              available
+            </td>
+            <td>
+              <button
+                className="btn btn-success"
+              >
+                Go To
+              </button>
+            </td>
+            <td>
+              <button
+                className="btn btn-success"
+                id="all-enroll-1"
+                onClick={[Function]}
+              >
+                Enroll
+              </button>
+            </td>
+          </tr>
+          <tr
+            key="2"
+          >
+            <td>
+              bruh2
+            </td>
+            <td>
+              bruh physics
+            </td>
+            <td>
+              unavailable
+            </td>
+            <td>
+              <button
+                className="btn btn-success"
+              >
+                Go To
+              </button>
+            </td>
+            <td>
+              None
+            </td>
+          </tr>
+          <tr
+            key="3"
+          >
+            <td>
+              bruh3
+            </td>
+            <td>
+              bruh bro
+            </td>
+            <td>
+              full
+            </td>
+            <td>
+              <button
+                className="btn btn-success"
+              >
+                Go To
+              </button>
+            </td>
+            <td>
+              None
+            </td>
+          </tr>
+          <tr
+            key="4"
+          >
+            <td>
+              bruh4
+            </td>
+            <td>
+              bruh chad
+            </td>
+            <td>
+              enrolled
+            </td>
+            <td>
+              <button
+                className="btn btn-success"
+              >
+                Go To
+              </button>
+            </td>
+            <td>
+              <button
+                className="btn btn-warning"
+                id="all-unenroll-4"
+                onClick={[Function]}
+              >
+                Unenroll
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</AllCoursesComponentMock>
+`;
+
+exports[`AllCourseComponentMock enrolling then unenrolling 1`] = `
+<AllCoursesComponentMock
+  debug={true}
+>
+  <div>
+    <div
+      className="container"
+    >
+      <h1>
+        My Courses
+      </h1>
+      <table
+        className="table"
+      >
+        <thead>
+          <tr>
+            <th>
+              Code
+            </th>
+            <th>
+              Name
+            </th>
+            <th>
+              Status
+            </th>
+            <th>
+              Link
+            </th>
+            <th>
+              Action
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr
+            key="4"
+          >
+            <td>
+              bruh4
+            </td>
+            <td>
+              bruh chad
+            </td>
+            <td>
+              enrolled
+            </td>
+            <td>
+              <button
+                className="btn btn-success"
+              >
+                Go To
+              </button>
+            </td>
+            <td>
+              <button
+                className="btn btn-warning"
+                id="my-unenroll-4"
+                onClick={[Function]}
+              >
+                Unenroll
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <hr
+        style={
+          Object {
+            "backgroundColor": "grey",
+            "color": "grey",
+            "height": 3,
+          }
+        }
+      />
+      <h1>
+        All Courses
+      </h1>
+      <table
+        className="table"
+      >
+        <thead>
+          <tr>
+            <th>
+              Code
+            </th>
+            <th>
+              Name
+            </th>
+            <th>
+              Status
+            </th>
+            <th>
+              Link
+            </th>
+            <th>
+              Action
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr
+            key="1"
+          >
+            <td>
+              bruh1
+            </td>
+            <td>
+              bruh science
+            </td>
+            <td>
+              available
+            </td>
+            <td>
+              <button
+                className="btn btn-success"
+              >
+                Go To
+              </button>
+            </td>
+            <td>
+              <button
+                className="btn btn-success"
+                id="all-enroll-1"
+                onClick={[Function]}
+              >
+                Enroll
+              </button>
+            </td>
+          </tr>
+          <tr
+            key="2"
+          >
+            <td>
+              bruh2
+            </td>
+            <td>
+              bruh physics
+            </td>
+            <td>
+              unavailable
+            </td>
+            <td>
+              <button
+                className="btn btn-success"
+              >
+                Go To
+              </button>
+            </td>
+            <td>
+              None
+            </td>
+          </tr>
+          <tr
+            key="3"
+          >
+            <td>
+              bruh3
+            </td>
+            <td>
+              bruh bro
+            </td>
+            <td>
+              full
+            </td>
+            <td>
+              <button
+                className="btn btn-success"
+              >
+                Go To
+              </button>
+            </td>
+            <td>
+              None
+            </td>
+          </tr>
+          <tr
+            key="4"
+          >
+            <td>
+              bruh4
+            </td>
+            <td>
+              bruh chad
+            </td>
+            <td>
+              enrolled
+            </td>
+            <td>
+              <button
+                className="btn btn-success"
+              >
+                Go To
+              </button>
+            </td>
+            <td>
+              <button
+                className="btn btn-warning"
+                id="all-unenroll-4"
+                onClick={[Function]}
+              >
+                Unenroll
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</AllCoursesComponentMock>
+`;
+
+exports[`AllCourseComponentMock unenrolling 1`] = `
+<AllCoursesComponentMock
+  debug={true}
+>
+  <div>
+    <div
+      className="container"
+    >
+      <h1>
+        My Courses
+      </h1>
+      <table
+        className="table"
+      >
+        <thead>
+          <tr>
+            <th>
+              Code
+            </th>
+            <th>
+              Name
+            </th>
+            <th>
+              Status
+            </th>
+            <th>
+              Link
+            </th>
+            <th>
+              Action
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr
+            key="4"
+          >
+            <td>
+              bruh4
+            </td>
+            <td>
+              bruh chad
+            </td>
+            <td>
+              enrolled
+            </td>
+            <td>
+              <button
+                className="btn btn-success"
+              >
+                Go To
+              </button>
+            </td>
+            <td>
+              <button
+                className="btn btn-warning"
+                id="my-unenroll-4"
+                onClick={[Function]}
+              >
+                Unenroll
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <hr
+        style={
+          Object {
+            "backgroundColor": "grey",
+            "color": "grey",
+            "height": 3,
+          }
+        }
+      />
+      <h1>
+        All Courses
+      </h1>
+      <table
+        className="table"
+      >
+        <thead>
+          <tr>
+            <th>
+              Code
+            </th>
+            <th>
+              Name
+            </th>
+            <th>
+              Status
+            </th>
+            <th>
+              Link
+            </th>
+            <th>
+              Action
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr
+            key="1"
+          >
+            <td>
+              bruh1
+            </td>
+            <td>
+              bruh science
+            </td>
+            <td>
+              available
+            </td>
+            <td>
+              <button
+                className="btn btn-success"
+              >
+                Go To
+              </button>
+            </td>
+            <td>
+              <button
+                className="btn btn-success"
+                id="all-enroll-1"
+                onClick={[Function]}
+              >
+                Enroll
+              </button>
+            </td>
+          </tr>
+          <tr
+            key="2"
+          >
+            <td>
+              bruh2
+            </td>
+            <td>
+              bruh physics
+            </td>
+            <td>
+              unavailable
+            </td>
+            <td>
+              <button
+                className="btn btn-success"
+              >
+                Go To
+              </button>
+            </td>
+            <td>
+              None
+            </td>
+          </tr>
+          <tr
+            key="3"
+          >
+            <td>
+              bruh3
+            </td>
+            <td>
+              bruh bro
+            </td>
+            <td>
+              full
+            </td>
+            <td>
+              <button
+                className="btn btn-success"
+              >
+                Go To
+              </button>
+            </td>
+            <td>
+              None
+            </td>
+          </tr>
+          <tr
+            key="4"
+          >
+            <td>
+              bruh4
+            </td>
+            <td>
+              bruh chad
+            </td>
+            <td>
+              enrolled
+            </td>
+            <td>
+              <button
+                className="btn btn-success"
+              >
+                Go To
+              </button>
+            </td>
+            <td>
+              <button
+                className="btn btn-warning"
+                id="all-unenroll-4"
+                onClick={[Function]}
+              >
+                Unenroll
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</AllCoursesComponentMock>
+`;
+
+exports[`AllCourseComponentMock unenrolling from all courses list 1`] = `
+<AllCoursesComponentMock
+  debug={true}
+>
+  <div>
+    <div
+      className="container"
+    >
+      <h1>
+        My Courses
+      </h1>
+      <table
+        className="table"
+      >
+        <thead>
+          <tr>
+            <th>
+              Code
+            </th>
+            <th>
+              Name
+            </th>
+            <th>
+              Status
+            </th>
+            <th>
+              Link
+            </th>
+            <th>
+              Action
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr
+            key="4"
+          >
+            <td>
+              bruh4
+            </td>
+            <td>
+              bruh chad
+            </td>
+            <td>
+              enrolled
+            </td>
+            <td>
+              <button
+                className="btn btn-success"
+              >
+                Go To
+              </button>
+            </td>
+            <td>
+              <button
+                className="btn btn-warning"
+                id="my-unenroll-4"
+                onClick={[Function]}
+              >
+                Unenroll
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <hr
+        style={
+          Object {
+            "backgroundColor": "grey",
+            "color": "grey",
+            "height": 3,
+          }
+        }
+      />
+      <h1>
+        All Courses
+      </h1>
+      <table
+        className="table"
+      >
+        <thead>
+          <tr>
+            <th>
+              Code
+            </th>
+            <th>
+              Name
+            </th>
+            <th>
+              Status
+            </th>
+            <th>
+              Link
+            </th>
+            <th>
+              Action
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr
+            key="1"
+          >
+            <td>
+              bruh1
+            </td>
+            <td>
+              bruh science
+            </td>
+            <td>
+              available
+            </td>
+            <td>
+              <button
+                className="btn btn-success"
+              >
+                Go To
+              </button>
+            </td>
+            <td>
+              <button
+                className="btn btn-success"
+                id="all-enroll-1"
+                onClick={[Function]}
+              >
+                Enroll
+              </button>
+            </td>
+          </tr>
+          <tr
+            key="2"
+          >
+            <td>
+              bruh2
+            </td>
+            <td>
+              bruh physics
+            </td>
+            <td>
+              unavailable
+            </td>
+            <td>
+              <button
+                className="btn btn-success"
+              >
+                Go To
+              </button>
+            </td>
+            <td>
+              None
+            </td>
+          </tr>
+          <tr
+            key="3"
+          >
+            <td>
+              bruh3
+            </td>
+            <td>
+              bruh bro
+            </td>
+            <td>
+              full
+            </td>
+            <td>
+              <button
+                className="btn btn-success"
+              >
+                Go To
+              </button>
+            </td>
+            <td>
+              None
+            </td>
+          </tr>
+          <tr
+            key="4"
+          >
+            <td>
+              bruh4
+            </td>
+            <td>
+              bruh chad
+            </td>
+            <td>
+              enrolled
+            </td>
+            <td>
+              <button
+                className="btn btn-success"
+              >
+                Go To
+              </button>
+            </td>
+            <td>
+              <button
+                className="btn btn-warning"
+                id="all-unenroll-4"
+                onClick={[Function]}
+              >
+                Unenroll
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</AllCoursesComponentMock>
+`;
+
+exports[`AllCourseComponentMock unenrolling from my courses list 1`] = `
+<AllCoursesComponentMock
+  debug={true}
+>
+  <div>
+    <div
+      className="container"
+    >
+      <h1>
+        My Courses
+      </h1>
+      <table
+        className="table"
+      >
+        <thead>
+          <tr>
+            <th>
+              Code
+            </th>
+            <th>
+              Name
+            </th>
+            <th>
+              Status
+            </th>
+            <th>
+              Link
+            </th>
+            <th>
+              Action
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr
+            key="4"
+          >
+            <td>
+              bruh4
+            </td>
+            <td>
+              bruh chad
+            </td>
+            <td>
+              enrolled
+            </td>
+            <td>
+              <button
+                className="btn btn-success"
+              >
+                Go To
+              </button>
+            </td>
+            <td>
+              <button
+                className="btn btn-warning"
+                id="my-unenroll-4"
+                onClick={[Function]}
+              >
+                Unenroll
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <hr
+        style={
+          Object {
+            "backgroundColor": "grey",
+            "color": "grey",
+            "height": 3,
+          }
+        }
+      />
+      <h1>
+        All Courses
+      </h1>
+      <table
+        className="table"
+      >
+        <thead>
+          <tr>
+            <th>
+              Code
+            </th>
+            <th>
+              Name
+            </th>
+            <th>
+              Status
+            </th>
+            <th>
+              Link
+            </th>
+            <th>
+              Action
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr
+            key="1"
+          >
+            <td>
+              bruh1
+            </td>
+            <td>
+              bruh science
+            </td>
+            <td>
+              available
+            </td>
+            <td>
+              <button
+                className="btn btn-success"
+              >
+                Go To
+              </button>
+            </td>
+            <td>
+              <button
+                className="btn btn-success"
+                id="all-enroll-1"
+                onClick={[Function]}
+              >
+                Enroll
+              </button>
+            </td>
+          </tr>
+          <tr
+            key="2"
+          >
+            <td>
+              bruh2
+            </td>
+            <td>
+              bruh physics
+            </td>
+            <td>
+              unavailable
+            </td>
+            <td>
+              <button
+                className="btn btn-success"
+              >
+                Go To
+              </button>
+            </td>
+            <td>
+              None
+            </td>
+          </tr>
+          <tr
+            key="3"
+          >
+            <td>
+              bruh3
+            </td>
+            <td>
+              bruh bro
+            </td>
+            <td>
+              full
+            </td>
+            <td>
+              <button
+                className="btn btn-success"
+              >
+                Go To
+              </button>
+            </td>
+            <td>
+              None
+            </td>
+          </tr>
+          <tr
+            key="4"
+          >
+            <td>
+              bruh4
+            </td>
+            <td>
+              bruh chad
+            </td>
+            <td>
+              enrolled
+            </td>
+            <td>
+              <button
+                className="btn btn-success"
+              >
+                Go To
+              </button>
+            </td>
+            <td>
+              <button
+                className="btn btn-warning"
+                id="all-unenroll-4"
+                onClick={[Function]}
+              >
+                Unenroll
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</AllCoursesComponentMock>
+`;
