@@ -60,6 +60,8 @@ public class JwtUserDetails implements UserDetails {
     return username;
   }
 
+  public void setUsername(String username) { this.username = username; }
+
   @JsonIgnore
   @Override
   public boolean isAccountNonExpired() {
@@ -83,6 +85,8 @@ public class JwtUserDetails implements UserDetails {
   public String getPassword() {
     return password;
   }
+
+  public void setPassword(String password) { this.password = password; }
 
   @Override
   public Collection<? extends GrantedAuthority> getAuthorities() {

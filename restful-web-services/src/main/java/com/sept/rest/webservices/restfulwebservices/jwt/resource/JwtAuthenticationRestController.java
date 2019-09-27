@@ -1,9 +1,13 @@
 package com.sept.rest.webservices.restfulwebservices.jwt.resource;
 
+import java.net.URI;
 import java.util.Objects;
 
 import javax.servlet.http.HttpServletRequest;
 
+import com.sept.rest.webservices.restfulwebservices.jwt.JwtUserDetailsJpaRepository;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpStatus;
@@ -14,10 +18,12 @@ import org.springframework.security.authentication.DisabledException;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.web.bind.annotation.*;
 
 import com.sept.rest.webservices.restfulwebservices.jwt.JwtTokenUtil;
 import com.sept.rest.webservices.restfulwebservices.jwt.JwtUserDetails;
+import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
 @RestController
 @CrossOrigin(origins="http://localhost:4200")
@@ -34,6 +40,10 @@ public class JwtAuthenticationRestController {
 
   @Autowired
   private UserDetailsService jwtInMemoryUserDetailsService;
+
+  private final Logger logger = LoggerFactory.getLogger(this.getClass());
+
+  private JwtUserDetailsJpaRepository jwtUserDetailsJpaRepository;
 
   @RequestMapping(value = "${jwt.get.token.uri}", method = RequestMethod.POST)
   public ResponseEntity<?> createAuthenticationToken(@RequestBody JwtTokenRequest authenticationRequest)
@@ -63,11 +73,31 @@ public class JwtAuthenticationRestController {
     }
   }
 
-//  @PostMapping("/signup")
-//  public void signUp(@RequestBody JwtUserDetails jwtUserDetails) {
-//    user.setPassword(bCryptPasswordEncoder.encode(user.getPassword()));
-//    applicationUserRepository.save(user);
-//  }
+  @PostMapping("/new-account")
+  public ResponseEntity<?> registerUser(@RequestBody SignUpRequest signUpRequest) {
+    logger.debug("USER_REGISTERED");
+    if(jwtUserDetailsJpaRepository.existsByUsername(signUpRequest.getUsername())) {
+      logger.warn("USERNAME_ALREADY_EXISTS");
+      return new ResponseEntity(new SignUpResponse(false, "Username is already taken!"),
+              HttpStatus.BAD_REQUEST);
+    }
+
+    BCryptPasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
+
+    // Creating user's account
+    JwtUserDetails jwtUserDetails = new JwtUserDetails(2L, signUpRequest.getUsername(), signUpRequest.getPassword());
+
+    jwtUserDetails.setPassword(passwordEncoder.encode(jwtUserDetails.getPassword()));
+
+    JwtUserDetails result = jwtUserDetailsJpaRepository.save(jwtUserDetails);
+
+    URI location = ServletUriComponentsBuilder
+            .fromCurrentContextPath().path("/api/users/{username}")
+            .buildAndExpand(result.getUsername()).toUri();
+
+
+    return ResponseEntity.created(location).body(new SignUpResponse(true, "User registered successfully"));
+  }
 
   @ExceptionHandler({ AuthenticationException.class })
   public ResponseEntity<String> handleAuthenticationException(AuthenticationException e) {
