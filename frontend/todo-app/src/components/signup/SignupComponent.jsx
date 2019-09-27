@@ -13,6 +13,7 @@ class SignupComponent extends Component {
             failSignup: false
         }
         this.handleChange = this.handleChange.bind(this)
+        this.signupClicked = this.signupClicked.bind(this)
     }
 
     handleChange(event) {
@@ -26,8 +27,10 @@ class SignupComponent extends Component {
     }
 
     signupClicked() {
+        console.log("trying to singup, clicked")
         SignupDataService.createNewAccount(this.state.username, this.state.password)
-        .then((response) => {
+        .then(
+            response => {
             this.props.history.push(`/login`)
         }).catch(() => {
             this.setState({failSignup: true })
@@ -42,7 +45,7 @@ class SignupComponent extends Component {
                     {this.state.failSignup && <div className="alert alert-warning">Username already taken</div>}
                     User Name: <input type="text" name="username" value={this.state.username} onChange={this.handleChange} />
                     Password: <input type="password" name="password" value={this.state.password} onChange={this.handleChange} />
-                    <button className="btn btn-success">Sign Up</button>
+                    <button className="btn btn-success" onClick={() => this.signupClicked()}>Sign Up</button>
                 </div>
             </div>
         )
