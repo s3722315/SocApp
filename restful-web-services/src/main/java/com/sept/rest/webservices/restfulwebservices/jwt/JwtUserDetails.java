@@ -10,13 +10,22 @@ import org.springframework.security.core.userdetails.UserDetails;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
+import javax.persistence.*;
+
+@Entity
 public class JwtUserDetails implements UserDetails {
 
   private static final long serialVersionUID = 5155720064139820502L;
 
-  private final Long id;
-  private final String username;
-  private final String password;
+
+  @Id
+  @GeneratedValue(strategy= GenerationType.AUTO)
+  private long id;
+
+  private String username;
+  private String password;
+
+  @Transient
   private final Collection<? extends GrantedAuthority> authorities;
 
   public JwtUserDetails(Long id, String username, String password, String role) {
@@ -28,6 +37,17 @@ public class JwtUserDetails implements UserDetails {
     authorities.add(new SimpleGrantedAuthority(role));
 
     this.authorities = authorities;
+  }
+
+  public JwtUserDetails(Long id, String username, String password) {
+    this.id = id;
+    this.username = username;
+    this.password = password;
+    this.authorities = null;
+  }
+
+  protected JwtUserDetails(){
+    this.authorities = null;
   }
 
   @JsonIgnore

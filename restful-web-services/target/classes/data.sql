@@ -21,3 +21,6 @@ values (4, 'sept', 'Software Testing', 'COSC0035', 'unavailable');
 
 insert into course(id, username, coursename, code, status)
 values (5, 'sept', 'Capstone Project', 'EEET0003', 'enrolled');
+
+insert into jwt_user_details(id, username, password)
+values (1L, 'sept', '$2a$10$3zHzb.Npv1hfZbLEU5qsdOju/tk2je6W6PnNnY.c1ujWPcZh4PL6e');
