@@ -55,6 +55,8 @@ public class JwtAuthenticationRestController {
 
     final String token = jwtTokenUtil.generateToken(userDetails);
 
+    logger.warn("USER_LOGGED_IN");
+
     return ResponseEntity.ok(new JwtTokenResponse(token));
   }
 
@@ -75,7 +77,7 @@ public class JwtAuthenticationRestController {
 
   @PostMapping("/new-account")
   public ResponseEntity<?> registerUser(@RequestBody SignUpRequest signUpRequest) {
-    logger.debug("USER_REGISTERED");
+    logger.warn("USER_REGISTERED");
     if(jwtUserDetailsJpaRepository.existsByUsername(signUpRequest.getUsername())) {
       logger.warn("USERNAME_ALREADY_EXISTS");
       return new ResponseEntity(new SignUpResponse(false, "Username is already taken!"),
