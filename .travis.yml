@@ -10,7 +10,6 @@ before_script: cd ./frontend/todo-app/
 
 script:
   - npm test
-  - npm run build
 
 deploy:
   - provider: pages
