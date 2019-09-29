@@ -6,6 +6,8 @@ cache: npm
 install:
   - npm install
 
+before_script: cd ./frontend/todo-app/
+
 script:
   - npm test
   - npm run build
@@ -13,6 +15,5 @@ script:
 deploy:
   - provider: pages
   - skip-cleanup: true
-  - project: ./frontend/todo-app/
   - on:
       branch: frontend-test
