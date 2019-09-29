@@ -3,7 +3,9 @@ package com.sept.rest.webservices.restfulwebservices.jwt;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
+import java.util.Set;
 
+import com.sept.rest.webservices.restfulwebservices.course.Course;
 import com.sept.rest.webservices.restfulwebservices.todo.Todo;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
@@ -28,6 +30,13 @@ public class JwtUserDetails implements UserDetails {
 
 //  @OneToMany(mappedBy = "jwt_user_details")
 //  private List<Todo> todos;
+
+  @ManyToMany
+  @JoinTable(
+          name = "student_course",
+          joinColumns = @JoinColumn(name = "jwt_user_details_id"),
+          inverseJoinColumns = @JoinColumn(name = "course_id"))
+  Set<Course> enrolledCourses;
 
   @Transient
   private final Collection<? extends GrantedAuthority> authorities;

@@ -33,3 +33,6 @@ values (4, 'sept', 'Software Testing', 'COSC0035', 'unavailable');
 
 insert into course(id, username, coursename, code, status)
 values (5, 'sept', 'Capstone Project', 'EEET0003', 'enrolled');
+
+insert into student_course(jwt_user_details_id, course_id)
+values (1L, 1)
