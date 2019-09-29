@@ -18,6 +18,5 @@ script:
 deploy:
   - provider: pages
   - skip-cleanup: true
-  - github_token: $github_token
   - on:
       branch: frontend-test
