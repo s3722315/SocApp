@@ -7,6 +7,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.ManyToMany;
+import java.util.List;
 import java.util.Set;
 
 @Entity
@@ -54,4 +55,6 @@ public class Course {
     public String getStatus() { return status; }
 
     public void setStatus(String status) { this.status = status; }
+
+    public Set<JwtUserDetails> getStudents() { return enrolledStudents; }
 }
