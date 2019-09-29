@@ -3,6 +3,7 @@ package com.sept.rest.webservices.restfulwebservices.course;
 import java.net.URI;
 import java.util.List;
 
+import com.sept.rest.webservices.restfulwebservices.jwt.JwtUserDetails;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -38,20 +39,31 @@ public class CourseJpaResource {
 
     @GetMapping("/jpa/courses/{id}/status")
     public String getCourseStatus(@PathVariable long id){
+
         return courseJpaRepository.findById(id).get().getStatus();
     }
 
-    @GetMapping("/jpa/users/{username}/courses")       //user database not implemented yet
+    @GetMapping("/jpa/users/{username}/courses")
     public List<Course> getMyCourses(@PathVariable String username){
+        //return courseJpaRepository.findByJwt_User_Details_Username(username);
         return courseJpaRepository.findByStatus("enrolled");
     }
 
     @PutMapping("/jpa/courses/{id}/enroll")
-    public ResponseEntity<Course> enrollCourse(@PathVariable long id, @RequestBody Course course){
+    public ResponseEntity<Course> enrollCourse(@PathVariable long id, @RequestBody Course course, @RequestBody JwtUserDetails user){
         course.setStatus("enrolled");
         Course courseUpdated = courseJpaRepository.save(course);
 
         return new ResponseEntity<Course>(course, HttpStatus.OK);
+
+//        user.getCourses().add(course);
+//        course.getStudents().add(user);
+//
+//        Course courseUpdated = courseJpaRepository.save(course);
+//
+//        return new ResponseEntity<Course>(course, HttpStatus.OK);
+
+
     }
 
     @PutMapping("/jpa/courses/{id}/drop")

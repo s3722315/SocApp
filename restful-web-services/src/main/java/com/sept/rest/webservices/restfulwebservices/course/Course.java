@@ -1,9 +1,14 @@
 package com.sept.rest.webservices.restfulwebservices.course;
 
 
+import com.sept.rest.webservices.restfulwebservices.jwt.JwtUserDetails;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.ManyToMany;
+import java.util.List;
+import java.util.Set;
 
 @Entity
 public class Course {
@@ -15,9 +20,8 @@ public class Course {
     private String code;
     private String status;
 
-    public enum Status {
-        available, enrolled, full, unavailable
-    }
+    @ManyToMany
+    Set<JwtUserDetails> enrolledStudents;
 
     //constructor methods
     protected Course(){
@@ -51,4 +55,6 @@ public class Course {
     public String getStatus() { return status; }
 
     public void setStatus(String status) { this.status = status; }
+
+    public Set<JwtUserDetails> getStudents() { return enrolledStudents; }
 }
