@@ -1,10 +1,10 @@
 package com.sept.rest.webservices.restfulwebservices.todo;
 
+import com.sept.rest.webservices.restfulwebservices.jwt.JwtUserDetails;
+
 import java.util.Date;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Entity
 public class Todo {
@@ -15,6 +15,10 @@ public class Todo {
 	private String description;
 	private Date targetDate;
 	private boolean isDone;
+
+	@ManyToOne
+	@JoinColumn(name="jwt_user_details_username")
+	private JwtUserDetails user;
 	
 	public Todo() {
 		
