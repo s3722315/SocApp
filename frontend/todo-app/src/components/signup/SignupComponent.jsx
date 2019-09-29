@@ -28,6 +28,7 @@ class SignupComponent extends Component {
 
     signupClicked() {
         console.log("trying to singup, clicked")
+        console.log(this.state)
         SignupDataService.createNewAccount(this.state.username, this.state.password)
         .then(
             response => {
