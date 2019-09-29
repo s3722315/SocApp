@@ -56,5 +56,5 @@ public class Course {
 
     public void setStatus(String status) { this.status = status; }
 
-    public Set<JwtUserDetails> getStudents() { return enrolledStudents; }
+    //public Set<JwtUserDetails> getStudents() { return enrolledStudents; }
 }

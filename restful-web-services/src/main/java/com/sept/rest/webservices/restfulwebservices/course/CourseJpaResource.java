@@ -50,7 +50,7 @@ public class CourseJpaResource {
     }
 
     @PutMapping("/jpa/courses/{id}/enroll")
-    public ResponseEntity<Course> enrollCourse(@PathVariable long id, @RequestBody Course course, @RequestBody JwtUserDetails user){
+    public ResponseEntity<Course> enrollCourse(@PathVariable long id, @RequestBody Course course){
         course.setStatus("enrolled");
         Course courseUpdated = courseJpaRepository.save(course);
 
