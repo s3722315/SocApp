@@ -3,9 +3,9 @@ node_js:
   - "stable"
 cache: npm
 
-install:
-  - npm install
-  - npm install react-scripts --save
+# install:
+#   - npm install
+#   - npm install react-scripts --save
 
 before_script: cd ./frontend/todo-app/
 
