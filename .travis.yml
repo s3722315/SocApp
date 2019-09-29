@@ -2,8 +2,6 @@ language: node_js
 node_js:
   - "stable"
 cache: npm
-  directories:
-  - node_modules
 
 install:
   - npm install
@@ -12,11 +10,10 @@ before_script: cd ./frontend/todo-app/
 
 script:
   - npm test
-  - npm run test:coverage
   - npm run build
 
 deploy:
   - provider: pages
   - skip-cleanup: true
   - on:
-    branch: frontend-test
+      branch: frontend-test
