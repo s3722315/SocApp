@@ -1,12 +1,11 @@
 language: node_js
 node_js:
   - "stable"
-cache:
-  directories:
-    - node_modules
+cache: npm
 
 install:
   - npm install
+  - npm install react-scripts --save
 
 before_script: cd ./frontend/todo-app/
 
