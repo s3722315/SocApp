@@ -50,7 +50,14 @@ public class CourseJpaResource {
     }
 
     @PutMapping("/jpa/courses/{id}/enroll")
-    public ResponseEntity<Course> enrollCourse(@PathVariable long id, @RequestBody Course course, @RequestBody JwtUserDetails user){
+    public ResponseEntity<Course> enrollCourse(@PathVariable long id, @RequestBody Course course){
+
+        if(course.getStatus().equals("unavailable")){
+            return new ResponseEntity<Course>(course, HttpStatus.OK);
+        }
+        if (course.getStatus().equals("full")){
+            return new ResponseEntity<Course>(course, HttpStatus.OK);
+        }
         course.setStatus("enrolled");
         Course courseUpdated = courseJpaRepository.save(course);
 
@@ -68,6 +75,13 @@ public class CourseJpaResource {
 
     @PutMapping("/jpa/courses/{id}/drop")
     public ResponseEntity<Course> dropCourse(@PathVariable long id, @RequestBody Course course){
+        if(course.getStatus().equals("unavailable")){
+            return new ResponseEntity<Course>(course, HttpStatus.OK);
+        }
+        if (course.getStatus().equals("full")){
+            return new ResponseEntity<Course>(course, HttpStatus.OK);
+        }
+
         course.setStatus("available");
         Course courseUpdated = courseJpaRepository.save(course);
 
