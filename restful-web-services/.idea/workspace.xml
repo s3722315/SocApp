@@ -2,8 +2,53 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8200ed62-0c0b-4b11-b650-e00a4c6e9759" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sept/rest/webservices/restfulwebservices/course/CourseJpaResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sept/rest/webservices/restfulwebservices/course/CourseJpaResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/src/main/java/com/sept/rest/basic/auth/AuthenticationBean.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/src/main/java/com/sept/rest/basic/auth/BasicAuthenticationController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/src/main/java/com/sept/rest/basic/auth/SpringSecurityConfigurationBasicAuth.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/src/main/java/com/sept/rest/webservices/restfulwebservices/RestfulWebServicesApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/src/main/java/com/sept/rest/webservices/restfulwebservices/helloworld/HelloWorldBean.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/src/main/java/com/sept/rest/webservices/restfulwebservices/helloworld/HelloWorldController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/src/main/java/com/sept/rest/webservices/restfulwebservices/jwt/JWTWebSecurityConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/src/main/java/com/sept/rest/webservices/restfulwebservices/jwt/JwtInMemoryUserDetailsService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/src/main/java/com/sept/rest/webservices/restfulwebservices/jwt/JwtTokenAuthorizationOncePerRequestFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/src/main/java/com/sept/rest/webservices/restfulwebservices/jwt/JwtTokenUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/src/main/java/com/sept/rest/webservices/restfulwebservices/jwt/JwtUnAuthorizedResponseAuthenticationEntryPoint.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/src/main/java/com/sept/rest/webservices/restfulwebservices/jwt/JwtUserDetails.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/src/main/java/com/sept/rest/webservices/restfulwebservices/jwt/resource/AuthenticationException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/src/main/java/com/sept/rest/webservices/restfulwebservices/jwt/resource/JwtAuthenticationRestController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/src/main/java/com/sept/rest/webservices/restfulwebservices/jwt/resource/JwtTokenRequest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/src/main/java/com/sept/rest/webservices/restfulwebservices/jwt/resource/JwtTokenResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/src/main/java/com/sept/rest/webservices/restfulwebservices/todo/Todo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/src/main/java/com/sept/rest/webservices/restfulwebservices/todo/TodoHardcodedService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/src/main/java/com/sept/rest/webservices/restfulwebservices/todo/TodoJpaRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/src/main/java/com/sept/rest/webservices/restfulwebservices/todo/TodoJpaResource.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/src/main/java/com/sept/rest/webservices/restfulwebservices/todo/TodoResource.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/src/test/java/com/sept/rest/webservices/restfulwebservices/RestfulWebServicesApplicationTests.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/sept/rest/webservices/restfulwebservices/CourseJpaResourceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/sept/rest/webservices/restfulwebservices/CourseJpaResourceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/sept/rest/basic/auth/AuthenticationBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sept/rest/basic/auth/AuthenticationBean.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/sept/rest/basic/auth/BasicAuthenticationController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/sept/rest/basic/auth/SpringSecurityConfigurationBasicAuth.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sept/rest/basic/auth/SpringSecurityConfigurationBasicAuth.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/sept/rest/webservices/restfulwebservices/RestfulWebServicesApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sept/rest/webservices/restfulwebservices/RestfulWebServicesApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/sept/rest/webservices/restfulwebservices/helloworld/HelloWorldBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sept/rest/webservices/restfulwebservices/helloworld/HelloWorldBean.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/sept/rest/webservices/restfulwebservices/helloworld/HelloWorldController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sept/rest/webservices/restfulwebservices/helloworld/HelloWorldController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/sept/rest/webservices/restfulwebservices/jwt/JWTWebSecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sept/rest/webservices/restfulwebservices/jwt/JWTWebSecurityConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/sept/rest/webservices/restfulwebservices/jwt/JwtInMemoryUserDetailsService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sept/rest/webservices/restfulwebservices/jwt/JwtInMemoryUserDetailsService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/sept/rest/webservices/restfulwebservices/jwt/JwtTokenAuthorizationOncePerRequestFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sept/rest/webservices/restfulwebservices/jwt/JwtTokenAuthorizationOncePerRequestFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/sept/rest/webservices/restfulwebservices/jwt/JwtTokenUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sept/rest/webservices/restfulwebservices/jwt/JwtTokenUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/sept/rest/webservices/restfulwebservices/jwt/JwtUnAuthorizedResponseAuthenticationEntryPoint.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sept/rest/webservices/restfulwebservices/jwt/JwtUnAuthorizedResponseAuthenticationEntryPoint.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/sept/rest/webservices/restfulwebservices/jwt/resource/AuthenticationException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sept/rest/webservices/restfulwebservices/jwt/resource/AuthenticationException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/sept/rest/webservices/restfulwebservices/jwt/resource/JwtTokenRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sept/rest/webservices/restfulwebservices/jwt/resource/JwtTokenRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/sept/rest/webservices/restfulwebservices/jwt/resource/JwtTokenResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sept/rest/webservices/restfulwebservices/jwt/resource/JwtTokenResponse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/sept/rest/webservices/restfulwebservices/todo/Todo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sept/rest/webservices/restfulwebservices/todo/Todo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/sept/rest/webservices/restfulwebservices/todo/TodoHardcodedService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sept/rest/webservices/restfulwebservices/todo/TodoHardcodedService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/sept/rest/webservices/restfulwebservices/todo/TodoJpaRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sept/rest/webservices/restfulwebservices/todo/TodoJpaRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/sept/rest/webservices/restfulwebservices/todo/TodoJpaResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sept/rest/webservices/restfulwebservices/todo/TodoJpaResource.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/sept/rest/webservices/restfulwebservices/todo/TodoResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sept/rest/webservices/restfulwebservices/todo/TodoResource.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/data.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/sept/rest/webservices/restfulwebservices/RestfulWebServicesApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/sept/rest/webservices/restfulwebservices/RestfulWebServicesApplicationTests.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -22,7 +67,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/sept/rest/webservices/restfulwebservices/course/CourseJpaRepository.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="289">
-              <caret line="17" column="61" lean-forward="true" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="61" />
+              <caret line="17" column="61" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="61" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -33,8 +78,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/sept/rest/webservices/restfulwebservices/course/CourseJpaResource.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="815">
-              <caret line="82" column="9" selection-start-line="82" selection-start-column="9" selection-end-line="82" selection-end-column="9" />
+            <state relative-caret-position="357">
+              <caret line="40" column="46" selection-start-line="40" selection-start-column="46" selection-end-line="40" selection-end-column="46" />
             </state>
           </provider>
         </entry>
@@ -42,8 +87,12 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/sept/rest/webservices/restfulwebservices/CourseJpaResourceTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="47" column="16" selection-start-line="47" selection-start-column="16" selection-end-line="47" selection-end-column="16" />
+            <state relative-caret-position="68">
+              <caret line="38" column="86" selection-start-line="38" selection-start-column="86" selection-end-line="38" selection-end-column="86" />
+              <folding>
+                <element signature="e#1117#1118#0" expanded="true" />
+                <element signature="e#1210#1211#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -53,6 +102,15 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="289">
               <caret line="20" column="80" selection-start-line="20" selection-start-column="80" selection-end-line="20" selection-end-column="80" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="15" column="77" selection-start-line="15" selection-start-column="77" selection-end-line="15" selection-end-column="77" />
             </state>
           </provider>
         </entry>
@@ -290,7 +348,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.CourseJpaResourceTest">
+  <component name="RunManager" selected="Spring Boot.RestfulWebServicesApplication">
     <configuration name="CourseJpaResourceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="restful-web-services" />
       <extension name="coverage">
@@ -353,14 +411,11 @@
       <workItem from="1569494766761" duration="13591000" />
       <workItem from="1569645496045" duration="651000" />
       <workItem from="1569713340626" duration="13377000" />
-      <workItem from="1569786452280" duration="9757000" />
+      <workItem from="1569786452280" duration="10322000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="RestfulWebServicesApplicationTests_test - 2019.09.30 at 11h 04m 34s.xml">
-      <configuration name="RestfulWebServicesApplicationTests.test" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="CourseJpaResourceTest - 2019.09.30 at 11h 07m 31s.xml">
       <configuration name="CourseJpaResourceTest" configurationId="JUnit" />
     </history-entry>
@@ -388,9 +443,12 @@
     <history-entry file="CourseJpaResourceTest - 2019.09.30 at 12h 07m 46s.xml">
       <configuration name="CourseJpaResourceTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="CourseJpaResourceTest - 2019.09.30 at 12h 14m 58s.xml">
+      <configuration name="CourseJpaResourceTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="69971000" />
+    <option name="totallyTimeSpent" value="70536000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="55" y="-7" width="1488" height="878" extended-state="6" />
@@ -681,13 +739,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="15" column="77" selection-start-line="15" selection-start-column="77" selection-end-line="15" selection-end-column="77" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="356">
@@ -698,17 +749,10 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/sept/rest/webservices/restfulwebservices/course/CourseJpaRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
-          <caret line="17" column="61" lean-forward="true" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="61" />
+          <caret line="17" column="61" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="61" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/data.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="20" column="80" selection-start-line="20" selection-start-column="80" selection-end-line="20" selection-end-column="80" />
         </state>
       </provider>
     </entry>
@@ -735,15 +779,33 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/sept/rest/webservices/restfulwebservices/course/CourseJpaResource.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="815">
-          <caret line="82" column="9" selection-start-line="82" selection-start-column="9" selection-end-line="82" selection-end-column="9" />
+        <state relative-caret-position="357">
+          <caret line="40" column="46" selection-start-line="40" selection-start-column="46" selection-end-line="40" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="77" selection-start-line="15" selection-start-column="77" selection-end-line="15" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/data.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="20" column="80" selection-start-line="20" selection-start-column="80" selection-end-line="20" selection-end-column="80" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/sept/rest/webservices/restfulwebservices/CourseJpaResourceTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="47" column="16" selection-start-line="47" selection-start-column="16" selection-end-line="47" selection-end-column="16" />
+        <state relative-caret-position="68">
+          <caret line="38" column="86" selection-start-line="38" selection-start-column="86" selection-end-line="38" selection-end-column="86" />
+          <folding>
+            <element signature="e#1117#1118#0" expanded="true" />
+            <element signature="e#1210#1211#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

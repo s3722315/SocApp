@@ -36,7 +36,7 @@ public class CourseJpaResourceTest {
 
     @AfterAll
     static void finish() {
-
+        Course course = new Course(1, "sept", "Programming 1", "EEET01", "available");
     }
 
     @BeforeEach
