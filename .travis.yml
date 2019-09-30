@@ -1,31 +1,20 @@
-# language: node_js
-# node_js:
-#   - "stable"
-# cache: npm
-
-# install:
-#   - npm install
-#   - npm install react-scripts
-
-# before_script: cd ./frontend/todo-app/
-
-# script:
-#   - npm test
-#   - npm run build
-
-# deploy:
-#   - provider: pages
-#   - skip-cleanup: true
-#   - on:
-#       branch: frontend-test
-
 language: node_js
 node_js:
-  - 8
-cache:
-  directories:
-    - node_modules
+  - "stable"
+cache: npm
+
+install:
+  - npm install
+  - npm install react-scripts
+
 before_script: cd ./frontend/todo-app/
+
 script:
-  - npm run build
   - npm test
+  - npm run build
+
+deploy:
+  - provider: pages
+  - skip-cleanup: true
+  - on:
+      branch: frontend-test
