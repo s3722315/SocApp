@@ -45,21 +45,71 @@ public class CourseJpaResourceTest {
     @AfterEach
     void tearDown() {}
 
+    //testing enrolment
     @Test
-    public void test(){
-        Course course = new Course(1, "sept", "Programming 1", "EEET01", "enrolled");
-        courseJpaRepository.save(course);
-        List<Course> list = courseJpaResource.getMyCourses("sept");
-
-        assertEquals(1, 1);
-    }
-
-    @Test
-    public void testEnrolment(){
+    public void testEnroll1(){
         Course course = new Course(1, "sept", "Programming 1", "EEET01", "available");
         courseJpaRepository.save(course);
         courseJpaResource.enrollCourse(1, course);
         assertEquals("enrolled", course.getStatus());
+    }
+
+    @Test
+    public void testEnroll2(){
+        Course course = new Course(1, "sept", "Programming 1", "EEET01", "enrolled");
+        courseJpaRepository.save(course);
+        courseJpaResource.enrollCourse(1, course);
+        assertEquals("enrolled", course.getStatus());
+    }
+
+    @Test
+    public void testEnroll3(){
+        Course course = new Course(1, "sept", "Programming 1", "EEET01", "unavailable");
+        courseJpaRepository.save(course);
+        courseJpaResource.enrollCourse(1, course);
+        assertEquals("unavailable", course.getStatus());
+    }
+
+    @Test
+    public void testEnroll4(){
+        Course course = new Course(1, "sept", "Programming 1", "EEET01", "full");
+        courseJpaRepository.save(course);
+        courseJpaResource.enrollCourse(1, course);
+        assertEquals("full", course.getStatus());
+    }
+
+
+    //test dropping
+    @Test
+    public void testDrop1(){
+        Course course = new Course(1, "sept", "Programming 1", "EEET01", "available");
+        courseJpaRepository.save(course);
+        courseJpaResource.dropCourse(1, course);
+        assertEquals("available", course.getStatus());
+    }
+
+    @Test
+    public void testDrop2(){
+        Course course = new Course(1, "sept", "Programming 1", "EEET01", "enrolled");
+        courseJpaRepository.save(course);
+        courseJpaResource.dropCourse(1, course);
+        assertEquals("available", course.getStatus());
+    }
+
+    @Test
+    public void testDrop3(){
+        Course course = new Course(1, "sept", "Programming 1", "EEET01", "unavailable");
+        courseJpaRepository.save(course);
+        courseJpaResource.dropCourse(1, course);
+        assertEquals("unavailable", course.getStatus());
+    }
+
+    @Test
+    public void testDrop4(){
+        Course course = new Course(1, "sept", "Programming 1", "EEET01", "full");
+        courseJpaRepository.save(course);
+        courseJpaResource.dropCourse(1, course);
+        assertEquals("full", course.getStatus());
     }
 
 }

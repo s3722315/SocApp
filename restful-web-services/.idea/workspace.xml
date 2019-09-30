@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8200ed62-0c0b-4b11-b650-e00a4c6e9759" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sept/rest/webservices/restfulwebservices/course/CourseJpaResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sept/rest/webservices/restfulwebservices/course/CourseJpaResource.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/sept/rest/webservices/restfulwebservices/CourseJpaResourceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/sept/rest/webservices/restfulwebservices/CourseJpaResourceTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -33,8 +33,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/sept/rest/webservices/restfulwebservices/course/CourseJpaResource.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-27">
-              <caret line="30" column="32" lean-forward="true" selection-start-line="30" selection-start-column="32" selection-end-line="30" selection-end-column="32" />
+            <state relative-caret-position="815">
+              <caret line="82" column="9" selection-start-line="82" selection-start-column="9" selection-end-line="82" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -42,8 +42,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/sept/rest/webservices/restfulwebservices/CourseJpaResourceTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="313">
-              <caret line="61" column="31" selection-start-line="61" selection-start-column="31" selection-end-line="61" selection-end-column="31" />
+            <state relative-caret-position="135">
+              <caret line="47" column="16" selection-start-line="47" selection-start-column="16" selection-end-line="47" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -102,11 +102,11 @@
         <option value="$PROJECT_DIR$/src/main/resources/data.sql" />
         <option value="$PROJECT_DIR$/src/main/java/com/sept/rest/webservices/restfulwebservices/course/Course.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sept/rest/webservices/restfulwebservices/jwt/JwtUserDetails.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/sept/rest/webservices/restfulwebservices/course/CourseJpaResource.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sept/rest/webservices/restfulwebservices/course/CourseJpaRepository.java" />
         <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/com/sept/rest/webservices/restfulwebservices/RestfulWebServicesApplicationTests.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sept/rest/webservices/restfulwebservices/course/CourseJpaResource.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/sept/rest/webservices/restfulwebservices/CourseJpaResourceTest.java" />
       </list>
     </option>
@@ -290,7 +290,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.RestfulWebServicesApplication">
+  <component name="RunManager" selected="JUnit.CourseJpaResourceTest">
     <configuration name="CourseJpaResourceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="restful-web-services" />
       <extension name="coverage">
@@ -353,26 +353,11 @@
       <workItem from="1569494766761" duration="13591000" />
       <workItem from="1569645496045" duration="651000" />
       <workItem from="1569713340626" duration="13377000" />
-      <workItem from="1569786452280" duration="8841000" />
+      <workItem from="1569786452280" duration="9757000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CourseJpaResourceTest - 2019.09.30 at 07h 44m 18s.xml">
-      <configuration name="CourseJpaResourceTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CourseJpaResourceTest - 2019.09.30 at 07h 44m 44s.xml">
-      <configuration name="CourseJpaResourceTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CourseJpaResourceTest - 2019.09.30 at 07h 48m 19s.xml">
-      <configuration name="CourseJpaResourceTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CourseJpaResourceTest - 2019.09.30 at 08h 00m 43s.xml">
-      <configuration name="CourseJpaResourceTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CourseJpaResourceTest - 2019.09.30 at 11h 04m 15s.xml">
-      <configuration name="CourseJpaResourceTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="RestfulWebServicesApplicationTests_test - 2019.09.30 at 11h 04m 34s.xml">
       <configuration name="RestfulWebServicesApplicationTests.test" configurationId="JUnit" />
     </history-entry>
@@ -388,9 +373,24 @@
     <history-entry file="CourseJpaResourceTest - 2019.09.30 at 11h 23m 38s.xml">
       <configuration name="CourseJpaResourceTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="CourseJpaResourceTest - 2019.09.30 at 11h 55m 56s.xml">
+      <configuration name="CourseJpaResourceTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CourseJpaResourceTest - 2019.09.30 at 11h 57m 52s.xml">
+      <configuration name="CourseJpaResourceTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CourseJpaResourceTest - 2019.09.30 at 11h 58m 23s.xml">
+      <configuration name="CourseJpaResourceTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CourseJpaResourceTest - 2019.09.30 at 12h 05m 20s.xml">
+      <configuration name="CourseJpaResourceTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CourseJpaResourceTest - 2019.09.30 at 12h 07m 46s.xml">
+      <configuration name="CourseJpaResourceTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="69055000" />
+    <option name="totallyTimeSpent" value="69971000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="55" y="-7" width="1488" height="878" extended-state="6" />
@@ -404,7 +404,7 @@
       <window_info id="Designer" order="5" />
       <window_info content_ui="combo" id="Project" order="6" visible="true" weight="0.25840336" />
       <window_info id="Structure" order="7" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="0" visible="true" weight="0.33378017" />
+      <window_info anchor="bottom" id="Terminal" order="0" weight="0.33378017" />
       <window_info anchor="bottom" id="Docker" order="1" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="3" weight="0.3297587" />
@@ -414,7 +414,7 @@
       <window_info anchor="bottom" id="Spring" order="7" weight="0.3297587" />
       <window_info anchor="bottom" id="Message" order="8" />
       <window_info anchor="bottom" id="Find" order="9" />
-      <window_info anchor="bottom" id="Run" order="10" weight="0.34450403" />
+      <window_info active="true" anchor="bottom" id="Run" order="10" visible="true" weight="0.34450403" />
       <window_info anchor="bottom" id="Debug" order="11" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="12" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="13" weight="0.4" />
@@ -735,15 +735,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/sept/rest/webservices/restfulwebservices/course/CourseJpaResource.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-27">
-          <caret line="30" column="32" lean-forward="true" selection-start-line="30" selection-start-column="32" selection-end-line="30" selection-end-column="32" />
+        <state relative-caret-position="815">
+          <caret line="82" column="9" selection-start-line="82" selection-start-column="9" selection-end-line="82" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/sept/rest/webservices/restfulwebservices/CourseJpaResourceTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
-          <caret line="61" column="31" selection-start-line="61" selection-start-column="31" selection-end-line="61" selection-end-column="31" />
+        <state relative-caret-position="135">
+          <caret line="47" column="16" selection-start-line="47" selection-start-column="16" selection-end-line="47" selection-end-column="16" />
         </state>
       </provider>
     </entry>
