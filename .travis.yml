@@ -25,7 +25,7 @@ node_js:
 cache:
   directories:
     - node_modules
-before_script: cd .?frontend/todo-app/
+before_script: cd ./frontend/todo-app/
 script:
   - npm run build
   - npm test
