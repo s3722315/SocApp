@@ -54,4 +54,12 @@ public class CourseJpaResourceTest {
         assertEquals(1, 1);
     }
 
+    @Test
+    public void testEnrolment(){
+        Course course = new Course(1, "sept", "Programming 1", "EEET01", "available");
+        courseJpaRepository.save(course);
+        courseJpaResource.enrollCourse(1, course);
+        assertEquals("enrolled", course.getStatus());
+    }
+
 }
