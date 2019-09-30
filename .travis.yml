@@ -1,0 +1,20 @@
+language: node_js
+node_js:
+  - "stable"
+cache: npm
+
+install:
+  - npm install
+  - npm install react-scripts
+
+before_script: cd ./frontend/todo-app/
+
+script:
+  - npm test
+  - npm run build
+
+deploy:
+  - provider: pages
+  - skip-cleanup: true
+  - on:
+      branch: frontend-test
