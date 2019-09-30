@@ -4,7 +4,6 @@ import java.net.URI;
 import java.util.List;
 
 import com.sept.rest.webservices.restfulwebservices.jwt.JwtUserDetails;
-import com.sept.rest.webservices.restfulwebservices.student.Student;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -31,12 +30,12 @@ public class StudentJpaResource {
 	private StudentJpaRepository studentJpaRepository;
 
     @GetMapping("/jpa/courses")
-    public List<Student> getAllStudents() {
+    public List<Students> getAllStudents() {
     	return studentJpaRepository.findAll();
     }
 
     @GetMapping("/jpa/courses/{id}")
-    public Student getStudent(@PathVariable long id) {
+    public Students getStudent(@PathVariable long id) {
     	return studentJpaRepository.findById(id).get();
     }
     
