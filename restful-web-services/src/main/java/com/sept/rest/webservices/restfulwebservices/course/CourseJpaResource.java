@@ -36,20 +36,26 @@ public class CourseJpaResource {
         return courseJpaRepository.findById(id).get();
     }
 
-    @GetMapping("/jpa/courses/{id}/status")
-    public String getCourseStatus(@PathVariable long id){
-        return courseJpaRepository.findById(id).get().getStatus();
+    @GetMapping("/jpa/users/{name}/{id}/enroll/status")
+    public boolean getEnrolledStatus(@PathVariable String username, @PathVariable long courseId){
+        long studentId = studentJpaRepository.findByUsername(username).get().getId();
+        return enrolmentJpaRepository.existsByStudentIdAndCourseId(studentId, courseId);
     }
 
 //    @GetMapping("/jpa/courses/{id}/status")
-//    public String getCourseStatus(@PathVariable long studentId, long courseId){
-//        if (courseJpaRepository.findById(courseId).get().getStatus().equals("available")){
-//            if (enrolmentJpaRepository.existsByStudentIdAndCourseId(studentId, courseId))
-//                return "enrolled";
-//            else return "available";
-//        }
-//        else return courseJpaRepository.findById(courseId).get().getStatus();
+//    public String getCourseStatus(@PathVariable long id){
+//        return courseJpaRepository.findById(id).get().getStatus();
 //    }
+
+    @GetMapping("/jpa/courses/{id}/status")
+    public String getCourseStatus(@PathVariable long studentId, @PathVariable long courseId){
+        if (courseJpaRepository.findById(courseId).get().getStatus().equals("available")){
+            if (enrolmentJpaRepository.existsByStudentIdAndCourseId(studentId, courseId))
+                return "enrolled";
+            else return "available";
+        }
+        else return courseJpaRepository.findById(courseId).get().getStatus();
+    }
 
     @GetMapping("/jpa/users/{username}/courses")
     public List<Course> getMyCourses(@PathVariable String username){

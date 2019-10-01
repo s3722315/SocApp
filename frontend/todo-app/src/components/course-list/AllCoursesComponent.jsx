@@ -121,7 +121,7 @@ class AllCoursesComponent extends Component {
     }
 
     getCourseStatus(course) {
-        if (course.status == "available") {
+        if (course.status.equals("available")) {
             let username = AuthenticationService.getLoggedInUserName()
 
             var enrolled = false;

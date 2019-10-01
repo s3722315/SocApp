@@ -20,7 +20,7 @@ insert into course(id, username, coursename, code, status)values (3, 'sept', 'So
 
 insert into course(id, username, coursename, code, status)values (4, 'sept', 'Software Testing', 'COSC0035', 'unavailable');
 
-insert into course(id, username, coursename, code, status)values (5, 'sept', 'Capstone Project', 'EEET0003', 'enrolled');
+insert into course(id, username, coursename, code, status)values (5, 'sept', 'Capstone Project', 'EEET0003', 'available');
 
 insert into enrolment(student_id, course_id)values (1, 1);
 
