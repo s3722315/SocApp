@@ -1,6 +1,6 @@
 package com.sept.rest.webservices.restfulwebservices.course;
 
-import com.sept.rest.webservices.restfulwebservices.jwt.JwtUserDetails;
+import com.sept.rest.webservices.restfulwebservices.jwt.Student;
 
 import javax.persistence.*;
 
@@ -11,9 +11,9 @@ public class Enrolment {
     EnrolmentKey id;
 
     @ManyToOne
-    @MapsId("jwt_user_details_id")
-    @JoinColumn(name = "jwt_user_details_id")
-    JwtUserDetails jwtUserDetails;
+    @MapsId("student_id")
+    @JoinColumn(name = "student_id")
+    Student student;
 
     @ManyToOne
     @MapsId("course_id")
@@ -31,12 +31,12 @@ public class Enrolment {
         this.id = id;
     }
 
-    public JwtUserDetails getJwtUserDetails() {
-        return jwtUserDetails;
+    public Student getStudent() {
+        return student;
     }
 
-    public void setJwtUserDetails(JwtUserDetails jwtUserDetails) {
-        this.jwtUserDetails = jwtUserDetails;
+    public void setStudent(Student student) {
+        this.student = student;
     }
 
     public Course getCourse() {

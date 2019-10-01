@@ -7,7 +7,7 @@ import java.io.Serializable;
 @Embeddable
 public class EnrolmentKey implements Serializable {
 
-    @Column(name = "jwt_user_details_id")
+    @Column(name = "student_id")
     Long userId;
 
     @Column(name = "course_id")

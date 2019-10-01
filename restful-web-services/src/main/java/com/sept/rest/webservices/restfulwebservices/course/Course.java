@@ -1,10 +1,7 @@
 package com.sept.rest.webservices.restfulwebservices.course;
 
 
-import com.sept.rest.webservices.restfulwebservices.jwt.JwtUserDetails;
-
 import javax.persistence.*;
-import java.util.List;
 import java.util.Set;
 
 @Entity
@@ -53,7 +50,7 @@ public class Course {
 
     public void setStatus(String status) { this.status = status; }
 
-    //public Set<JwtUserDetails> getStudents() { return enrolledStudents; }
+    //public Set<Student> getStudents() { return enrolledStudents; }
 
 //    spring.jpa.hibernate.ddl-auto=update
 //    spring.datasource.url=jdbc:mysql://${MYSQL_HOST:localhost}:3306/rmitsocappsdb

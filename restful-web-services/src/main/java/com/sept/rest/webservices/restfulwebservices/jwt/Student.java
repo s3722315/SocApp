@@ -17,7 +17,7 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import javax.persistence.*;
 
 @Entity
-public class JwtUserDetails implements UserDetails {
+public class Student implements UserDetails {
 
   private static final long serialVersionUID = 5155720064139820502L;
 
@@ -29,8 +29,8 @@ public class JwtUserDetails implements UserDetails {
   private String username;
   private String password;
 
-//  @OneToMany(mappedBy = "jwtuserdetails")
-//  Set<Enrolment> enrolments;
+  @OneToMany(mappedBy = "student")
+  Set<Enrolment> enrolments;
 
 //  @OneToMany(mappedBy = "jwt_user_details")
 //  private List<Todo> todos;
@@ -45,7 +45,7 @@ public class JwtUserDetails implements UserDetails {
   @Transient
   private final Collection<? extends GrantedAuthority> authorities;
 
-  public JwtUserDetails(Long id, String username, String password, String role) {
+  public Student(Long id, String username, String password, String role) {
     this.id = id;
     this.username = username;
     this.password = password;
@@ -56,14 +56,14 @@ public class JwtUserDetails implements UserDetails {
     this.authorities = authorities;
   }
 
-  public JwtUserDetails(Long id, String username, String password) {
+  public Student(Long id, String username, String password) {
     this.id = id;
     this.username = username;
     this.password = password;
     this.authorities = null;
   }
 
-  protected JwtUserDetails(){
+  protected Student(){
     this.authorities = null;
   }
 

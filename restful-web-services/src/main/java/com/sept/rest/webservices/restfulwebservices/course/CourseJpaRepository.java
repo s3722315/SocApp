@@ -11,7 +11,7 @@ public interface CourseJpaRepository extends JpaRepository<Course, Long> {
     List<Course> findByUsername(String username);
     List<Course> findByStatus(String status);
 
-//    @Query("select x from Course c, JwtUserDetails u where c.id = u.id")
+//    @Query("select x from Course c, Student u where c.id = u.id")
 //    List<Course> findByJwtuserdetails_Username(String username);
 
     //jdbc:mysql://google/RMITSocAppsDB?cloudSqlInstance=rmitsocappsdb:australia-southeast1:myinstance

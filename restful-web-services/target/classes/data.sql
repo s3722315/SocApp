@@ -1,6 +1,6 @@
-insert into jwt_user_details(id, username, password) values (1, 'sept', '$2a$10$3zHzb.Npv1hfZbLEU5qsdOju/tk2je6W6PnNnY.c1ujWPcZh4PL6e');
+insert into student(id, username, password) values (1, 'sept', '$2a$10$3zHzb.Npv1hfZbLEU5qsdOju/tk2je6W6PnNnY.c1ujWPcZh4PL6e');
 
-insert into jwt_user_details(id, username, password) values (2, 'sept2', '$2a$10$3zHzb.Npv1hfZbLEU5qsdOju/tk2je6W6PnNnY.c1ujWPcZh4PL6e');
+insert into student(id, username, password) values (2, 'sept2', '$2a$10$3zHzb.Npv1hfZbLEU5qsdOju/tk2je6W6PnNnY.c1ujWPcZh4PL6e');
 
 insert into todo(id, username,description,target_date,is_done)values(10001, 'sept', 'Learn JPA', sysdate(), false);
 

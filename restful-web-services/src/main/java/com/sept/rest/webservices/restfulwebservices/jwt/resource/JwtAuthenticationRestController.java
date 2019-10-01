@@ -5,7 +5,8 @@ import java.util.Objects;
 
 import javax.servlet.http.HttpServletRequest;
 
-import com.sept.rest.webservices.restfulwebservices.jwt.JwtUserDetailsJpaRepository;
+import com.sept.rest.webservices.restfulwebservices.jwt.StudentJpaRepository;
+import com.sept.rest.webservices.restfulwebservices.jwt.Student;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,7 +23,6 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.web.bind.annotation.*;
 
 import com.sept.rest.webservices.restfulwebservices.jwt.JwtTokenUtil;
-import com.sept.rest.webservices.restfulwebservices.jwt.JwtUserDetails;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
 @RestController
@@ -43,7 +43,7 @@ public class JwtAuthenticationRestController {
 
   private final Logger logger = LoggerFactory.getLogger(this.getClass());
 
-  private JwtUserDetailsJpaRepository jwtUserDetailsJpaRepository;
+  private StudentJpaRepository studentJpaRepository;
 
   @RequestMapping(value = "${jwt.get.token.uri}", method = RequestMethod.POST)
   public ResponseEntity<?> createAuthenticationToken(@RequestBody JwtTokenRequest authenticationRequest)
@@ -65,7 +65,7 @@ public class JwtAuthenticationRestController {
     String authToken = request.getHeader(tokenHeader);
     final String token = authToken.substring(7);
     String username = jwtTokenUtil.getUsernameFromToken(token);
-    JwtUserDetails user = (JwtUserDetails) jwtInMemoryUserDetailsService.loadUserByUsername(username);
+    Student user = (Student) jwtInMemoryUserDetailsService.loadUserByUsername(username);
 
     if (jwtTokenUtil.canTokenBeRefreshed(token)) {
       String refreshedToken = jwtTokenUtil.refreshToken(token);
@@ -78,7 +78,7 @@ public class JwtAuthenticationRestController {
   @PostMapping("/new-account")
   public ResponseEntity<?> registerUser(@RequestBody SignUpRequest signUpRequest) {
     logger.warn("USER_REGISTERED");
-    if(jwtUserDetailsJpaRepository.existsByUsername(signUpRequest.getUsername())) {
+    if(studentJpaRepository.existsByUsername(signUpRequest.getUsername())) {
       logger.warn("USERNAME_ALREADY_EXISTS");
       return new ResponseEntity(new SignUpResponse(false, "Username is already taken!"),
               HttpStatus.BAD_REQUEST);
@@ -87,11 +87,11 @@ public class JwtAuthenticationRestController {
     BCryptPasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
 
     // Creating user's account
-    JwtUserDetails jwtUserDetails = new JwtUserDetails(2L, signUpRequest.getUsername(), signUpRequest.getPassword());
+    Student student = new Student(2L, signUpRequest.getUsername(), signUpRequest.getPassword());
 
-    jwtUserDetails.setPassword(passwordEncoder.encode(jwtUserDetails.getPassword()));
+    student.setPassword(passwordEncoder.encode(student.getPassword()));
 
-    JwtUserDetails result = jwtUserDetailsJpaRepository.save(jwtUserDetails);
+    Student result = studentJpaRepository.save(student);
 
     URI location = ServletUriComponentsBuilder
             .fromCurrentContextPath().path("/api/users/{username}")
