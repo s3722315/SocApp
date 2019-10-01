@@ -3,9 +3,9 @@ import { API_URL, JPA_API_URL } from '../../Constants'
 
 class CourseDataService {
 
-    retrieveAllCourses() {
+    retrieveAllCourses(name) {
         //console.log('executed service')
-        return axios.get(`${JPA_API_URL}/courses`);
+        return axios.get(`${JPA_API_URL}/${name}/courses`);
     }
 
     retrieveMyCourses(name) {
@@ -13,19 +13,24 @@ class CourseDataService {
         return axios.get(`${JPA_API_URL}/users/${name}/courses`);
     }
 
+    retrieveACoursesEnrollStatus(id, name) {
+        //console.log('executed service')
+        return axios.get(`${JPA_API_URL}/users/${name}/${id}/enroll/status`);
+    }
+
     retrieveACourse(id) {
         //console.log('executed service')
         return axios.get(`${JPA_API_URL}/courses/${id}`);
     }
 
-    enrolACourse(id, course) {
+    enrolACourse(id, name) {
 
-        return axios.put(`${JPA_API_URL}/courses/${id}/enroll`, course)
+        return axios.put(`${JPA_API_URL}/courses/${id}/enroll`, name)
     }
 
-    unenrolACourse(id, course) {
+    unenrolACourse(id, name) {
 
-        return axios.put(`${JPA_API_URL}/courses/${id}/drop`, course)
+        return axios.put(`${JPA_API_URL}/courses/${id}/drop`, name)
     }
 
 }

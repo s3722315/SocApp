@@ -42,9 +42,11 @@ class AllCoursesComponent extends Component {
 
     }
 
-    enrollInCourse(id, course) {
+    enrollInCourse(id) {
         console.log('enrolled in ' + id)
-        CourseDataService.enrolACourse(id, course)
+        let username = AuthenticationService.getLoggedInUserName()
+
+        CourseDataService.enrolACourse(id, username)
         .then(
             response => {
                 this.refreshMyCourses()
@@ -54,10 +56,11 @@ class AllCoursesComponent extends Component {
         )
     }
 
-    unenrollCourse(id, course)
-    {
+    unenrollCourse(id) {
         console.log('enrolled in ' + id)
-        CourseDataService.unenrolACourse(id, course)
+        let username = AuthenticationService.getLoggedInUserName()
+
+        CourseDataService.unenrolACourse(id, username)
         .then(
             response => {
                 this.refreshMyCourses()
@@ -69,7 +72,9 @@ class AllCoursesComponent extends Component {
 
     refreshCourses() {
         console.log('refresh Courses')
-        CourseDataService.retrieveAllCourses()
+        let username = AuthenticationService.getLoggedInUserName()
+
+        CourseDataService.retrieveAllCourses(username)
         .then(
             response => {
                 //console.log(response);
@@ -93,11 +98,22 @@ class AllCoursesComponent extends Component {
 
     actionButton(course) {
         if (course.status == "available") {
-            return <td><button className="btn btn-success" id={course.id} onClick={() => this.enrollInCourse(course.id, course)}>Enroll</button></td>;
-        }
+            let username = AuthenticationService.getLoggedInUserName()
 
-        if (course.status == "enrolled") {
-            return <td><button className="btn btn-warning" id={course.id} onClick={() => this.unenrollCourse(course.id, course)}>Unenroll</button></td>;
+            var enrolled = false;
+            CourseDataService.retrieveACoursesEnrollStatus(id, name)
+            .then(
+                response => {
+                    enrolled = response.data
+                }
+            )
+
+            if (enrolled == true) {
+                return <td><button className="btn btn-warning" id={course.id} onClick={() => this.unenrollCourse(course.id, course)}>Unenroll</button></td>;
+            }
+            if (enrolled == false) {
+                return <td><button className="btn btn-success" id={course.id} onClick={() => this.enrollInCourse(course.id, course)}>Enroll</button></td>;
+            }
         }
 
         return <td>None</td>;
