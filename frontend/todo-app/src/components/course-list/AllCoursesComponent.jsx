@@ -102,7 +102,7 @@ class AllCoursesComponent extends Component {
             let username = AuthenticationService.getLoggedInUserName()
 
             var enrolled = false;
-            CourseDataService.retrieveACoursesEnrollStatus(id, name)
+            CourseDataService.retrieveACoursesEnrollStatus(id, username)
             .then(
                 response => {
                     enrolled = response.data
@@ -110,10 +110,10 @@ class AllCoursesComponent extends Component {
             )
 
             if (enrolled == true) {
-                return <td><button className="btn btn-warning" id={course.id} onClick={() => this.unenrollCourse(course.id, course)}>Unenroll</button></td>;
+                return <td><button className="btn btn-warning" id={course.id} onClick={() => this.unenrollCourse(course.id)}>Unenroll</button></td>;
             }
             if (enrolled == false) {
-                return <td><button className="btn btn-success" id={course.id} onClick={() => this.enrollInCourse(course.id, course)}>Enroll</button></td>;
+                return <td><button className="btn btn-success" id={course.id} onClick={() => this.enrollInCourse(course.id)}>Enroll</button></td>;
             }
         }
 
@@ -125,7 +125,7 @@ class AllCoursesComponent extends Component {
             let username = AuthenticationService.getLoggedInUserName()
 
             var enrolled = false;
-            CourseDataService.retrieveACoursesEnrollStatus(id, name)
+            CourseDataService.retrieveACoursesEnrollStatus(id, username)
             .then(
                 response => {
                     enrolled = response.data
