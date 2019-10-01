@@ -16,6 +16,7 @@ class AllCoursesComponent extends Component {
         this.enrollInCourse = this.enrollInCourse.bind(this)
         this.refreshCourses = this.refreshCourses.bind(this)
         this.refreshMyCourses = this.refreshMyCourses.bind(this)
+        this.getCourseStatus = this.getCourseStatus.bind(this)
     }
 
     componentWillUnmount() {
@@ -119,6 +120,29 @@ class AllCoursesComponent extends Component {
         return <td>None</td>;
     }
 
+    getCourseStatus(course) {
+        if (course.status == "available") {
+            let username = AuthenticationService.getLoggedInUserName()
+
+            var enrolled = false;
+            CourseDataService.retrieveACoursesEnrollStatus(id, name)
+            .then(
+                response => {
+                    enrolled = response.data
+                }
+            )
+
+            if (enrolled == true) {
+                return <td>enrolled</td>;
+            }
+            if (enrolled == false) {
+                return <td>unenrolled</td>;
+            }
+        }
+
+        return <td>{course.status}</td>;
+    }
+
     render() {
 
         console.log('render')
@@ -146,7 +170,7 @@ class AllCoursesComponent extends Component {
                                     <tr key={course.id}>
                                         <td>{course.code}</td>
                                         <td>{course.coursename}</td>
-                                        <td>{course.status}</td>
+                                        {this.getCourseStatus(course)}
                                         <td><button className="btn btn-success" onClick={() => this.gotoCourse(course.id)}>Go To</button></td>
                                         {this.actionButton(course)}
                                     </tr>
@@ -183,7 +207,7 @@ class AllCoursesComponent extends Component {
                                         <tr key={course.id}>
                                             <td>{course.code}</td>
                                             <td>{course.coursename}</td>
-                                            <td>{course.status}</td>
+                                            {this.getCourseStatus(course)}
                                             <td><button className="btn btn-success" onClick={() => this.gotoCourse(course.id)}>Go To</button></td> 
                                             {this.actionButton(course)}
                                         </tr>
