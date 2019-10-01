@@ -73,9 +73,8 @@ class AllCoursesComponent extends Component {
 
     refreshCourses() {
         console.log('refresh Courses')
-        let username = AuthenticationService.getLoggedInUserName()
 
-        CourseDataService.retrieveAllCourses(username)
+        CourseDataService.retrieveAllCourses()
         .then(
             response => {
                 //console.log(response);
@@ -136,7 +135,7 @@ class AllCoursesComponent extends Component {
                 return <td>enrolled</td>;
             }
             if (enrolled == false) {
-                return <td>unenrolled</td>;
+                return <td>available</td>;
             }
         }
 
