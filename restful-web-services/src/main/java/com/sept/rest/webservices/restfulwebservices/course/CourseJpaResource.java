@@ -26,8 +26,8 @@ public class CourseJpaResource {
     @Autowired
     private StudentJpaRepository studentJpaRepository;
 
-    @GetMapping("/jpa/courses")
-    public List<Course> getAllCourses() {
+    @GetMapping("/jpa/{name}/courses")
+    public List<Course> getAllCourses(@PathVariable String name) {
         return courseJpaRepository.findAll();
     }
 

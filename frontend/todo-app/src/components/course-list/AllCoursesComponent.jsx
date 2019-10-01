@@ -43,7 +43,7 @@ class AllCoursesComponent extends Component {
 
     }
 
-    enrollInCourse(id) {
+    enrollInCourse(id, course) {
         console.log('enrolled in ' + id)
         let username = AuthenticationService.getLoggedInUserName()
 
@@ -57,7 +57,7 @@ class AllCoursesComponent extends Component {
         )
     }
 
-    unenrollCourse(id) {
+    unenrollCourse(id, course) {
         console.log('enrolled in ' + id)
         let username = AuthenticationService.getLoggedInUserName()
 
@@ -102,7 +102,7 @@ class AllCoursesComponent extends Component {
             let username = AuthenticationService.getLoggedInUserName()
 
             var enrolled = false;
-            CourseDataService.retrieveACoursesEnrollStatus(id, username)
+            CourseDataService.retrieveACoursesEnrollStatus(course.id, username)
             .then(
                 response => {
                     enrolled = response.data
@@ -110,10 +110,10 @@ class AllCoursesComponent extends Component {
             )
 
             if (enrolled == true) {
-                return <td><button className="btn btn-warning" id={course.id} onClick={() => this.unenrollCourse(course.id)}>Unenroll</button></td>;
+                return <td><button className="btn btn-warning" id={course.id} onClick={() => this.unenrollCourse(course.id, course)}>Unenroll</button></td>;
             }
             if (enrolled == false) {
-                return <td><button className="btn btn-success" id={course.id} onClick={() => this.enrollInCourse(course.id)}>Enroll</button></td>;
+                return <td><button className="btn btn-success" id={course.id} onClick={() => this.enrollInCourse(course.id, course)}>Enroll</button></td>;
             }
         }
 
@@ -121,11 +121,11 @@ class AllCoursesComponent extends Component {
     }
 
     getCourseStatus(course) {
-        if (course.status.equals("available")) {
+        if (course.status == "available") {
             let username = AuthenticationService.getLoggedInUserName()
 
             var enrolled = false;
-            CourseDataService.retrieveACoursesEnrollStatus(id, username)
+            CourseDataService.retrieveACoursesEnrollStatus(course.id, username)
             .then(
                 response => {
                     enrolled = response.data
