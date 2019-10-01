@@ -17,9 +17,6 @@ import org.springframework.web.bind.annotation.RestController;
 public class CourseJpaResource {
 
     @Autowired
-    private CourseHardcodedService courseService;
-
-    @Autowired
     private CourseJpaRepository courseJpaRepository;
 
     @GetMapping("/jpa/courses")

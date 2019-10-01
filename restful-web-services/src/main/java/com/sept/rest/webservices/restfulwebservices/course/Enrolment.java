@@ -23,27 +23,15 @@ public class Enrolment {
     protected Enrolment(){
     }
 
-    public EnrolmentKey getId() {
-        return id;
-    }
+    public EnrolmentKey getId() { return id; }
 
-    public void setId(EnrolmentKey id) {
-        this.id = id;
-    }
+    public void setId(EnrolmentKey id) { this.id = id; }
 
-    public Student getStudent() {
-        return student;
-    }
+    public Student getStudent() { return student; }
 
-    public void setStudent(Student student) {
-        this.student = student;
-    }
+    public void setStudent(Student student) { this.student = student; }
 
-    public Course getCourse() {
-        return course;
-    }
+    public Course getCourse() { return course; }
 
-    public void setCourse(Course course) {
-        this.course = course;
-    }
+    public void setCourse(Course course) { this.course = course; }
 }
