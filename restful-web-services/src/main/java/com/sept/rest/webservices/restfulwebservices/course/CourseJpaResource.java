@@ -37,9 +37,9 @@ public class CourseJpaResource {
     }
 
     @GetMapping("/jpa/users/{name}/{id}/enroll/status")
-    public boolean getEnrolledStatus(@PathVariable String username, @PathVariable long courseId){
-        long studentId = studentJpaRepository.findByUsername(username).get().getId();
-        return enrolmentJpaRepository.existsByStudentIdAndCourseId(studentId, courseId);
+    public boolean getEnrolledStatus(@PathVariable String name, @PathVariable long id){
+        long studentId = studentJpaRepository.findByUsername(name).get().getId();
+        return enrolmentJpaRepository.existsByStudentIdAndCourseId(studentId, id);
     }
 
 //    @GetMapping("/jpa/courses/{id}/status")
