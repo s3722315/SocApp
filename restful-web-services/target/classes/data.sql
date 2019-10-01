@@ -22,5 +22,5 @@ insert into course(id, username, coursename, code, status)values (4, 'sept', 'So
 
 insert into course(id, username, coursename, code, status)values (5, 'sept', 'Capstone Project', 'EEET0003', 'enrolled');
 
-insert into student_course(jwt_user_details_id, course_id)
-values (1L, 1)
+--insert into student_course(jwt_user_details_id, course_id)
+--values (1L, 1)
