@@ -9,6 +9,7 @@ import java.util.List;
 public interface EnrolmentJpaRepository extends JpaRepository<Enrolment, Long> {
     List<Enrolment> findByStudentId(long id);
     List<Enrolment> findByCourseId(long id);
+    Boolean existsByStudentIdAndCourseId(long studentId, long courseId);
 
 //    @Query("select x from Course c, Student u where c.id = u.id")
 //    List<Course> findByJwtuserdetails_Username(String username);

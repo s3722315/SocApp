@@ -1,6 +1,7 @@
 package com.sept.rest.webservices.restfulwebservices.course;
 
 import java.util.List;
+import java.util.Set;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
@@ -10,6 +11,7 @@ import org.springframework.stereotype.Repository;
 public interface CourseJpaRepository extends JpaRepository<Course, Long> {
     List<Course> findByUsername(String username);
     List<Course> findByStatus(String status);
+    List<Course> findByEnrolments(Set<Enrolment> enrolments);
 
 //    @Query("select x from Course c, Student u where c.id = u.id")
 //    List<Course> findByJwtuserdetails_Username(String username);

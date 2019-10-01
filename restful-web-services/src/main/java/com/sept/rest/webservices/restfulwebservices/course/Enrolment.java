@@ -23,6 +23,11 @@ public class Enrolment {
     protected Enrolment(){
     }
 
+    public Enrolment(Student student, Course course){
+        this.student = student;
+        this.course = course;
+    }
+
     public EnrolmentKey getId() { return id; }
 
     public void setId(EnrolmentKey id) { this.id = id; }
