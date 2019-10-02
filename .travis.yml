@@ -1,15 +1,16 @@
 language: node_js
-# node_js:
-#   - "stable"
+node_js:
 cache: npm
 
 before_install:
  - cd ./frontend/todo-app/
  - chmod +x ./node_modules/.bin/react-scripts
+#  - rm ./package-lock.json
+#  - rm -r ./node_modules
 
-install:
-  - npm install
-  - npm install react-scripts
+# install:
+#   - npm install
+#   - npm install react-scripts
 
 # before_script: cd ./frontend/todo-app/
 
