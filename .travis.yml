@@ -3,6 +3,9 @@ node_js:
   - "stable"
 cache: npm
 
+before_install:
+ - chmod +x ./frontend/todo-app/node_modules/.bin/react-scripts
+
 install:
   - npm install
   - npm install react-scripts
