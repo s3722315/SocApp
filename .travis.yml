@@ -5,10 +5,12 @@ cache: npm
 
 before_install:
  - chmod +x ./frontend/todo-app/node_modules/.bin/react-scripts
+ - rm ./frontend/todo-app/package-lock.json
+ - rm -r ./frontend/todo-app/node_modules
 
-# install:
-#   - npm install
-#   - npm install react-scripts
+install:
+  - npm install
+  - npm install react-scripts
 
 before_script: cd ./frontend/todo-app/
 
