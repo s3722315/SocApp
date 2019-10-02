@@ -46,19 +46,3 @@ describe('AllCourseComponentMock', () => {
     component.unmount();
   });
 });
-
-// describe('AllCourseComponent', () => {
-//   it('should enroll', () => {
-//     const component = mount(<AllCourseComponent debug />);
-    
-//     let course = [];
-//     course = CourseDataService.retrieveACourse(1);
-
-//     component
-//     .find('#1')
-//     .simulate('click');
-
-//     expect(component).toMatchSnapshot();
-//     component.unmount();
-//   });
-// });
