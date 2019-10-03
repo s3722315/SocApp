@@ -49,7 +49,7 @@ class AllStudentsComponent extends Component {
             response => {
                 this.refreshMyStudents()
                 this.refreshStudents()
-                this.state.message = "The student " + student.code + ": " + student.studentname + " has been enrolled"
+                this.setState({message: "The student " + student.code + ": " + student.studentname + " has been enrolled"})
             }
         )
     }
@@ -62,7 +62,7 @@ class AllStudentsComponent extends Component {
             response => {
                 this.refreshMyStudents()
                 this.refreshStudents()
-                this.state.message = "The student " + student.code + ": " + student.studentname + " has been unenrolled"
+                this.setState({message: "The student " + student.code + ": " + student.studentname + " has been unenrolled"})
             }
         )
     }
@@ -92,11 +92,11 @@ class AllStudentsComponent extends Component {
     }
 
     actionButton(student) {
-        if (student.status == "available") {
+        if (student.status === "available") {
             return <td><button className="btn btn-success" onClick={() => this.enrollInStudent(student.id, student)}>Enroll</button></td>;
         }
 
-        if (student.status == "enrolled") {
+        if (student.status === "enrolled") {
             return <td><button className="btn btn-warning" onClick={() => this.unenrollStudent(student.id, student)}>Unenroll</button></td>;
         }
 
