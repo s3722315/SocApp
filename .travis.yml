@@ -5,7 +5,7 @@ matrix:
         - oraclejdk8
       dist: trusty
       
-      install: cd restful-web-services && nvm clean install
+      install: cd restful-web-services && mvn clean install
       
     - language: node_js
       cache:
