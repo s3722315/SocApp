@@ -1,5 +1,4 @@
 language: node_js
-# node_js:
 cache:
   directories:
       - ./frontend/todo-app/node_modules
@@ -7,8 +6,6 @@ cache:
 before_install:
  - cd ./frontend/todo-app/
  - chmod +x ./node_modules/.bin/react-scripts
-#  - rm ./package-lock.json
-#  - rm -r ./node_modules
 
 install:
   - npm -v
@@ -17,17 +14,14 @@ install:
   - npm i -g npm
   - nvm install 10
   - npm install -g npm
-  # - npm install react-scripts
-
-# before_script: cd ./frontend/todo-app/
 
 script:
   - npm run build
   - npm test
 
-# deploy:
-#   - provider: pages
-#   - skip-cleanup: true
-#   - on:
-#       branch: frontend-test
+deploy:
+  - provider: pages
+  - skip-cleanup: true
+  - on:
+      branch: frontend-test
       
