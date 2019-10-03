@@ -1,5 +1,12 @@
 matrix:
   include:
+    - language: java
+      jdk:
+        - oraclejdk8
+      dist: trusty
+      
+      install: cd restful-web-services && nvm clean install
+      
     - language: node_js
       cache:
         directories:
@@ -20,10 +27,3 @@ matrix:
       script:
         - npm run build
         - npm test
-        
-    - language: java
-      jdk:
-        - oraclejdk8
-      dist: trusty
-      
-      install: cd restful-web-services && nvm clean install
