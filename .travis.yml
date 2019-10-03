@@ -20,7 +20,6 @@ script:
   - npm test
 
 deploy:
-  - provider: pages
   - skip-cleanup: true
   - on:
       branch: frontend-test
