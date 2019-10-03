@@ -49,7 +49,7 @@ class AllCoursesComponent extends Component {
             response => {
                 this.refreshMyCourses()
                 this.refreshCourses()
-                this.state.message = "The course " + course.code + ": " + course.coursename + " has been enrolled" 
+                this.setState({ message: "The course " + course.code + ": " + course.coursename + " has been enrolled" })
             }
         )
     }
@@ -62,7 +62,7 @@ class AllCoursesComponent extends Component {
             response => {
                 this.refreshMyCourses()
                 this.refreshCourses()
-                this.state.message = "The course " + course.code + ": " + course.coursename + " has been unenrolled" 
+                this.setState({ message: "The course " + course.code + ": " + course.coursename + " has been unenrolled" })
             }
         )
     }
@@ -92,11 +92,11 @@ class AllCoursesComponent extends Component {
     }
 
     actionButton(course) {
-        if (course.status == "available") {
+        if (course.status === "available") {
             return <td><button className="btn btn-success" id={course.id} onClick={() => this.enrollInCourse(course.id, course)}>Enroll</button></td>;
         }
 
-        if (course.status == "enrolled") {
+        if (course.status === "enrolled") {
             return <td><button className="btn btn-warning" id={course.id} onClick={() => this.unenrollCourse(course.id, course)}>Unenroll</button></td>;
         }
 
