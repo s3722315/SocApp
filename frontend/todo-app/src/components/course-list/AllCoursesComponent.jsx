@@ -97,8 +97,7 @@ class AllCoursesComponent extends Component {
     }
 
     actionButton(course) {
-<<<<<<< HEAD
-        if (course.status == "available") {
+        if (course.status === "available") {
             let username = AuthenticationService.getLoggedInUserName()
 
             var enrolled = false;
@@ -109,10 +108,10 @@ class AllCoursesComponent extends Component {
                 }
             )
 
-            if (enrolled == true) {
+            if (enrolled === true) {
                 return <td><button className="btn btn-warning" id={course.id} onClick={() => this.unenrollCourse(course.id, course)}>Unenroll</button></td>;
             }
-            if (enrolled == false) {
+            if (enrolled === false) {
                 return <td><button className="btn btn-success" id={course.id} onClick={() => this.enrollInCourse(course.id, course)}>Enroll</button></td>;
             }
         }
@@ -121,7 +120,7 @@ class AllCoursesComponent extends Component {
     }
 
     getCourseStatus(course) {
-        if (course.status == "available") {
+        if (course.status === "available") {
             let username = AuthenticationService.getLoggedInUserName()
 
             var enrolled = false;
@@ -132,20 +131,12 @@ class AllCoursesComponent extends Component {
                 }
             )
 
-            if (enrolled == true) {
+            if (enrolled === true) {
                 return <td>enrolled</td>;
             }
-            if (enrolled == false) {
+            if (enrolled === false) {
                 return <td>available</td>;
             }
-=======
-        if (course.status === "available") {
-            return <td><button className="btn btn-success" id={course.id} onClick={() => this.enrollInCourse(course.id, course)}>Enroll</button></td>;
-        }
-
-        if (course.status === "enrolled") {
-            return <td><button className="btn btn-warning" id={course.id} onClick={() => this.unenrollCourse(course.id, course)}>Unenroll</button></td>;
->>>>>>> a137a88cf09d7686e95f10a5eaeef38ee45c713e
         }
 
         return <td>{course.status}</td>;
