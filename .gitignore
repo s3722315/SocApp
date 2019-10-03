@@ -1,5 +1,6 @@
 /target/
 /frontend/todo-app/node_modules/.cache
+<<<<<<< HEAD
 restful-web-services/target/classes/com/sept/rest/webservices/restfulwebservices/jwt/resource/JwtTokenResponse.class
 restful-web-services/target/classes/com/sept/rest/basic/auth/AuthenticationBean.class
 restful-web-services/target/classes/com/sept/rest/basic/auth/BasicAuthenticationController.class
@@ -19,3 +20,6 @@ restful-web-services/target/classes/com/sept/rest/webservices/restfulwebservices
 restful-web-services/target/classes/com/sept/rest/webservices/restfulwebservices/todo/TodoJpaRepository.class
 restful-web-services/target/classes/com/sept/rest/webservices/restfulwebservices/todo/TodoJpaResource.class
 restful-web-services/target/classes/com/sept/rest/webservices/restfulwebservices/todo/TodoResource.class
+=======
+.travis.yml
+>>>>>>> a137a88cf09d7686e95f10a5eaeef38ee45c713e

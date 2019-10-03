@@ -1,0 +1,22 @@
+language: node_js
+cache:
+  directories:
+      - ./frontend/todo-app/node_modules
+
+before_install:
+ - cd ./frontend/todo-app/
+ - chmod +x ./node_modules/.bin/react-scripts
+
+install:
+  - npm -v
+  - npm install npm@latest -g
+  - nvm install 4.8.4
+  - npm i -g npm
+  - nvm install 10
+  - npm install -g npm
+
+script:
+  - npm run build
+  - npm test
+
+      
