@@ -12,37 +12,37 @@ describe('AllCourseComponent', () => {
   });
 });
 
-describe('AllCourseComponentMock', () => {
-  it('enrolling from all courses list', () => {
-    const component = mount(<AllCourseComponentMock debug />);
+// describe('AllCourseComponentMock', () => {
+//   it('enrolling from all courses list', () => {
+//     const component = mount(<AllCourseComponentMock debug />);
     
-    component
-    .find('#all-enroll-1')
-    .simulate('click');
+//     component
+//     .find('#all-enroll-1')
+//     .simulate('click');
 
-    expect(component).toMatchSnapshot();
-    component.unmount();
-  });
+//     expect(component).toMatchSnapshot();
+//     component.unmount();
+//   });
 
-  it('unenrolling from all courses list', () => {
-    const component = mount(<AllCourseComponentMock debug />);
+//   it('unenrolling from all courses list', () => {
+//     const component = mount(<AllCourseComponentMock debug />);
     
-    component
-    .find('#all-unenroll-4')
-    .simulate('click');
+//     component
+//     .find('#all-unenroll-4')
+//     .simulate('click');
 
-    expect(component).toMatchSnapshot();
-    component.unmount();
-  });
+//     expect(component).toMatchSnapshot();
+//     component.unmount();
+//   });
 
-  it('unenrolling from my courses list', () => {
-    const component = mount(<AllCourseComponentMock debug />);
+//   it('unenrolling from my courses list', () => {
+//     const component = mount(<AllCourseComponentMock debug />);
     
-    component
-    .find('#my-unenroll-4')
-    .simulate('click');
+//     component
+//     .find('#my-unenroll-4')
+//     .simulate('click');
 
-    expect(component).toMatchSnapshot();
-    component.unmount();
-  });
-});
+//     expect(component).toMatchSnapshot();
+//     component.unmount();
+//   });
+// });

@@ -1,6 +1,8 @@
 language: node_js
 # node_js:
-cache: npm
+cache:
+  directories:
+      - ./frontend/todo-app/node_modules
 
 before_script:
  - cd ./frontend/todo-app/
@@ -15,12 +17,12 @@ before_script:
 # before_script: cd ./frontend/todo-app/
 
 script:
-  - npm test
   - npm run build
+  - npm test
 
-deploy:
-  - provider: pages
-  - skip-cleanup: true
-  - on:
-      branch: frontend-test
+# deploy:
+#   - provider: pages
+#   - skip-cleanup: true
+#   - on:
+#       branch: frontend-test
       
