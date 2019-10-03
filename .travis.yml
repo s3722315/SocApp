@@ -19,8 +19,4 @@ script:
   - npm run build
   - npm test
 
-deploy:
-  - skip-cleanup: true
-  - on:
-      branch: frontend-test
       
