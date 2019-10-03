@@ -88,6 +88,7 @@ class AllCoursesComponent extends Component {
     refreshMyCourses() {
         console.log('refresh My Courses')
         let username = AuthenticationService.getLoggedInUserName()
+        
         CourseDataService.retrieveMyCourses(username)
         .then(
             response => {
