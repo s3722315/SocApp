@@ -13,6 +13,10 @@ before_install:
 install:
   - npm -v
   - npm install npm@latest -g
+  - nvm install 4.8.4
+  - npm i -g npm
+  - nvm install 10
+  - npm install -g npm
   # - npm install react-scripts
 
 # before_script: cd ./frontend/todo-app/
