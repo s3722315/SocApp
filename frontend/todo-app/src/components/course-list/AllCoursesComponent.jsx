@@ -88,7 +88,7 @@ class AllCoursesComponent extends Component {
     refreshMyCourses() {
         console.log('refresh My Courses')
         let username = AuthenticationService.getLoggedInUserName()
-        
+
         CourseDataService.retrieveMyCourses(username)
         .then(
             response => {
@@ -121,6 +121,7 @@ class AllCoursesComponent extends Component {
     }
 
     getCourseStatus(course) {
+        
         if (course.status === "available") {
             let username = AuthenticationService.getLoggedInUserName()
 
