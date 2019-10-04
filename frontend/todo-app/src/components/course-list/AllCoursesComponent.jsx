@@ -7,6 +7,7 @@ class AllCoursesComponent extends Component {
     constructor(props) {
         console.log('constructor')
         super(props)
+        // these arrays store the course list and my course list
         this.state = {
             courseList: [],
             myCourseList: [],
@@ -37,16 +38,19 @@ class AllCoursesComponent extends Component {
         console.log(this.state)
     }
 
+    // created link to the specific course
     gotoCourse(id) {
         console.log('move to course' + id)
         this.props.history.push(`/courses/${id}`)
 
     }
 
+    // enrolls the user into the course
     enrollInCourse(id, course) {
         console.log('enrolled in ' + id)
         let username = AuthenticationService.getLoggedInUserName()
 
+        // calls for backend to create relation
         CourseDataService.enrolACourse(id, username)
         .then(
             response => {
@@ -57,10 +61,12 @@ class AllCoursesComponent extends Component {
         )
     }
 
+    // unenrolls the user out of the course
     unenrollCourse(id, course) {
         console.log('enrolled in ' + id)
         let username = AuthenticationService.getLoggedInUserName()
 
+        // calls for backend to delete a relation
         CourseDataService.unenrolACourse(id, username)
         .then(
             response => {
@@ -71,6 +77,7 @@ class AllCoursesComponent extends Component {
         )
     }
 
+    // used to get the all courses fromthe database
     refreshCourses() {
         console.log('refresh Courses')
         let username = AuthenticationService.getLoggedInUserName()
@@ -85,6 +92,7 @@ class AllCoursesComponent extends Component {
         
     }
     
+    // used to get the users courses from the database
     refreshMyCourses() {
         console.log('refresh My Courses')
         let username = AuthenticationService.getLoggedInUserName()
@@ -97,6 +105,7 @@ class AllCoursesComponent extends Component {
         )
     }
 
+    // used to create action butons for the specific course status
     actionButton(course) {
         if (course.status === "enrolled") {
             return <td><button className="btn btn-warning" id={course.id} onClick={() => this.unenrollCourse(course.id, course)}>Unenroll</button></td>;

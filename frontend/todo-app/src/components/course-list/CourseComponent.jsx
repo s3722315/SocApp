@@ -32,6 +32,7 @@ class CourseComponent extends Component {
         console.log(this.state)
     }
 
+    // used to load in the specific course
     refreshCourse()
     {
         console.log('getting course')
@@ -43,6 +44,7 @@ class CourseComponent extends Component {
         )
     }
 
+    // not used, for enrolling in course
     enrollInCourse() {
         console.log('enrolled in ' + this.state.id)
         CourseDataService.enrolACourse(this.state.id, this.state.course)
@@ -53,6 +55,7 @@ class CourseComponent extends Component {
         )
     }
 
+    // not used, for unenrolling in a course
     unenrollCourse()
     {
         console.log('enrolled in ' + this.state.id)

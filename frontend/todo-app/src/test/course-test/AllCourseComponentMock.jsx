@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 
+// mock class of allCourseComponent for testing
 class AllCoursesComponentMock extends Component {
 
     constructor(props) {
