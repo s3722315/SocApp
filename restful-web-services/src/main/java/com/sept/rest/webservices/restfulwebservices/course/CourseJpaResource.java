@@ -1,6 +1,7 @@
 package com.sept.rest.webservices.restfulwebservices.course;
 
 import java.net.URI;
+import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
@@ -26,9 +27,22 @@ public class CourseJpaResource {
     @Autowired
     private StudentJpaRepository studentJpaRepository;
 
-    @GetMapping("/jpa/courses")
-    public List<Course> getAllCourses() {
-        return courseJpaRepository.findAll();
+//    @GetMapping("/jpa/courses")
+//    public List<Course> getAllCourses() {
+//        return courseJpaRepository.findAll();
+//    }
+//    
+    @GetMapping("/jpa/{name}/courses")
+    public List<Course> getAllCourses(@PathVariable String name) {
+        long studentId = studentJpaRepository.findByUsername(name).get().getId();
+    	List<Course> list = courseJpaRepository.findAll();
+    	int length = list.size();
+    	for (int i = 0; i < length; i++) {
+    		if (enrolmentJpaRepository.existsByStudentIdAndCourseId(studentId, i + 1)) {
+    			list.get(i).setStatus("enrolled");
+    		}
+    	}
+    	return list;
     }
 
     @GetMapping("/jpa/courses/{id}")
@@ -59,7 +73,18 @@ public class CourseJpaResource {
 
     @GetMapping("/jpa/users/{username}/courses")
     public List<Course> getMyCourses(@PathVariable String username){
-        return courseJpaRepository.findByStatus("enrolled");
+    	long studentId = studentJpaRepository.findByUsername(username).get().getId();
+    	List<Course> list = courseJpaRepository.findAll();
+    	List<Course> myList = new ArrayList<>();
+    	int length = list.size();
+    	for (int i = 0; i < length; i++) {
+    		if (enrolmentJpaRepository.existsByStudentIdAndCourseId(studentId, i + 1)) {
+    			list.get(i).setStatus("enrolled");
+    			myList.add(list.get(i));
+    		}
+    	}
+    	
+        return myList;
     }
 
 //    @GetMapping("/jpa/users/{username}/courses")
@@ -71,51 +96,58 @@ public class CourseJpaResource {
 //        return courseJpaRepository.findByEnrolments(set);
 //    }
 
-    @PutMapping("/jpa/courses/{id}/enroll")
-    public ResponseEntity<Course> enrollCourse(@PathVariable long id, @RequestBody Course course){
+//    @PutMapping("/jpa/courses/{id}/enroll")
+//    public ResponseEntity<Course> enrollCourse(@PathVariable long id, @RequestBody Course course){
+//
+//        if(course.getStatus().equals("unavailable")){
+//            return new ResponseEntity<Course>(course, HttpStatus.OK);
+//        }
+//        if (course.getStatus().equals("full")){
+//            return new ResponseEntity<Course>(course, HttpStatus.OK);
+//        }
+//        course.setStatus("enrolled");
+//        Course courseUpdated = courseJpaRepository.save(course);
+//
+//        return new ResponseEntity<Course>(course, HttpStatus.OK);
+//    }
+
+    @PutMapping("/jpa/users/{username}/courses/{courseId}/enroll")
+    public ResponseEntity<Course> enrollCourse(@PathVariable long courseId, @PathVariable String username){
+    	
+    	long studentId = studentJpaRepository.findByUsername(username).get().getId();
+        Course course = courseJpaRepository.findById(courseId).get();
+        Student student = studentJpaRepository.findById(studentId).get();
 
         if(course.getStatus().equals("unavailable")){
-            return new ResponseEntity<Course>(course, HttpStatus.OK);
+        	return new ResponseEntity<Course>(course, HttpStatus.OK);
         }
         if (course.getStatus().equals("full")){
-            return new ResponseEntity<Course>(course, HttpStatus.OK);
+        	return new ResponseEntity<Course>(course, HttpStatus.OK);
         }
-        course.setStatus("enrolled");
-        Course courseUpdated = courseJpaRepository.save(course);
+
+        EnrolmentKey key = new EnrolmentKey(studentId, courseId);
+        Enrolment enrolment = new Enrolment(key, student, course);
+        Enrolment createdEnrolment = enrolmentJpaRepository.save(enrolment);
 
         return new ResponseEntity<Course>(course, HttpStatus.OK);
     }
 
-//    @PostMapping("/jpa/courses/{courseId}/enroll")
-//    public void enrollCourse(@PathVariable long studentId, @PathVariable long courseId){
-//
-//        Course course = courseJpaRepository.findById(courseId).get();
-//        Student student = studentJpaRepository.findById(studentId).get();
-//
-//        if(course.getStatus().equals("unavailable")){
-//            return;
-//        }
-//        if (course.getStatus().equals("full")){
-//            return;
-//        }
-//
-//        Enrolment enrolment = new Enrolment(student, course);
-//        Enrolment createdEnrolment = enrolmentJpaRepository.save(enrolment);
-//
-//        return;
-//    }
-
-    @PutMapping("/jpa/courses/{id}/drop")
-    public ResponseEntity<Course> dropCourse(@PathVariable long id, @RequestBody Course course){
-        if(course.getStatus().equals("unavailable")){
+    @PutMapping("/jpa/users/{username}/courses/{courseId}/drop")
+    public ResponseEntity<Course> dropCourse(@PathVariable long courseId, @PathVariable String username){
+    	System.out.println("HEEEEYYYYYYY");
+    	long studentId = studentJpaRepository.findByUsername(username).get().getId();
+    	Course course = courseJpaRepository.findById(courseId).get();
+        Student student = studentJpaRepository.findById(studentId).get();
+    	if(course.getStatus().equals("unavailable")){
             return new ResponseEntity<Course>(course, HttpStatus.OK);
         }
         if (course.getStatus().equals("full")){
             return new ResponseEntity<Course>(course, HttpStatus.OK);
         }
 
-        course.setStatus("available");
-        Course courseUpdated = courseJpaRepository.save(course);
+        EnrolmentKey key = new EnrolmentKey(studentId, courseId);
+        Enrolment enrolment = new Enrolment(key, student, course);
+        enrolmentJpaRepository.delete(enrolment);
 
         return new ResponseEntity<Course>(course, HttpStatus.OK);
     }

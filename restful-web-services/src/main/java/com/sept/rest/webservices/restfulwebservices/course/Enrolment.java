@@ -27,6 +27,16 @@ public class Enrolment {
         this.student = student;
         this.course = course;
     }
+    
+    public Enrolment(EnrolmentKey key) {
+    	this.id = key;
+    }
+    
+    public Enrolment(EnrolmentKey key, Student student, Course course) {
+    	this.id = key;
+    	this.student = student;
+        this.course = course;
+    }
 
     public EnrolmentKey getId() { return id; }
 

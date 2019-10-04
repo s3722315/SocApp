@@ -16,7 +16,7 @@ class AllCoursesComponent extends Component {
         this.enrollInCourse = this.enrollInCourse.bind(this)
         this.refreshCourses = this.refreshCourses.bind(this)
         this.refreshMyCourses = this.refreshMyCourses.bind(this)
-        this.getCourseStatus = this.getCourseStatus.bind(this)
+        // this.getCourseStatus = this.getCourseStatus.bind(this)
     }
 
     componentWillUnmount() {
@@ -73,13 +73,13 @@ class AllCoursesComponent extends Component {
 
     refreshCourses() {
         console.log('refresh Courses')
+        let username = AuthenticationService.getLoggedInUserName()
 
-        CourseDataService.retrieveAllCourses()
+        CourseDataService.retrieveAllCourses(username)
         .then(
             response => {
                 //console.log(response);
                 this.setState({ courseList: response.data })
-                
             }
         )
         
@@ -98,53 +98,40 @@ class AllCoursesComponent extends Component {
     }
 
     actionButton(course) {
-        if (course.status === "available") {
-            let username = AuthenticationService.getLoggedInUserName()
-
-            var enrolled = false;
-            CourseDataService.retrieveACoursesEnrollStatus(course.id, username)
-            .then(
-                response => {
-                    enrolled = response.data
-                }
-            )
-
-            if (enrolled === true) {
-                return <td><button className="btn btn-warning" id={course.id} onClick={() => this.unenrollCourse(course.id, course)}>Unenroll</button></td>;
-            }
-            if (enrolled === false) {
-                return <td><button className="btn btn-success" id={course.id} onClick={() => this.enrollInCourse(course.id, course)}>Enroll</button></td>;
-            }
+        if (course.status === "enrolled") {
+            return <td><button className="btn btn-warning" id={course.id} onClick={() => this.unenrollCourse(course.id, course)}>Unenroll</button></td>;
         }
-
+        if (course.status === "available") {
+            return <td><button className="btn btn-success" id={course.id} onClick={() => this.enrollInCourse(course.id, course)}>Enroll</button></td>;
+        }
         return <td>None</td>;
     }
 
-    getCourseStatus(course) {
+    // getCourseStatus(course) {
         
-        if (course.status === "available") {
-            let username = AuthenticationService.getLoggedInUserName()
+    //     if (course.status === "available") {
+    //         let username = AuthenticationService.getLoggedInUserName()
 
-            var enrolled = false;
-            CourseDataService.retrieveACoursesEnrollStatus(course.id, username)
-            .then(
-                response => {
-                    enrolled = response.data
-                    console.log("At response enroll status:" + enrolled + " for:" + course.id)
-                }
-            )
+    //         var enrolled = false;
+    //         CourseDataService.retrieveACoursesEnrollStatus(course.id, username)
+    //         .then(
+    //             response => {
+    //                 enrolled = response.data
+    //                 console.log("At response enroll status:" + enrolled + " for:" + course.id)
+    //             }
+    //         )
 
-            console.log("after response enroll status:" + enrolled + " for:" + course.id)
-            if (enrolled === true) {
-                return <td>enrolled</td>;
-            }
-            if (enrolled === false) {
-                return <td>available</td>;
-            }
-        }
+    //         console.log("after response enroll status:" + enrolled + " for:" + course.id)
+    //         if (enrolled === true) {
+    //             return <td>enrolled</td>;
+    //         }
+    //         if (enrolled === false) {
+    //             return <td>available</td>;
+    //         }
+    //     }
 
-        return <td>{course.status}</td>;
-    }
+    //     return <td>{course.status}</td>;
+    // }
 
     render() {
 
@@ -173,7 +160,7 @@ class AllCoursesComponent extends Component {
                                     <tr key={course.id}>
                                         <td>{course.code}</td>
                                         <td>{course.coursename}</td>
-                                        {this.getCourseStatus(course)}
+                                        <td>{course.status}</td>
                                         <td><button className="btn btn-success" onClick={() => this.gotoCourse(course.id)}>Go To</button></td>
                                         {this.actionButton(course)}
                                     </tr>
@@ -210,7 +197,7 @@ class AllCoursesComponent extends Component {
                                         <tr key={course.id}>
                                             <td>{course.code}</td>
                                             <td>{course.coursename}</td>
-                                            {this.getCourseStatus(course)}
+                                            <td>{course.status}</td>
                                             <td><button className="btn btn-success" onClick={() => this.gotoCourse(course.id)}>Go To</button></td> 
                                             {this.actionButton(course)}
                                         </tr>

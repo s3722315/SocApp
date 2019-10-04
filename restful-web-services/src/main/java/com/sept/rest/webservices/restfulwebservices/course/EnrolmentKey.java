@@ -15,5 +15,10 @@ public class EnrolmentKey implements Serializable {
 
     public EnrolmentKey(){
     }
+    
+    public EnrolmentKey(Long userId, Long courseId) {
+    	this.userId = userId;
+    	this.courseId = courseId;
+    }
 
 }
