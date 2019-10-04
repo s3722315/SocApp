@@ -15,6 +15,9 @@ import SignupComponent from '../signup/SignupComponent.jsx'
 import AllCoursesComponent from '../course-list/AllCoursesComponent.jsx'
 import CourseComponent from '../course-list/CourseComponent.jsx'
 
+import StudentComponent from '../student-list/StudentComponent.jsx'
+import AllStudentsComponent from '../student-list/AllStudentsComponent.jsx'
+
 class TodoApp extends Component {
     render() {
         return (
@@ -29,12 +32,15 @@ class TodoApp extends Component {
                             <AuthenticatedRoute path="/todos/:id" component={TodoComponent}/>
                             <AuthenticatedRoute path="/todos" component={ListTodosComponent}/>
                             <AuthenticatedRoute path="/logout" component={LogoutComponent}/>
-                            
+
                             <Route path="/signup" component={SignupComponent}/>
-                            
+
                             <AuthenticatedRoute path="/courses/:id" component={CourseComponent}/>
                             <AuthenticatedRoute path="/courses" component={AllCoursesComponent}/>
-                            
+
+                            <AuthenticatedRoute path="/students/:id" component={StudentComponent}/>
+                            <AuthenticatedRoute path="/students" component={AllStudentsComponent}/>
+
                             <Route component={ErrorComponent}/>
                         </Switch>
                         <FooterComponent/>

@@ -1,6 +1,6 @@
 package com.sept.rest.webservices.restfulwebservices.todo;
 
-import com.sept.rest.webservices.restfulwebservices.jwt.JwtUserDetails;
+import com.sept.rest.webservices.restfulwebservices.jwt.Student;
 
 import java.util.Date;
 
@@ -18,7 +18,7 @@ public class Todo {
 
 	@ManyToOne
 	@JoinColumn(name="jwt_user_details_username")
-	private JwtUserDetails user;
+	private Student user;
 	
 	public Todo() {
 		

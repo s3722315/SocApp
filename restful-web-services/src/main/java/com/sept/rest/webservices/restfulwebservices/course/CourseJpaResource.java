@@ -1,20 +1,17 @@
 package com.sept.rest.webservices.restfulwebservices.course;
 
 import java.net.URI;
+import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
-import com.sept.rest.webservices.restfulwebservices.jwt.JwtUserDetails;
+import com.sept.rest.webservices.restfulwebservices.jwt.Student;
+import com.sept.rest.webservices.restfulwebservices.jwt.StudentJpaRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.DeleteMapping;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.PutMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
 @CrossOrigin(origins="http://localhost:4200")
@@ -22,14 +19,30 @@ import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 public class CourseJpaResource {
 
     @Autowired
-    private CourseHardcodedService courseService;
-
-    @Autowired
     private CourseJpaRepository courseJpaRepository;
 
-    @GetMapping("/jpa/courses")
-    public List<Course> getAllCourses() {
-        return courseJpaRepository.findAll();
+    @Autowired
+    private EnrolmentJpaRepository enrolmentJpaRepository;
+
+    @Autowired
+    private StudentJpaRepository studentJpaRepository;
+
+//    @GetMapping("/jpa/courses")
+//    public List<Course> getAllCourses() {
+//        return courseJpaRepository.findAll();
+//    }
+//    
+    @GetMapping("/jpa/{name}/courses")
+    public List<Course> getAllCourses(@PathVariable String name) {
+        long studentId = studentJpaRepository.findByUsername(name).get().getId();
+    	List<Course> list = courseJpaRepository.findAll();
+    	int length = list.size();
+    	for (int i = 0; i < length; i++) {
+    		if (enrolmentJpaRepository.existsByStudentIdAndCourseId(studentId, i + 1)) {
+    			list.get(i).setStatus("enrolled");
+    		}
+    	}
+    	return list;
     }
 
     @GetMapping("/jpa/courses/{id}")
@@ -37,53 +50,104 @@ public class CourseJpaResource {
         return courseJpaRepository.findById(id).get();
     }
 
-    @GetMapping("/jpa/courses/{id}/status")
-    public String getCourseStatus(@PathVariable long id){
+    @GetMapping("/jpa/users/{name}/{id}/enroll/status")
+    public boolean getEnrolledStatus(@PathVariable String name, @PathVariable long id){
+        long studentId = studentJpaRepository.findByUsername(name).get().getId();
+        return enrolmentJpaRepository.existsByStudentIdAndCourseId(studentId, id);
+    }
 
-        return courseJpaRepository.findById(id).get().getStatus();
+//    @GetMapping("/jpa/courses/{id}/status")
+//    public String getCourseStatus(@PathVariable long id){
+//        return courseJpaRepository.findById(id).get().getStatus();
+//    }
+
+    @GetMapping("/jpa/courses/{id}/status")
+    public String getCourseStatus(@PathVariable long studentId, @PathVariable long courseId){
+        if (courseJpaRepository.findById(courseId).get().getStatus().equals("available")){
+            if (enrolmentJpaRepository.existsByStudentIdAndCourseId(studentId, courseId))
+                return "enrolled";
+            else return "available";
+        }
+        else return courseJpaRepository.findById(courseId).get().getStatus();
     }
 
     @GetMapping("/jpa/users/{username}/courses")
     public List<Course> getMyCourses(@PathVariable String username){
-        //return courseJpaRepository.findByJwt_User_Details_Username(username);
-        return courseJpaRepository.findByStatus("enrolled");
+    	long studentId = studentJpaRepository.findByUsername(username).get().getId();
+    	List<Course> list = courseJpaRepository.findAll();
+    	List<Course> myList = new ArrayList<>();
+    	int length = list.size();
+    	for (int i = 0; i < length; i++) {
+    		if (enrolmentJpaRepository.existsByStudentIdAndCourseId(studentId, i + 1)) {
+    			list.get(i).setStatus("enrolled");
+    			myList.add(list.get(i));
+    		}
+    	}
+    	
+        return myList;
     }
 
-    @PutMapping("/jpa/courses/{id}/enroll")
-    public ResponseEntity<Course> enrollCourse(@PathVariable long id, @RequestBody Course course){
-
-        if(course.getStatus().equals("unavailable")){
-            return new ResponseEntity<Course>(course, HttpStatus.OK);
-        }
-        if (course.getStatus().equals("full")){
-            return new ResponseEntity<Course>(course, HttpStatus.OK);
-        }
-        course.setStatus("enrolled");
-        Course courseUpdated = courseJpaRepository.save(course);
-
-        return new ResponseEntity<Course>(course, HttpStatus.OK);
-
-//        user.getCourses().add(course);
-//        course.getStudents().add(user);
+//    @GetMapping("/jpa/users/{username}/courses")
+//    public List<Course> getMyCourses(@PathVariable long studentId, @PathVariable long courseId){
+//        List<Enrolment> enrolledCourses = enrolmentJpaRepository.findByStudentId(studentId);
 //
+//        Set set = new HashSet<>(enrolledCourses);
+//
+//        return courseJpaRepository.findByEnrolments(set);
+//    }
+
+//    @PutMapping("/jpa/courses/{id}/enroll")
+//    public ResponseEntity<Course> enrollCourse(@PathVariable long id, @RequestBody Course course){
+//
+//        if(course.getStatus().equals("unavailable")){
+//            return new ResponseEntity<Course>(course, HttpStatus.OK);
+//        }
+//        if (course.getStatus().equals("full")){
+//            return new ResponseEntity<Course>(course, HttpStatus.OK);
+//        }
+//        course.setStatus("enrolled");
 //        Course courseUpdated = courseJpaRepository.save(course);
 //
 //        return new ResponseEntity<Course>(course, HttpStatus.OK);
+//    }
 
+    @PutMapping("/jpa/users/{username}/courses/{courseId}/enroll")
+    public ResponseEntity<Course> enrollCourse(@PathVariable long courseId, @PathVariable String username){
+    	
+    	long studentId = studentJpaRepository.findByUsername(username).get().getId();
+        Course course = courseJpaRepository.findById(courseId).get();
+        Student student = studentJpaRepository.findById(studentId).get();
 
+        if(course.getStatus().equals("unavailable")){
+        	return new ResponseEntity<Course>(course, HttpStatus.OK);
+        }
+        if (course.getStatus().equals("full")){
+        	return new ResponseEntity<Course>(course, HttpStatus.OK);
+        }
+
+        EnrolmentKey key = new EnrolmentKey(studentId, courseId);
+        Enrolment enrolment = new Enrolment(key, student, course);
+        Enrolment createdEnrolment = enrolmentJpaRepository.save(enrolment);
+
+        return new ResponseEntity<Course>(course, HttpStatus.OK);
     }
 
-    @PutMapping("/jpa/courses/{id}/drop")
-    public ResponseEntity<Course> dropCourse(@PathVariable long id, @RequestBody Course course){
-        if(course.getStatus().equals("unavailable")){
+    @PutMapping("/jpa/users/{username}/courses/{courseId}/drop")
+    public ResponseEntity<Course> dropCourse(@PathVariable long courseId, @PathVariable String username){
+    	System.out.println("HEEEEYYYYYYY");
+    	long studentId = studentJpaRepository.findByUsername(username).get().getId();
+    	Course course = courseJpaRepository.findById(courseId).get();
+        Student student = studentJpaRepository.findById(studentId).get();
+    	if(course.getStatus().equals("unavailable")){
             return new ResponseEntity<Course>(course, HttpStatus.OK);
         }
         if (course.getStatus().equals("full")){
             return new ResponseEntity<Course>(course, HttpStatus.OK);
         }
 
-        course.setStatus("available");
-        Course courseUpdated = courseJpaRepository.save(course);
+        EnrolmentKey key = new EnrolmentKey(studentId, courseId);
+        Enrolment enrolment = new Enrolment(key, student, course);
+        enrolmentJpaRepository.delete(enrolment);
 
         return new ResponseEntity<Course>(course, HttpStatus.OK);
     }

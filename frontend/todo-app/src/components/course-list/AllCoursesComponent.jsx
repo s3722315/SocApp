@@ -16,6 +16,7 @@ class AllCoursesComponent extends Component {
         this.enrollInCourse = this.enrollInCourse.bind(this)
         this.refreshCourses = this.refreshCourses.bind(this)
         this.refreshMyCourses = this.refreshMyCourses.bind(this)
+        // this.getCourseStatus = this.getCourseStatus.bind(this)
     }
 
     componentWillUnmount() {
@@ -44,37 +45,41 @@ class AllCoursesComponent extends Component {
 
     enrollInCourse(id, course) {
         console.log('enrolled in ' + id)
-        CourseDataService.enrolACourse(id, course)
+        let username = AuthenticationService.getLoggedInUserName()
+
+        CourseDataService.enrolACourse(id, username)
         .then(
             response => {
                 this.refreshMyCourses()
                 this.refreshCourses()
-                this.state.message = "The course " + course.code + ": " + course.coursename + " has been enrolled" 
+                this.setState({ message: "The course " + course.code + ": " + course.coursename + " has been enrolled" })
             }
         )
     }
 
-    unenrollCourse(id, course)
-    {
+    unenrollCourse(id, course) {
         console.log('enrolled in ' + id)
-        CourseDataService.unenrolACourse(id, course)
+        let username = AuthenticationService.getLoggedInUserName()
+
+        CourseDataService.unenrolACourse(id, username)
         .then(
             response => {
                 this.refreshMyCourses()
                 this.refreshCourses()
-                this.state.message = "The course " + course.code + ": " + course.coursename + " has been unenrolled" 
+                this.setState({ message: "The course " + course.code + ": " + course.coursename + " has been unenrolled" })
             }
         )
     }
 
     refreshCourses() {
         console.log('refresh Courses')
-        CourseDataService.retrieveAllCourses()
+        let username = AuthenticationService.getLoggedInUserName()
+
+        CourseDataService.retrieveAllCourses(username)
         .then(
             response => {
                 //console.log(response);
                 this.setState({ courseList: response.data })
-                
             }
         )
         
@@ -83,6 +88,7 @@ class AllCoursesComponent extends Component {
     refreshMyCourses() {
         console.log('refresh My Courses')
         let username = AuthenticationService.getLoggedInUserName()
+
         CourseDataService.retrieveMyCourses(username)
         .then(
             response => {
@@ -92,16 +98,40 @@ class AllCoursesComponent extends Component {
     }
 
     actionButton(course) {
-        if (course.status == "available") {
-            return <td><button className="btn btn-success" id={course.id} onClick={() => this.enrollInCourse(course.id, course)}>Enroll</button></td>;
-        }
-
-        if (course.status == "enrolled") {
+        if (course.status === "enrolled") {
             return <td><button className="btn btn-warning" id={course.id} onClick={() => this.unenrollCourse(course.id, course)}>Unenroll</button></td>;
         }
-
+        if (course.status === "available") {
+            return <td><button className="btn btn-success" id={course.id} onClick={() => this.enrollInCourse(course.id, course)}>Enroll</button></td>;
+        }
         return <td>None</td>;
     }
+
+    // getCourseStatus(course) {
+        
+    //     if (course.status === "available") {
+    //         let username = AuthenticationService.getLoggedInUserName()
+
+    //         var enrolled = false;
+    //         CourseDataService.retrieveACoursesEnrollStatus(course.id, username)
+    //         .then(
+    //             response => {
+    //                 enrolled = response.data
+    //                 console.log("At response enroll status:" + enrolled + " for:" + course.id)
+    //             }
+    //         )
+
+    //         console.log("after response enroll status:" + enrolled + " for:" + course.id)
+    //         if (enrolled === true) {
+    //             return <td>enrolled</td>;
+    //         }
+    //         if (enrolled === false) {
+    //             return <td>available</td>;
+    //         }
+    //     }
+
+    //     return <td>{course.status}</td>;
+    // }
 
     render() {
 

@@ -1,13 +1,7 @@
 package com.sept.rest.webservices.restfulwebservices.course;
 
 
-import com.sept.rest.webservices.restfulwebservices.jwt.JwtUserDetails;
-
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.ManyToMany;
-import java.util.List;
+import javax.persistence.*;
 import java.util.Set;
 
 @Entity
@@ -20,8 +14,8 @@ public class Course {
     private String code;
     private String status;
 
-    @ManyToMany
-    Set<JwtUserDetails> enrolledStudents;
+    @OneToMany(mappedBy = "course")
+    Set<Enrolment> enrolments;
 
     //constructor methods
     protected Course(){
@@ -56,5 +50,11 @@ public class Course {
 
     public void setStatus(String status) { this.status = status; }
 
-    //public Set<JwtUserDetails> getStudents() { return enrolledStudents; }
+    //public Set<Student> getStudents() { return enrolledStudents; }
+
+//    spring.jpa.hibernate.ddl-auto=update
+//    spring.datasource.url=jdbc:mysql://${MYSQL_HOST:localhost}:3306/rmitsocappsdb
+//    spring.jpa.properties.hibernate.dialect = org.hibernate.dialect.MySQL5InnoDBDialect
+//    spring.datasource.username=root
+//    spring.datasource.password=Responsibility!1
 }

@@ -1,20 +1,29 @@
-language: node_js
-node_js:
-  - "stable"
-cache: npm
+matrix:
+  include:
+    - language: java
+      jdk:
+        - oraclejdk8
+      dist: trusty
+      
+      install: cd restful-web-services && mvn clean install
+      
+    - language: node_js
+      cache:
+        directories:
+            - ./frontend/todo-app/node_modules
 
-install:
-  - npm install
-  - npm install react-scripts
+      before_install:
+       - cd ./frontend/todo-app/
+       - chmod +x ./node_modules/.bin/react-scripts
 
-before_script: cd ./frontend/todo-app/
+      install:
+        - npm -v
+        - npm install npm@latest -g
+        - nvm install 4.8.4
+        - npm i -g npm
+        - nvm install 10
+        - npm install -g npm
 
-script:
-  - npm test
-  - npm run build
-
-deploy:
-  - provider: pages
-  - skip-cleanup: true
-  - on:
-      branch: frontend-test
+      script:
+        - npm run build
+        - npm test

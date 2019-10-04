@@ -1,6 +1,6 @@
-insert into jwt_user_details(id, username, password) values (1, 'sept', '$2a$10$3zHzb.Npv1hfZbLEU5qsdOju/tk2je6W6PnNnY.c1ujWPcZh4PL6e');
+insert into student(id, username, password) values (1, 'sept', '$2a$10$3zHzb.Npv1hfZbLEU5qsdOju/tk2je6W6PnNnY.c1ujWPcZh4PL6e');
 
-insert into jwt_user_details(id, username, password) values (2, 'sept2', '$2a$10$3zHzb.Npv1hfZbLEU5qsdOju/tk2je6W6PnNnY.c1ujWPcZh4PL6e');
+insert into student(id, username, password) values (2, 'sept2', '$2a$10$3zHzb.Npv1hfZbLEU5qsdOju/tk2je6W6PnNnY.c1ujWPcZh4PL6e');
 
 insert into todo(id, username,description,target_date,is_done)values(10001, 'sept', 'Learn JPA', sysdate(), false);
 
@@ -20,7 +20,9 @@ insert into course(id, username, coursename, code, status)values (3, 'sept', 'So
 
 insert into course(id, username, coursename, code, status)values (4, 'sept', 'Software Testing', 'COSC0035', 'unavailable');
 
-insert into course(id, username, coursename, code, status)values (5, 'sept', 'Capstone Project', 'EEET0003', 'enrolled');
+insert into course(id, username, coursename, code, status)values (5, 'sept', 'Capstone Project', 'EEET0003', 'available');
 
-insert into student_course(jwt_user_details_id, course_id)
-values (1L, 1)
+insert into enrolment(student_id, course_id)values (1, 1);
+
+--insert into student_course(jwt_user_details_id, course_id)
+--values (1L, 1)
