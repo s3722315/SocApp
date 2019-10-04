@@ -1,4 +1,3 @@
-
 //package com.sept.rest.webservices.restfulwebservices;
 //
 //import com.sept.rest.webservices.restfulwebservices.course.Course;
