@@ -130,9 +130,11 @@ class AllCoursesComponent extends Component {
             .then(
                 response => {
                     enrolled = response.data
+                    console.log("At response enroll status:" + enrolled + " for:" + course.id)
                 }
             )
 
+            console.log("after response enroll status:" + enrolled + " for:" + course.id)
             if (enrolled === true) {
                 return <td>enrolled</td>;
             }
