@@ -17,7 +17,6 @@ class AllCoursesComponent extends Component {
         this.enrollInCourse = this.enrollInCourse.bind(this)
         this.refreshCourses = this.refreshCourses.bind(this)
         this.refreshMyCourses = this.refreshMyCourses.bind(this)
-        // this.getCourseStatus = this.getCourseStatus.bind(this)
     }
 
     componentWillUnmount() {
@@ -115,32 +114,6 @@ class AllCoursesComponent extends Component {
         }
         return <td>None</td>;
     }
-
-    // getCourseStatus(course) {
-        
-    //     if (course.status === "available") {
-    //         let username = AuthenticationService.getLoggedInUserName()
-
-    //         var enrolled = false;
-    //         CourseDataService.retrieveACoursesEnrollStatus(course.id, username)
-    //         .then(
-    //             response => {
-    //                 enrolled = response.data
-    //                 console.log("At response enroll status:" + enrolled + " for:" + course.id)
-    //             }
-    //         )
-
-    //         console.log("after response enroll status:" + enrolled + " for:" + course.id)
-    //         if (enrolled === true) {
-    //             return <td>enrolled</td>;
-    //         }
-    //         if (enrolled === false) {
-    //             return <td>available</td>;
-    //         }
-    //     }
-
-    //     return <td>{course.status}</td>;
-    // }
 
     render() {
 

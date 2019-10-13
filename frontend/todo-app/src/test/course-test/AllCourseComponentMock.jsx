@@ -47,6 +47,7 @@ class AllCoursesComponentMock extends Component {
         this.enrollInCourse = this.enrollInCourse.bind(this)
         this.refreshCourses = this.refreshCourses.bind(this)
         this.refreshMyCourses = this.refreshMyCourses.bind(this)
+        this.listRender = this.listRender.bind(this)
     }
 
     componentWillUnmount() {
@@ -134,6 +135,36 @@ class AllCoursesComponentMock extends Component {
         return <td>None</td>;
     }
 
+    listRender(list) {
+        <table className="table">
+            <thead>
+                <tr>
+                    <th>Code</th>
+                    <th>Name</th>
+                    <th>Status</th>
+                    <th>Link</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                {
+
+                    list.map(
+                        course =>
+                            <tr key={course.id}>
+                                <td>{course.code}</td>
+                                <td>{course.coursename}</td>
+                                <td>{course.status}</td>
+                                <td><button className="btn btn-success">Go To</button></td>
+                                {this.actionButton(course, "my")}
+                            </tr>
+                    )
+                }
+            </tbody>
+        </table>
+    }
+
     render() {
 
         console.log('render')
@@ -142,33 +173,7 @@ class AllCoursesComponentMock extends Component {
                 <div className="container">
                 <h1>My Courses</h1>
                 {this.state.message && <div class="alert alert-success">{this.state.message}</div>}
-                <table className="table">
-                    <thead>
-                        <tr>
-                            <th>Code</th>
-                            <th>Name</th>
-                            <th>Status</th>
-                            <th>Link</th>
-                            <th>Action</th>
-                        </tr>
-                    </thead>
-
-                    <tbody>
-                        {
-
-                            this.state.myCourseList.map(
-                                course =>
-                                    <tr key={course.id}>
-                                        <td>{course.code}</td>
-                                        <td>{course.coursename}</td>
-                                        <td>{course.status}</td>
-                                        <td><button className="btn btn-success">Go To</button></td>
-                                        {this.actionButton(course, "my")}
-                                    </tr>
-                            )
-                        }
-                    </tbody>
-                </table>
+                {this.listRendeer(this.state.courseList)}
 
                     <hr
                         style={{
