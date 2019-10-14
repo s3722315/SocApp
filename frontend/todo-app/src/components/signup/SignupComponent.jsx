@@ -42,7 +42,9 @@ class SignupComponent extends Component {
             <div>
                 <h1>Sign Up</h1>
                 <div className="container">
-                    {this.state.failSignup && <div className="alert alert-warning">Username already taken</div>}
+                    {this.state.failSignup && <div className="alert alert-warning">Failed signup<br></br>
+                    Username may be already taken<br></br>
+                    Make sure username and password is 20 characters</div>}
                     User Name: <input type="text" name="username" value={this.state.username} onChange={this.handleChange} />
                     Password: <input type="password" name="password" value={this.state.password} onChange={this.handleChange} />
                     <button className="btn btn-success" onClick={() => this.signupClicked()}>Sign Up</button>

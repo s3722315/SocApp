@@ -43,6 +43,7 @@ public class JwtAuthenticationRestController {
 
   private final Logger logger = LoggerFactory.getLogger(this.getClass());
 
+  @Autowired
   private StudentJpaRepository studentJpaRepository;
 
   @RequestMapping(value = "${jwt.get.token.uri}", method = RequestMethod.POST)
@@ -75,20 +76,22 @@ public class JwtAuthenticationRestController {
     }
   }
 
-  @PostMapping("/new-account")
-  public ResponseEntity<?> registerUser(@RequestBody SignUpRequest signUpRequest) {
+  @PutMapping("/jpa/new-account")
+  public ResponseEntity<SignUpResponse> registerUser(@RequestBody SignUpRequest signUpRequest) {
     logger.warn("USER_REGISTERED");
-    if(studentJpaRepository.existsByUsername(signUpRequest.getUsername())) {
+    logger.warn(signUpRequest.getUsername());
+    logger.warn(signUpRequest.getPassword());
+    if(studentJpaRepository.existsByUsername(signUpRequest.getUsername()) || signUpRequest.getUsername().length() >= 20) {
       logger.warn("USERNAME_ALREADY_EXISTS");
-      return new ResponseEntity(new SignUpResponse(false, "Username is already taken!"),
+      return new ResponseEntity<SignUpResponse>(new SignUpResponse(false, "Username is already taken!"),
               HttpStatus.BAD_REQUEST);
     }
 
     BCryptPasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
 
     // Creating user's account
-    Student student = new Student(2L, signUpRequest.getUsername(), signUpRequest.getPassword());
-
+    long count = studentJpaRepository.count();
+    Student student = new Student((count + 1), signUpRequest.getUsername(), signUpRequest.getPassword());
     student.setPassword(passwordEncoder.encode(student.getPassword()));
 
     Student result = studentJpaRepository.save(student);

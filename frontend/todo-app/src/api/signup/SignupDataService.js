@@ -5,7 +5,7 @@ class SignupDataService {
 
     // used to signup a new person
     createNewAccount(username, password) {
-        return axios.post(`${JPA_API_URL}/new-account`, {
+        return axios.put(`${JPA_API_URL}/new-account`, {
         username, 
         password
         })

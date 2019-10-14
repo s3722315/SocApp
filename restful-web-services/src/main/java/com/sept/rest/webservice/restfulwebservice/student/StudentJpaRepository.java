@@ -11,6 +11,7 @@ import com.sept.rest.webservice.restfulwebservice.student.Students;
 @Repository
 public interface StudentJpaRepository extends JpaRepository<Students, Long>{
 	List<Students> findByID(String id);
+	long count();
 	
 
 }
