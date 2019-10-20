@@ -27,11 +27,7 @@ public class CourseJpaResource { // main class for course backend methods
     @Autowired
     private StudentJpaRepository studentJpaRepository;
 
-//    @GetMapping("/jpa/courses")
-//    public List<Course> getAllCourses() {
-//        return courseJpaRepository.findAll();
-//    }
-//    
+
     @GetMapping("/jpa/{name}/courses")
     public List<Course> getAllCourses(@PathVariable String name) { // return a list of all courses to the frontend
         long studentId = studentJpaRepository.findByUsername(name).get().getId();
@@ -56,11 +52,6 @@ public class CourseJpaResource { // main class for course backend methods
         long studentId = studentJpaRepository.findByUsername(name).get().getId();
         return enrolmentJpaRepository.existsByStudentIdAndCourseId(studentId, id);
     }
-
-//    @GetMapping("/jpa/courses/{id}/status")
-//    public String getCourseStatus(@PathVariable long id){
-//        return courseJpaRepository.findById(id).get().getStatus();
-//    }
 
     @GetMapping("/jpa/courses/{id}/status")
     public String getCourseStatus(@PathVariable long studentId, @PathVariable long courseId){
@@ -89,29 +80,6 @@ public class CourseJpaResource { // main class for course backend methods
         return myList;
     }
 
-//    @GetMapping("/jpa/users/{username}/courses")
-//    public List<Course> getMyCourses(@PathVariable long studentId, @PathVariable long courseId){
-//        List<Enrolment> enrolledCourses = enrolmentJpaRepository.findByStudentId(studentId);
-//
-//        Set set = new HashSet<>(enrolledCourses);
-//
-//        return courseJpaRepository.findByEnrolments(set);
-//    }
-
-//    @PutMapping("/jpa/courses/{id}/enroll")
-//    public ResponseEntity<Course> enrollCourse(@PathVariable long id, @RequestBody Course course){
-//
-//        if(course.getStatus().equals("unavailable")){
-//            return new ResponseEntity<Course>(course, HttpStatus.OK);
-//        }
-//        if (course.getStatus().equals("full")){
-//            return new ResponseEntity<Course>(course, HttpStatus.OK);
-//        }
-//        course.setStatus("enrolled");
-//        Course courseUpdated = courseJpaRepository.save(course);
-//
-//        return new ResponseEntity<Course>(course, HttpStatus.OK);
-//    }
 
     @PutMapping("/jpa/users/{username}/courses/{courseId}/enroll")
     public ResponseEntity<Course> enrollCourse(@PathVariable long courseId, @PathVariable String username){

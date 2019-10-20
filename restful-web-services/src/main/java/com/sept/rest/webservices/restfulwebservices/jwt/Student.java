@@ -17,13 +17,12 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import javax.persistence.*;
 
 @Entity
-public class Student implements UserDetails {
+public class Student implements UserDetails { // user entity, contains student id, name, and encrypted password
 
   private static final long serialVersionUID = 5155720064139820502L;
 
 
   @Id
- // @GeneratedValue(strategy= GenerationType.AUTO)
   private long id;
 
   private String username;
@@ -31,16 +30,6 @@ public class Student implements UserDetails {
 
   @OneToMany(mappedBy = "student")
   Set<Enrolment> enrolments;
-
-//  @OneToMany(mappedBy = "jwt_user_details")
-//  private List<Todo> todos;
-
-//  @ManyToMany
-//  @JoinTable(
-//          name = "student_course",
-//          joinColumns = @JoinColumn(name = "jwt_user_details_id"),
-//          inverseJoinColumns = @JoinColumn(name = "course_id"))
-//  Set<Course> enrolledCourses;
 
   @Transient
   private final Collection<? extends GrantedAuthority> authorities;
@@ -78,8 +67,6 @@ public class Student implements UserDetails {
   }
 
   public void setUsername(String username) { this.username = username; }
-
-  //public Set<Course> getCourses() { return enrolledCourses; }
 
   @JsonIgnore
   @Override

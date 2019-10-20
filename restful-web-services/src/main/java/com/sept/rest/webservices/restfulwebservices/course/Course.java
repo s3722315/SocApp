@@ -5,7 +5,7 @@ import javax.persistence.*;
 import java.util.Set;
 
 @Entity
-public class Course {
+public class Course { // course entity, contains data of course name, id, and status
     @Id
     @GeneratedValue
     private long id;
@@ -50,11 +50,4 @@ public class Course {
 
     public void setStatus(String status) { this.status = status; }
 
-    //public Set<Student> getStudents() { return enrolledStudents; }
-
-//    spring.jpa.hibernate.ddl-auto=update
-//    spring.datasource.url=jdbc:mysql://${MYSQL_HOST:localhost}:3306/rmitsocappsdb
-//    spring.jpa.properties.hibernate.dialect = org.hibernate.dialect.MySQL5InnoDBDialect
-//    spring.datasource.username=root
-//    spring.datasource.password=Responsibility!1
 }
