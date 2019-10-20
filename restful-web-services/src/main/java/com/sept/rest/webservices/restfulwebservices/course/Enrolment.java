@@ -5,7 +5,7 @@ import com.sept.rest.webservices.restfulwebservices.jwt.Student;
 import javax.persistence.*;
 
 @Entity
-public class Enrolment {
+public class Enrolment { // entity to store enrolment relationships between Course and Student
 
     @EmbeddedId
     EnrolmentKey id;

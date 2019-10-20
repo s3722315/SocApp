@@ -5,7 +5,7 @@ import javax.persistence.Embeddable;
 import java.io.Serializable;
 
 @Embeddable
-public class EnrolmentKey implements Serializable {
+public class EnrolmentKey implements Serializable { // composite primary key for Enrolment class
 
     @Column(name = "student_id")
     Long userId;

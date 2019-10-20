@@ -27,7 +27,7 @@ import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
 @RestController
 @CrossOrigin(origins="http://localhost:4200")
-public class JwtAuthenticationRestController {
+public class JwtAuthenticationRestController { // main class for handling user accounts
 
   @Value("${jwt.http.request.header}")
   private String tokenHeader;
@@ -48,6 +48,7 @@ public class JwtAuthenticationRestController {
 
   @RequestMapping(value = "${jwt.get.token.uri}", method = RequestMethod.POST)
   public ResponseEntity<?> createAuthenticationToken(@RequestBody JwtTokenRequest authenticationRequest)
+  //receives JwtTokenRequest to create authentication token
       throws AuthenticationException {
 
     authenticate(authenticationRequest.getUsername(), authenticationRequest.getPassword());
@@ -63,6 +64,7 @@ public class JwtAuthenticationRestController {
 
   @RequestMapping(value = "${jwt.refresh.token.uri}", method = RequestMethod.GET)
   public ResponseEntity<?> refreshAndGetAuthenticationToken(HttpServletRequest request) {
+	// refreshes the authentication token
     String authToken = request.getHeader(tokenHeader);
     final String token = authToken.substring(7);
     String username = jwtTokenUtil.getUsernameFromToken(token);
@@ -78,6 +80,7 @@ public class JwtAuthenticationRestController {
 
   @PutMapping("/jpa/new-account")
   public ResponseEntity<SignUpResponse> registerUser(@RequestBody SignUpRequest signUpRequest) {
+	// receives SignUpRequest to add new user to the database
     logger.warn("USER_REGISTERED");
     logger.warn(signUpRequest.getUsername());
     logger.warn(signUpRequest.getPassword());
@@ -105,11 +108,11 @@ public class JwtAuthenticationRestController {
   }
 
   @ExceptionHandler({ AuthenticationException.class })
-  public ResponseEntity<String> handleAuthenticationException(AuthenticationException e) {
+  public ResponseEntity<String> handleAuthenticationException(AuthenticationException e) { // handle invalid credentials
     return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body(e.getMessage());
   }
 
-  private void authenticate(String username, String password) {
+  private void authenticate(String username, String password) {  // authenticate credentials with the datastorage
     Objects.requireNonNull(username);
     Objects.requireNonNull(password);
 

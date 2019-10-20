@@ -16,7 +16,7 @@ import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
 @CrossOrigin(origins="http://localhost:4200")
 @RestController
-public class CourseJpaResource {
+public class CourseJpaResource { // main class for course backend methods
 
     @Autowired
     private CourseJpaRepository courseJpaRepository;
@@ -33,7 +33,7 @@ public class CourseJpaResource {
 //    }
 //    
     @GetMapping("/jpa/{name}/courses")
-    public List<Course> getAllCourses(@PathVariable String name) {
+    public List<Course> getAllCourses(@PathVariable String name) { // return a list of all courses to the frontend
         long studentId = studentJpaRepository.findByUsername(name).get().getId();
     	List<Course> list = courseJpaRepository.findAll();
     	int length = list.size();
@@ -46,12 +46,13 @@ public class CourseJpaResource {
     }
 
     @GetMapping("/jpa/courses/{id}")
-    public Course getCourse(@PathVariable long id){
+    public Course getCourse(@PathVariable long id){ // return a single Course object for particular usage
         return courseJpaRepository.findById(id).get();
     }
 
     @GetMapping("/jpa/users/{name}/{id}/enroll/status")
     public boolean getEnrolledStatus(@PathVariable String name, @PathVariable long id){
+    	// check many-to-many table for existing enrolment relationship between Student and Course
         long studentId = studentJpaRepository.findByUsername(name).get().getId();
         return enrolmentJpaRepository.existsByStudentIdAndCourseId(studentId, id);
     }
@@ -63,6 +64,7 @@ public class CourseJpaResource {
 
     @GetMapping("/jpa/courses/{id}/status")
     public String getCourseStatus(@PathVariable long studentId, @PathVariable long courseId){
+    	// check if course is available for enrollment or not
         if (courseJpaRepository.findById(courseId).get().getStatus().equals("available")){
             if (enrolmentJpaRepository.existsByStudentIdAndCourseId(studentId, courseId))
                 return "enrolled";
@@ -72,7 +74,7 @@ public class CourseJpaResource {
     }
 
     @GetMapping("/jpa/users/{username}/courses")
-    public List<Course> getMyCourses(@PathVariable String username){
+    public List<Course> getMyCourses(@PathVariable String username){ // return a list of course the particular student is enrolled in
     	long studentId = studentJpaRepository.findByUsername(username).get().getId();
     	List<Course> list = courseJpaRepository.findAll();
     	List<Course> myList = new ArrayList<>();
@@ -113,6 +115,7 @@ public class CourseJpaResource {
 
     @PutMapping("/jpa/users/{username}/courses/{courseId}/enroll")
     public ResponseEntity<Course> enrollCourse(@PathVariable long courseId, @PathVariable String username){
+    	// enroll a student in a course
     	
     	long studentId = studentJpaRepository.findByUsername(username).get().getId();
         Course course = courseJpaRepository.findById(courseId).get();
@@ -134,7 +137,8 @@ public class CourseJpaResource {
 
     @PutMapping("/jpa/users/{username}/courses/{courseId}/drop")
     public ResponseEntity<Course> dropCourse(@PathVariable long courseId, @PathVariable String username){
-    	System.out.println("HEEEEYYYYYYY");
+    	// drop a student from a previously enrolled course
+    	
     	long studentId = studentJpaRepository.findByUsername(username).get().getId();
     	Course course = courseJpaRepository.findById(courseId).get();
         Student student = studentJpaRepository.findById(studentId).get();
